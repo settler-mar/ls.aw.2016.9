@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "SansusWebissimo";
+    src: url("Sansus-Webissimo-Regular.eot");
+    src: url("Sansus-Webissimo-Regular.eot?#iefix") format("embedded-opentype"),
+         url("Sansus-Webissimo-Regular.woff2") format("woff2"),
+         url("Sansus-Webissimo-Regular.woff") format("woff"),
+         url("Sansus-Webissimo-Regular.ttf") format("ttf"),
+         url("Sansus-Webissimo-Regular.svg#SansusWebissimo") format("svg");
+    font-style: normal;
+    font-weight: 300;
+}
