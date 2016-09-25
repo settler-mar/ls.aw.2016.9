@@ -33,6 +33,7 @@ $.gulp.task('default', $.gulp.series(
     'fonts',
     'copy:favicon'
   ),
+  'fonts_css:concat',
   $.gulp.parallel(
     'watch',
     'serve'
