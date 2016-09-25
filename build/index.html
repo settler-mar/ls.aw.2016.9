@@ -13,6 +13,10 @@
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#fff">
+    <link rel="stylesheet" href="fonts/FontAwesome.css">
+    <link rel="stylesheet" href="fonts/fontawesome-webfont.css">
+    <link rel="stylesheet" href="fonts/Sansus-Webissimo-Regular.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/foundation.css">
     <link rel="stylesheet" href="/assets/css/app.css">
     <script src="/assets/js/foundation.js" defer></script>
@@ -20,9 +24,69 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
-    <div class="greating">
-      <div class="greating_text">Hello! I'm your training builder.</div>
-      <div class="greating_picture"></div>
+    <div class="index" id="header">
+      <div class="container">
+        <div class="logo_blk">
+          <div class="logo">
+            <div class="logo_img"><img src="/assets/img/my_photo.jpg"></div>
+            <div class="my_name">Матюхин Максим</div><span>Личный сайт веб разработчика</span>
+          </div>
+          <div class="my_linc"><a class="vk" href="https://vk.com/settler_mar">
+              <svg class="icon icon-vk">
+                <use xlink:href="/assets/img/sprite.svg#vk"></use>
+              </svg></a><a class="git" href="https://github.com/settler-mar">
+              <svg class="icon icon-github">
+                <use xlink:href="/assets/img/sprite.svg#github"></use>
+              </svg></a><a class="li" href="https://vk.com/settler_mar">
+              <svg class="icon icon-in">
+                <use xlink:href="/assets/img/sprite.svg#in"></use>
+              </svg></a></div>
+          <div class="menu_blk">
+            <ul>
+              <li><a href="porfolio.html">Мои работы</a></li>
+              <li><a href="abaut.html">Обо мне</a></li>
+              <li><a href="blog.html">Блог</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="auth_menu">
+          <div class="title">Авторизируйся</div>
+          <form>
+            <label class="login">
+              <svg class="icon icon-login">
+                <use xlink:href="/assets/img/sprite.svg#login"></use>
+              </svg>
+              <input name="login" placeholder="Логин">
+            </label>
+            <label class="pass">
+              <svg class="icon icon-password">
+                <use xlink:href="/assets/img/sprite.svg#password"></use>
+              </svg>
+              <input name="pass" type="password" placeholder="Пароль">
+            </label>
+            <label class="capcha">
+              <input type="checkbox"><span></span>Я человек
+            </label>
+            <div class="recapcha"><span>Вы точно не робот?</span></div>
+            <label>
+              <input type="radio" checked><span></span>Да
+            </label>
+            <label>
+              <input type="radio"><span></span>Не уверен
+            </label>
+          </form>
+          <div class="menu_blk">
+            <ul>
+              <li><a class="auth_button">На главную</a></li>
+              <li><a class="login_but">Войти</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="auth_button">Авторизоваться</div>
     </div>
+    <footer class="footer index">
+      <div class="copyright">© Матюхин Максим | создано с любовью в LoftSchool | 2016</div>
+    </footer>
   </body>
 </html>

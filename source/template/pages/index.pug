@@ -2,6 +2,38 @@ extends ../_template
 
 block variables
   - var title = 'Home page'
+  - var body_css = 'index'
 
+block dop_menu
+  .auth_menu
+    .title Авторизируйся
+    form
+      label.login
+        +icon('login')
+        input(name="login",placeholder="Логин")
+      label.pass
+        +icon('password')
+        input(name="pass",type="password",placeholder="Пароль")
+      label.capcha
+        input(type="checkbox")
+        span
+        | Я человек
+      div.recapcha
+        span Вы точно не робот?
+      label
+        input(type="radio",checked)
+        span
+        | Да
+      label
+        input(type="radio")
+        span
+        | Не уверен
+    .menu_blk
+      ul
+        li
+          a.auth_button На главную
+        li
+          a.login_but Войти
+block dop_up_element
+  .auth_button Авторизоваться
 block content
-  include ../common/_greating

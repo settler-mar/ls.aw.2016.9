@@ -1,5 +1,4 @@
-body {
-  margin: 0;
-}
-
-@import 'common/greating';
+@import 'common/basecolor';
+@import 'common/base';
+@import 'common/header';
+@import 'common/footer';

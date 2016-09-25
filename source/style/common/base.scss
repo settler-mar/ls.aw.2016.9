@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+a{
+  transition: all linear 0.3s;
+  cursor: pointer;
+}
+label{
+  display: block;
+  margin: 20px 0 20px 0;
+  svg{
+    height: 44px;
+    width: 45px;
+    box-sizing: border-box;
+    fill:$input_icon_color;
+    background: $input_icon_bg;
+    border: 13px solid $input_icon_bg;
+    float: left;
+    margin-right: -45px;
+    +input{
+      margin-left: 45px;
+      width: 190px;
+    }
+  }
+  input{
+    outline: none;
+    border: 0;
+    padding: 13px 20px;
+    box-sizing: border-box;
+  }
+  input[type=text]{
+    display: block;
+  }
+}

@@ -1,0 +1,172 @@
+#header{
+  background: url(/assets/img/bg_1800.jpg) no-repeat 0 50%;
+  text-align: center;
+  height: 300px;
+  padding-bottom: 50px;
+  .container {
+    vertical-align:middle ;
+    text-align: center;
+    display: inline-block;
+    .my_linc {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      a {
+        text-decoration: none;
+        svg {
+          transition: all linear 0.3s;
+          fill: $text-header;
+          height: 22px;
+          width: 32px;
+        }
+      }
+      a:hover svg{
+        fill: $icon-hover;
+      }
+    }
+    .logo_blk {
+      padding: 40px;
+      display: inline-block;
+      color:$text-header;
+      margin: 0;
+      .my_name{
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 34px;
+        +span{
+          opacity: 0.8;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+      .logo_img {
+        width: 140px;
+        height: 140px;
+        border-radius: 100%;
+        overflow: hidden;
+        display: inline-block;
+        img {
+          height: 140px;
+        }
+      }
+    }
+    .auth_menu{
+      padding: 40px;
+      color: $text-header;
+      background: $logo_a_fon;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      .title{
+        font-family: SansusWebissimo;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 41px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .menu_blk{
+    position: absolute;
+  }
+  div.auth_button{
+    position: absolute;
+    border: 1px solid white;
+    top:24px;
+    right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 36px;
+    padding: 15px 29px;
+    color: $text-header;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.35s ease;
+  }
+}
+#header:before{
+  content: '';
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+#header.index{
+  height: 100vh;
+  padding-bottom: 0px;
+  .dop_menu+.auth_button{
+    opacity: 0;
+    height: 0%;
+    padding: 0 40px;
+  }
+  .container{
+    position: relative;
+  }
+  .my_linc {
+    position: relative;
+    a{
+      padding: 12px;
+    }
+  }
+  .menu_blk{
+    top:auto;
+    bottom: 0%;
+    left: 0;
+    display: table;
+    width: 100%;
+    ul{
+      list-style: none;
+      display: table-row;
+      margin: 0;
+      padding: 0;
+      li{
+        display: table-cell;
+        border-left:1px solid $text-header;
+        a{
+          color:$text-header;
+          background: $bt;
+          padding: 14px;
+          text-decoration: none;
+          display: block;
+        }
+        a:hover{
+          background: $bt-hover;
+        }
+      }
+      li:first-child{
+        border-left: 0;
+      }
+    }
+  }
+  .container{
+    .logo_blk{
+      padding-bottom: 100px;
+      background: $logo_a_fon;
+      transform: translateZ(0) rotateY(0);
+      transition: all 0.35s ease;
+    }
+    .auth_menu{
+      transform: translateZ(-1000px) rotateY(-90deg);
+      transition: all 0.35s ease 0.35s;
+    }
+  }
+  .container.dop_menu{
+    .logo_blk{
+      transform: translateZ(-1000px) rotateY(90deg);
+    }
+    .auth_menu{
+      transform: translateZ(0) rotateY(0);
+    }
+  }
+  .container.return_anim{
+    .logo_blk{
+      transition: all 0.35s ease 0.35s;
+    }
+    .auth_menu{
+      transition: all 0.35s ease;
+    }
+  }
+}

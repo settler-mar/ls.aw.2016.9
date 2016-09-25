@@ -1,8 +1,11 @@
 block variables
-
+    -var body_css=''
+include mixins/icons.pug
 doctype html
 html
   head
     include common/_head
   body
+    include common/_header
     block content
+    include common/_footer

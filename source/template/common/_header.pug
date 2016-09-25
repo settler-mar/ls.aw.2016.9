@@ -1,0 +1,25 @@
+#header(class=body_css)
+    .container
+        .logo_blk
+            .logo
+                .logo_img
+                    img(src="/assets/img/my_photo.jpg")
+                .my_name Матюхин Максим
+                span Личный сайт веб разработчика
+            .my_linc
+                a.vk(href="https://vk.com/settler_mar")
+                    +icon('vk')
+                a.git(href="https://github.com/settler-mar")
+                    +icon('github')
+                a.li(href="https://vk.com/settler_mar")
+                    +icon('in')
+            .menu_blk
+                ul
+                    li
+                        a(href="porfolio.html") Мои работы
+                    li
+                        a(href="abaut.html") Обо мне
+                    li
+                        a(href="blog.html") Блог
+        block dop_menu
+    block dop_up_element

@@ -1,0 +1,36 @@
+.footer{
+  text-align: center;
+  color: $footer_text;
+  width: 100%;
+  .copyright{
+    background: $footer_bg_cr;
+    color:$footer_text;
+  }
+}
+
+.footer.index{
+  position: absolute;
+  bottom: 0;
+  .copyright{
+    padding: 40px;
+    background: none;
+  }
+}
+
+
+//прибить подвал
+#content {
+  margin-top: 90px;
+  margin-bottom: -72px;
+}
+#content:after {
+  content: "";
+  display: block;
+}
+#content:after {
+  content: "";
+  display: block;
+}
+#footer, #content:after {
+  height: 72px;
+}
