@@ -2,14 +2,16 @@
   background: url(/assets/img/bg_1800.jpg) no-repeat 0 50%;
   text-align: center;
   height: 300px;
-  padding-bottom: 50px;
+  padding-bottom: 377px;
+  position: relative;
+  padding-top: 108px;
   .container {
     vertical-align:middle ;
     text-align: center;
     display: inline-block;
     .my_linc {
       position: absolute;
-      top: 10px;
+      top: 28px;
       left: 10px;
       a {
         text-decoration: none;
@@ -72,7 +74,22 @@
     }
   }
   .menu_blk{
-    position: absolute;
+    ul{
+      display: none;
+    }
+    svg {
+      transition: all linear 0.3s;
+      fill: $text-header;
+      height: 22px;
+      width: 32px;
+      position: absolute;
+      top: 28px;
+      right: 31px;
+      cursor: pointer;
+    }
+    svg:hover{
+      fill: $icon-hover;
+    }
   }
   div.auth_button{
     position: absolute;
@@ -87,6 +104,53 @@
     overflow: hidden;
     transition: all 0.35s ease;
   }
+  svg.icon-bg{
+    fill:$base-bg-color;
+    width: 2032px;
+    font-size: 64px;
+    position: absolute;
+    left: 50%;
+    height: 360px;
+    margin-left: -1016px;
+    bottom: 0;
+  }
+  svg.icon-stars1{
+    fill:$base-bg-color;
+    position: absolute;
+    left: 50%;
+    top: 109px;
+    width: 460px;
+    height: 270px;
+    opacity: 0.07;
+    margin-left: -230px;
+  }
+  svg.icon-stars2{
+    fill:$base-bg-color;
+    position: absolute;
+    left: 50%;
+    top: 600px;
+    width: 260px;
+    height: 171px;
+    opacity: 0.15;
+    margin-left: -130px;
+    transform: rotate(-180deg)
+  }
+  svg.icon-arrow_down {
+    fill:$base-bg-color;
+    position: absolute;
+    left: 50%;
+    margin-left: -13px;
+    top: 100vh;
+    margin-top: -80px;
+    width: 26px;
+    height: 16px;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all linear 0.3s;
+  }
+  svg.icon-arrow_down:hover{
+    fill: $icon-hover;
+  }
 }
 #header:before{
   content: '';
@@ -94,9 +158,10 @@
   display: inline-block;
   vertical-align: middle;
 }
-#header.index{
+.index #header{
   height: 100vh;
   padding-bottom: 0px;
+  padding-top: 0px;
   .dop_menu+.auth_button{
     opacity: 0;
     height: 0%;
@@ -124,6 +189,7 @@
     left: 0;
     display: table;
     width: 100%;
+    position: absolute;
     ul{
       list-style: none;
       display: table-row;
@@ -131,7 +197,7 @@
       padding: 0;
       li{
         display: table-cell;
-        border-left:1px solid $text-header;
+        border-right:1px solid $text-header;
         a{
           color:$text-header;
           background: $bt;
@@ -143,10 +209,19 @@
           background: $bt-hover;
         }
       }
+      li:last-child{
+        border-right: 0;
+      }
       li:first-child{
-        border-left: 0;
+        display: none;
       }
     }
+    svg{
+      display: none;
+    }
+  }
+  .auth_menu .menu_blk ul li{
+    display: table-cell;
   }
   .container{
     .logo_blk {
@@ -183,5 +258,15 @@
     .auth_menu{
       transition: all 0.35s ease;
     }
+  }
+}
+.works #header {
+  svg.icon-bg {
+    fill:$head-dop-color;
+  }
+  h1{
+    position: absolute;
+    top: 625px;
+    width: 100%;
   }
 }

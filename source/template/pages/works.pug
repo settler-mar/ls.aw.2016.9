@@ -1,0 +1,13 @@
+extends ../_template
+
+block variables
+  - var title = 'Another page'
+  - var body_css = 'works'
+block dop_up_element
+  +icon('bg')
+  +icon('stars1')
+  +icon('arrow_down')
+  +icon('stars2')
+  h1 Мои работы
+block content
+  include ../common/_slider

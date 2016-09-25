@@ -17,20 +17,21 @@
   }
 }
 
-
 //прибить подвал
-#content {
-  margin-top: 90px;
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
   margin-bottom: -72px;
 }
-#content:after {
+.page-wrap:after {
   content: "";
   display: block;
 }
-#content:after {
-  content: "";
-  display: block;
-}
-#footer, #content:after {
+#footer, .page-wrap:after {
   height: 72px;
+}
+.page-wrap.index:after{
+  height: auto;
 }

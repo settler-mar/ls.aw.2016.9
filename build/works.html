@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Home page</title>
+    <title>Another page</title>
     <meta content="" name="author">
     <meta content="" name="description">
     <meta content="" name="keywords">
@@ -26,7 +26,7 @@
     <!--[endif]-->
   </head>
   <body>
-    <div class="page-wrap index">
+    <div class="page-wrap works">
       <div id="header">
         <div class="container">
           <div class="logo_blk">
@@ -56,50 +56,51 @@
               </ul>
             </div>
           </div>
-          <div class="auth_menu">
-            <div class="title">Авторизируйся</div>
-            <form>
-              <label class="login">
-                <svg class="icon icon-login">
-                  <use xlink:href="/assets/img/sprite.svg#login"></use>
-                </svg>
-                <input name="login" placeholder="Логин">
-              </label>
-              <label class="pass">
-                <svg class="icon icon-password">
-                  <use xlink:href="/assets/img/sprite.svg#password"></use>
-                </svg>
-                <input name="pass" type="password" placeholder="Пароль">
-              </label>
-              <label class="capcha">
-                <input type="checkbox" name="capcha">
-                <svg class="icon icon-check">
-                  <use xlink:href="/assets/img/sprite.svg#check"></use>
-                </svg><span>Я человек</span>
-              </label>
-              <div class="recapcha"><span>Вы точно не робот?</span>
-                <label>
-                  <input type="radio" name="recapcha"><span></span><span>Да</span>
-                </label>
-                <label>
-                  <input type="radio" checked name="recapcha"><span></span><span>Не уверен</span>
-                </label>
-              </div>
-            </form>
-            <div class="menu_blk">
-              <ul>
-                <li><a class="auth_button">На главную</a></li>
-                <li><a class="login_but">Войти</a></li>
-              </ul>
+        </div>
+        <svg class="icon icon-bg">
+          <use xlink:href="/assets/img/sprite.svg#bg"></use>
+        </svg>
+        <svg class="icon icon-stars1">
+          <use xlink:href="/assets/img/sprite.svg#stars1"></use>
+        </svg>
+        <svg class="icon icon-arrow_down">
+          <use xlink:href="/assets/img/sprite.svg#arrow_down"></use>
+        </svg>
+        <svg class="icon icon-stars2">
+          <use xlink:href="/assets/img/sprite.svg#stars2"></use>
+        </svg>
+        <h1>Мои работы</h1>
+      </div>
+      <div id="content">
+        <div id="slider">
+          <div class="this_slide">
+            <div class="title">Сайт школы онлайн образования</div>
+            <ul class="skills">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+            </ul><a class="links" href="/" target="_blank">
+              <svg class="icon icon-link">
+                <use xlink:href="/assets/img/sprite.svg#link"></use>
+              </svg>Посмотреть сайт</a>
+          </div>
+          <div class="sliders_control">
+            <div class="hear_slide"><img src="/assets/img/work-1.png"></div>
+            <div class="prew_slile">
+              <svg class="icon icon-portf_arrow_down">
+                <use xlink:href="/assets/img/sprite.svg#portf_arrow_down"></use>
+              </svg><img src="/assets/img/work-2.png">
+            </div>
+            <div class="next_slile">
+              <svg class="icon icon-portf_arrow_up">
+                <use xlink:href="/assets/img/sprite.svg#portf_arrow_up"></use>
+              </svg><img src="/assets/img/work-3.png">
             </div>
           </div>
         </div>
-        <div class="auth_button">Авторизоваться</div>
-      </div>
-      <div id="content">
       </div>
     </div>
-    <footer class="footer index">
+    <footer class="footer works">
       <div class="copyright">© Матюхин Максим | создано с любовью в LoftSchool | 2016</div>
     </footer>
   </body>

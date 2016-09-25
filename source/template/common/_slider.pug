@@ -1,0 +1,27 @@
+#slider
+    //-ul
+      li
+         img(src="/assets/img/work-1.png")
+         a.title(href="/") Работа 1
+         ul.skills
+           li HTML
+           li CSS
+           li JAVASCRIPT
+    .this_slide
+        .title Сайт школы онлайн образования
+        ul.skills
+            li HTML
+            li CSS
+            li JAVASCRIPT
+        a.links(href="/",target="_blank")
+            +icon('link')
+            | Посмотреть сайт
+    .sliders_control
+        .hear_slide
+            img(src="/assets/img/work-1.png")
+        .prew_slile
+            +icon("portf_arrow_down")
+            img(src="/assets/img/work-2.png")
+        .next_slile
+            +icon("portf_arrow_up")
+            img(src="/assets/img/work-3.png")

@@ -1,0 +1,130 @@
+#slider {
+  font-size: 0;
+  background: $slide_this_fon;
+  > div {
+    font-size: 16px;
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .this_slide{
+    text-align: center;
+    .title{
+      font-family: SansusWebissimo;
+      font-size: 35px;
+      font-weight: 400;
+      line-height: 41px;
+      text-transform: uppercase;
+      color: $slide_this_text;
+      padding-bottom:25px;
+      max-width: 500px;
+      margin: auto;
+    }
+    .title:after{
+      content: '';
+      width: 89px;
+      height: 3px;
+      display: block;
+      margin: auto;
+      opacity: 0.5;
+      background: $slide_this_text;
+      margin-top:30px ;
+    }
+    ul.skills{
+      margin: 0 0 60px 0;
+      padding: 0;
+      li{
+        display: inline-block;
+        list-style: none;
+        color: $slide_skill;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      li:before{
+        content: ', ';
+      }
+      li:first-child:before{
+        content: '';
+      }
+    }
+    a{
+      background: $slide_href_bg;
+      color:$slider_chenger;
+      padding: 16px 21px;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 36px;
+      text-decoration: none;
+      vertical-align: middle;
+      svg{
+        fill:$slider_chenger;
+        height: 20px;
+        width:20px;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .sliders_control{
+    height:  100vh;
+    font-size: 0;
+    >div{
+      overflow: hidden;
+    }
+    .hear_slide {
+      height:  72%;
+      width: 100%;
+      text-align: center;
+      padding: 50px;
+      box-sizing: border-box;
+      background-color: $hear_slide_bg;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      ~div{
+        height: 28%;
+        width: 50%;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        svg{
+          fill:$slider_chenger;
+          position: absolute;
+          height: 100%;
+          width:44px;
+          left: 50%;
+          top:0;
+          margin-left: -22px;
+        }
+        img{
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+      ~div:before{
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .prew_slile {
+
+    }
+    .next_slile {
+    }
+    .prew_slile:before {
+      background: $ofter_slider_shirma_l;
+    }
+    .next_slile:before {
+      background: $ofter_slider_shirma_r;
+    }
+  }
+}
