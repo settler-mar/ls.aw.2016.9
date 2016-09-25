@@ -15,19 +15,19 @@ block dop_menu
         +icon('password')
         input(name="pass",type="password",placeholder="Пароль")
       label.capcha
-        input(type="checkbox")
-        span
-        | Я человек
+        input(type="checkbox",name="capcha")
+        +icon('check')
+        span Я человек
       div.recapcha
         span Вы точно не робот?
-      label
-        input(type="radio",checked)
-        span
-        | Да
-      label
-        input(type="radio")
-        span
-        | Не уверен
+        label
+          input(type="radio",name="recapcha")
+          span
+          span Да
+        label
+          input(type="radio",checked,name="recapcha")
+          span
+          span Не уверен
     .menu_blk
       ul
         li

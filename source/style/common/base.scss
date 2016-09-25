@@ -9,6 +9,10 @@ a{
 label{
   display: block;
   margin: 20px 0 20px 0;
+  width: 270px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
   svg{
     height: 44px;
     width: 45px;
@@ -20,16 +24,82 @@ label{
     margin-right: -45px;
     +input{
       margin-left: 45px;
-      width: 190px;
+      width: 225px;
     }
+  }
+  input[type=checkbox]{
+    display: none;
+    +svg{
+      fill:$input_checkbox_fon;
+      background: $input_checkbox_fon;
+      border: 4px solid $input_checkbox_border;
+      border-radius:2px;
+      height: 20px;
+      width: 20px;
+      float: none;
+      margin: 2px 10px 2px 0;
+      vertical-align: top;
+      transition: all 0.2s ease;
+    }
+  }
+  input[type=checkbox]:checked{
+    +svg{
+      fill:$input_checkbox_text;
+     }
   }
   input{
     outline: none;
     border: 0;
-    padding: 13px 20px;
+    padding: 10px 20px;
     box-sizing: border-box;
   }
   input[type=text]{
     display: block;
+  }
+  input[type=radio]{
+    display: none;
+    +span{
+      opacity: 1;
+      height: 20px;
+      width: 20px;
+      background: $input_checkbox_fon;
+      box-shadow: $input_checkbox_text 0px 0px 0px 10px inset;
+      border-radius: 100%;
+      vertical-align: top;
+      margin-right: 10px;
+      transition: all 0.2s ease;
+    }
+  }
+  input[type=radio]:checked{
+    +span{
+      box-shadow: $input_checkbox_text 0px 0px 0px 6px inset;
+    }
+  }
+}
+form{
+  span{
+    opacity: 0.8;
+  }
+}
+.recapcha{
+  span{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 12px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  label{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 106px;
+    text-align: left;
+    span {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
   }
 }

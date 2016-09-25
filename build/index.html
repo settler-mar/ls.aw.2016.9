@@ -65,15 +65,19 @@
               <input name="pass" type="password" placeholder="Пароль">
             </label>
             <label class="capcha">
-              <input type="checkbox"><span></span>Я человек
+              <input type="checkbox" name="capcha">
+              <svg class="icon icon-check">
+                <use xlink:href="/assets/img/sprite.svg#check"></use>
+              </svg><span>Я человек</span>
             </label>
-            <div class="recapcha"><span>Вы точно не робот?</span></div>
-            <label>
-              <input type="radio" checked><span></span>Да
-            </label>
-            <label>
-              <input type="radio"><span></span>Не уверен
-            </label>
+            <div class="recapcha"><span>Вы точно не робот?</span>
+              <label>
+                <input type="radio" name="recapcha"><span></span><span>Да</span>
+              </label>
+              <label>
+                <input type="radio" checked name="recapcha"><span></span><span>Не уверен</span>
+              </label>
+            </div>
           </form>
           <div class="menu_blk">
             <ul>
