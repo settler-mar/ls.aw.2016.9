@@ -30,10 +30,13 @@ $.gulp.task('default', $.gulp.series(
     'css:foundation',
     'sprite:svg',
     'sprite:png',
-    'fonts',
+    $.gulp.series(
+        'fonts',
+        'fonts_css:concat',
+        'fonts_css:clear'
+    ),
     'copy:favicon'
   ),
-  'fonts_css:concat',
   $.gulp.parallel(
     'watch',
     'serve'
