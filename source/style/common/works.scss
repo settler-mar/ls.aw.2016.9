@@ -1,0 +1,67 @@
+#review {
+  padding-top: 70px;
+  position: relative;
+  .icon-stars3{
+    fill:$base-bg-color;
+    position: absolute;
+    left: 50%;
+    top: 32px;
+    width: 173px;
+    height: 202px;
+    opacity: 0.15;
+    margin-left: -86.5px;
+  }
+  h2{
+    color:$base-bg-color;
+    font-family: SansusWebissimo;
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 66px;
+    text-transform: uppercase;
+    margin: auto;
+    width: 350px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .re_group {
+    text-align: center;
+    width: 810px;
+    margin: auto;
+    color: $review_text;
+    margin-bottom: 69px;
+    .re_blk {
+      padding: 13px;
+      font-size: 16px;
+      width: 375px;
+      display: inline-block;
+      background:url("/assets/img/quotes.png") no-repeat 20px 105px;
+      .logo_img {
+        height: 77px;
+        width: 77px;
+        overflow: hidden;
+        border-radius: 100%;
+        margin: 21px auto;
+        display: block;
+        img {
+          height: 100%;
+        }
+      }
+      .review{
+        font-style: italic;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: 30px;
+      }
+      .r_name {
+        font-weight: 700;
+        span {
+          font-weight: 300;
+          display: block;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}

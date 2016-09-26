@@ -1,6 +1,8 @@
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto-Light', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
   background: $base-bg-color;
   overflow-x: hidden;
 }
@@ -15,6 +17,9 @@ h1{
 a{
   transition: all linear 0.3s;
   cursor: pointer;
+}
+a:hover{
+  color:$a_hover !important;
 }
 label{
   display: block;
@@ -103,7 +108,7 @@ form{
     padding: 0;
     margin: 0;
     display: inline-block;
-    width: 106px;
+    width: 110px;
     text-align: left;
     span {
       display: inline-block;
@@ -112,4 +117,28 @@ form{
       line-height: 24px;
     }
   }
+}
+
+.my_linc {
+  position: absolute;
+  top: 28px;
+  left: 30px;
+  a {
+    text-decoration: none;
+    svg {
+      transition: all linear 0.3s;
+      fill: $text-header;
+      height: 22px;
+      width: 32px;
+    }
+  }
+  a:hover svg{
+    fill: $icon-hover;
+    opacity: 1;
+  }
+}
+.bg_dop1{
+  background: url(/assets/img/majak.png) 100% 100% no-repeat,url(/assets/img/bg_about.jpg) 50% no-repeat;
+  margin-bottom: -196px;
+  padding-bottom: 196px;
 }

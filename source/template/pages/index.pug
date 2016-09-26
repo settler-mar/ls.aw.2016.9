@@ -3,7 +3,8 @@ extends ../_template
 block variables
   - var title = 'Home page'
   - var body_css = 'index'
-
+block header_up
+  a#auth
 block dop_menu
   .auth_menu
     .title Авторизируйся
@@ -31,9 +32,9 @@ block dop_menu
     .menu_blk
       ul
         li
-          a.auth_button На главную
+          a(href="#") На главную
         li
           a.login_but Войти
 block dop_up_element
-  .auth_button Авторизоваться
+  a.auth_button(href="/#auth") Авторизоваться
 block content

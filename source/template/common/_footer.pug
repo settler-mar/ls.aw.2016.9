@@ -1,3 +1,20 @@
-footer.footer(class=body_css)
-    block dop_footer
+footer#footer(class=body_css)
+    .dop_footer
+        div
+            | Этот сайт я сделал в рамках обучения в Школе
+            br
+            |онлайн образования LoftSchool.
+        div
+            include _site_menu
+                li
+                    a(href="/#auth") Авторизация
+            include _social
+        div
+            | skype_kdn
+            br
+            | astahov@gmail.com
+            br
+            | +7 931 200 93 24
+            br
+            | г. Новосибирск, ул. Инская, д.4
     .copyright © Матюхин Максим | создано с любовью в LoftSchool | 2016

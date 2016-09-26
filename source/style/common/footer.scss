@@ -1,19 +1,91 @@
-.footer{
+#footer{
   text-align: center;
   color: $footer_text;
   width: 100%;
   .copyright{
     background: $footer_bg_cr;
     color:$footer_text;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 9px 0 12px 0;
+  }
+  .dop_footer{
+    background: $dop_footer_bg;
+    display: table;
+    width: 100%;
+    >div{
+      display: table-cell;
+      vertical-align: top;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+      text-align: left;
+      padding: 26px 30px;
+    }
+    >div:before{
+      content: "";
+      background: $footer_text;
+      width: 1px;
+      height: 87px;
+      display: block;
+      float: left;
+      opacity: 0.2;
+      margin-top: 4px;
+      margin-left: -30px;
+    }
+    >div:first-child:before{
+      display: none;
+    }
+    ul{
+      margin: 0 0 46px 0;
+      padding: 0;
+      white-space: nowrap;
+      li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 40px;
+        a{
+          text-decoration: none;
+          color:$footer_text;
+          font-family: "Roboto-Bold";
+          font-weight: 700;
+        }
+      }
+      li:first-child{
+        display: none;
+      }
+      li:last-child{
+        margin-right: 0px;
+      }
+    }
+    .my_linc{
+      position: relative;
+      top:0;
+      left: 0;
+      a{
+        margin-right: 17px;
+      }
+      svg{
+        opacity: 0.2;
+      }
+      a:hover svg{
+        opacity: 1;
+      }
+    }
   }
 }
 
-.footer.index{
+#footer.index{
   position: absolute;
   bottom: 0;
+  height: auto;
   .copyright{
     padding: 40px;
     background: none;
+  }
+  .dop_footer{
+    display: none;
   }
 }
 
@@ -23,14 +95,14 @@ html, body {
 }
 .page-wrap {
   min-height: 100%;
-  margin-bottom: -72px;
+  margin-bottom: -45px;
 }
 .page-wrap:after {
   content: "";
   display: block;
 }
 #footer, .page-wrap:after {
-  height: 72px;
+  height: 45px;
 }
 .page-wrap.index:after{
   height: auto;

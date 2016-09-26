@@ -9,23 +9,6 @@
     vertical-align:middle ;
     text-align: center;
     display: inline-block;
-    .my_linc {
-      position: absolute;
-      top: 28px;
-      left: 10px;
-      a {
-        text-decoration: none;
-        svg {
-          transition: all linear 0.3s;
-          fill: $text-header;
-          height: 22px;
-          width: 32px;
-        }
-      }
-      a:hover svg{
-        fill: $icon-hover;
-      }
-    }
     .logo_blk {
       padding: 40px 50px;
       display: inline-block;
@@ -41,6 +24,9 @@
           font-weight: 400;
           line-height: 21px;
         }
+      }
+      .logo{
+        position: relative;
       }
       .logo_img {
         width: 140px;
@@ -91,8 +77,9 @@
       fill: $icon-hover;
     }
   }
-  div.auth_button{
+  a.auth_button{
     position: absolute;
+    text-decoration: none;
     border: 1px solid white;
     top:24px;
     right: 20px;
@@ -162,7 +149,10 @@
   height: 100vh;
   padding-bottom: 0px;
   padding-top: 0px;
-  .dop_menu+.auth_button{
+  a:hover{
+    color:$text-header-hover !important;
+  }
+  #auth:target~.auth_button{
     opacity: 0;
     height: 0%;
     padding: 0 40px;
@@ -228,7 +218,7 @@
       padding-bottom: 85px;
       background: $logo_a_fon;
       transform: translateZ(0) rotateY(0);
-      transition: all 0.35s ease;
+      transition: all 0.35s ease  0.35s;
       min-width: 250px;
       .logo{
         margin: 0 0 35px 0;
@@ -240,23 +230,17 @@
     }
     .auth_menu{
       transform: translateZ(-1000px) rotateY(-90deg);
-      transition: all 0.35s ease 0.35s;
+      transition: all 0.35s ease;
     }
   }
-  .container.dop_menu{
+  #auth:target~.container{
     .logo_blk{
       transform: translateZ(-1000px) rotateY(90deg);
+      transition: all 0.35s ease;
     }
     .auth_menu{
       transform: translateZ(0) rotateY(0);
-    }
-  }
-  .container.return_anim{
-    .logo_blk{
       transition: all 0.35s ease 0.35s;
-    }
-    .auth_menu{
-      transition: all 0.35s ease;
     }
   }
 }

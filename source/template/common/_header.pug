@@ -1,4 +1,5 @@
 #header
+    block header_up
     .container
         .logo_blk
             .logo
@@ -6,23 +7,9 @@
                     img(src="/assets/img/my_photo.jpg")
                 .my_name Матюхин Максим
                 span Личный сайт веб разработчика
-            .my_linc
-                a.vk(href="https://vk.com/settler_mar")
-                    +icon('vk')
-                a.git(href="https://github.com/settler-mar")
-                    +icon('github')
-                a.li(href="https://vk.com/settler_mar")
-                    +icon('in')
+            include _social
             .menu_blk
                 +icon('hamburger')
-                ul
-                    li
-                        a(href="/") Стартовая
-                    li
-                        a(href="works.html") Мои работы
-                    li
-                        a(href="abaut.html") Обо мне
-                    li
-                        a(href="blog.html") Блог
+                include _site_menu
         block dop_menu
     block dop_up_element
