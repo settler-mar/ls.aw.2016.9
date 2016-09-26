@@ -2,13 +2,14 @@
   text-align: center;
   color: $footer_text;
   width: 100%;
+  position: relative;
   .copyright{
     background: $footer_bg_cr;
     color:$footer_text;
     font-size: 16px;
     font-weight: 300;
-    line-height: 24px;
-    padding: 9px 0 12px 0;
+    line-height: 48px;
+    padding: 0;
   }
   .dop_footer{
     background: $dop_footer_bg;
@@ -63,6 +64,7 @@
       position: relative;
       top:0;
       left: 0;
+      line-height: 13px;
       a{
         margin-right: 17px;
       }
@@ -95,14 +97,14 @@ html, body {
 }
 .page-wrap {
   min-height: 100%;
-  margin-bottom: -45px;
+  margin-bottom: -48px;
 }
 .page-wrap:after {
   content: "";
   display: block;
 }
 #footer, .page-wrap:after {
-  height: 45px;
+  height: 48px;
 }
 .page-wrap.index:after{
   height: auto;

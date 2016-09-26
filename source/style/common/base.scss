@@ -62,7 +62,7 @@ label{
       fill:$input_checkbox_text;
      }
   }
-  input{
+  input,textarea{
     outline: none;
     border: 0;
     padding: 10px 20px;
@@ -125,6 +125,7 @@ form{
   left: 30px;
   a {
     text-decoration: none;
+    text-indent: -9999px;
     svg {
       transition: all linear 0.3s;
       fill: $text-header;
@@ -141,4 +142,12 @@ form{
   background: url(/assets/img/majak.png) 100% 100% no-repeat,url(/assets/img/bg_about.jpg) 50% no-repeat;
   margin-bottom: -196px;
   padding-bottom: 196px;
+  position: relative;
+}
+.clearfix:before,.clearfix:after{
+  content: " ";
+  display: table;
+}
+.clearfix:after{
+  clear: both;
 }

@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Another page</title>
-    <meta content="" name="author">
+    <title>Works</title>
+    <meta content="Матюхин Максим" name="author">
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -23,14 +23,14 @@
   </head>
   <body>
     <div class="page-wrap works">
-      <div id="header">
+      <header id="header">
         <svg class="icon icon-stars1">
           <use xlink:href="/assets/img/sprite.svg#stars1"></use>
         </svg>
         <div class="container">
           <div class="logo_blk">
             <div class="logo">
-              <div class="logo_img"><img src="/assets/img/my_photo.jpg"></div>
+              <div class="logo_img"><img src="/assets/img/my_photo.jpg" alt="Матюхин Максим"></div>
               <div class="my_name">Матюхин Максим</div><span>Личный сайт веб разработчика</span>
             </div>
             <div class="my_linc"><a class="vk" href="https://vk.com/settler_mar">
@@ -66,9 +66,9 @@
           <use xlink:href="/assets/img/sprite.svg#stars2"></use>
         </svg>
         <h1>Мои работы</h1>
-      </div>
+      </header>
       <div id="content">
-        <div id="slider">
+        <section id="slider">
           <div class="this_slide">
             <div class="title">Сайт школы онлайн образования</div>
             <ul class="skills">
@@ -93,34 +93,34 @@
               </svg><img src="/assets/img/work-3.png">
             </div>
           </div>
-        </div>
+        </section>
         <div class="bg_dop1">
-          <div id="review">
+          <section id="review">
             <svg class="icon icon-stars3">
               <use xlink:href="/assets/img/sprite.svg#stars3"></use>
             </svg>
             <h2>Что обо мне говорят</h2>
             <div class="re_group">
               <div class="re_blk">
-                <div class="logo_img"><img src="/assets/img/my_photo.jpg"></div>
+                <div class="logo_img"><img src="/assets/img/my_photo.jpg" alt="Ковальчук Дмитрий"></div>
                 <div class="review">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
                 <div class="r_name">Ковальчук Дмитрий<span>— основатель Loftschool</span></div>
               </div>
               <div class="re_blk">
-                <div class="logo_img"><img src="/assets/img/my_photo.jpg"></div>
+                <div class="logo_img"><img src="/assets/img/my_photo.jpg" alt="Ковальчук Дмитрий"></div>
                 <div class="review">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
                 <div class="r_name">Ковальчук Дмитрий<span>— основатель Loftschool</span></div>
               </div>
             </div>
-          </div>
-          <div id="feadback">
-            <h2>Связь со мной</h2>
-            <form>
+          </section>
+          <section id="feadback">
+            <h2>Связаться со мной</h2>
+            <form method="post">
               <label>
-                <input name="name" placeholder="Имя">
+                <input type="text" name="name" placeholder="Имя">
               </label>
               <label>
-                <input name="mail" placeholder="Ваш email">
+                <input type="text" name="mail" placeholder="Ваш email">
               </label>
               <label>
                 <textarea name="comment" placeholder="Ваша сообщение"></textarea>
@@ -130,7 +130,7 @@
                 <input type="reset" value="Очистить">
               </div>
             </form>
-          </div>
+          </section>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 extends ../_template
 
 block variables
-  - var title = 'Another page'
+  - var title = 'Works'
   - var body_css = 'works'
 block header_up
   +icon('stars1')
@@ -13,13 +13,13 @@ block dop_up_element
 block content
   include ../common/_slider
   .bg_dop1
-    #review
+    section#review
       +icon('stars3')
       h2 Что обо мне говорят
       .re_group
         .re_blk
           .logo_img
-            img(src="/assets/img/my_photo.jpg")
+            img(src="/assets/img/my_photo.jpg",alt="Ковальчук Дмитрий")
           .review
             | Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
           .r_name
@@ -27,19 +27,19 @@ block content
             span — основатель Loftschool
         .re_blk
           .logo_img
-            img(src="/assets/img/my_photo.jpg")
+            img(src="/assets/img/my_photo.jpg",alt="Ковальчук Дмитрий")
           .review
             | Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
           .r_name
             | Ковальчук Дмитрий
             span — основатель Loftschool
-    #feadback
-      h2 Связь со мной
-      form
+    section#feadback
+      h2 Связаться со мной
+      form(method="post")
         label
-          input(name="name",placeholder="Имя")
+          input(type="text",name="name",placeholder="Имя")
         label
-          input(name="mail",placeholder="Ваш email")
+          input(type="text",name="mail",placeholder="Ваш email")
         label
           textarea(name="comment",placeholder="Ваша сообщение")
         .form_control
