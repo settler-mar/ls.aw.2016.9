@@ -1,0 +1,75 @@
+extends ../_template
+
+block variables
+    - var title = 'About'
+    - var body_css = 'about'
+block header_up
+    +icon_svg('stars1')
+block dop_up_element
+    +icon_svg('arrow_down')
+    +svg_poly_angle('about_bg_left','',"0,0 1100,170 1100,360 0,360")
+    +svg_poly_angle('about_bg_right','',"0,170 1100,0 1100,360 0,360")
+block content
+    .left_blk
+        +icon_svg('stars2')
+        h1 Обо мне
+        .photo_box
+            img(src="/assets/img/my_photo.jpg",alt="Матюхин Максим")
+        h2 Кто я
+        p
+            | Я програмист из Мариуполя(Украна). Мне 27 лет. Занимаюсь разработкой современных сайтов и WEB-сервисов.
+            | На сегодняшний день сайт стал неотъемлемой частью любой солидной компании. Взявшись за сайт, я беру на себя ответственность по созданию готового продукта, адаптированного для продвижения и получения дохода.
+        p
+            | В совокупности это позволяет создать действительно эффективный сайт и воплотить Ваши идеи.
+            | Создать сайт могут многие, сделать эффективный инструмент на рынке интернет-маркетинга – единицы.
+    .right_blk
+        +icon_svg('about_bg_right')
+        h2.dashed-title Чем я могу быть вам полезен
+        p.description
+            | Я занимаюсь комлексной разработкой сайтов (Frontend + Backend), что позваляет видеть и риализовывать задачи в целом.
+        .skills
+                .skills__block
+                    .skills__block__title Frontend
+                    ul.skills__lists
+                        li.skills__item
+                            +diagram_circle('HTML5',80,'skills__circle')
+                        li.skills__item
+                            +diagram_circle('CSS3',70,'skills__circle')
+                        li.skills__item
+                            +diagram_circle('JavaScript & jQuery',65,'skills__circle')
+                .skills__block
+                    .skills__block__title Backend
+                    ul.skills__lists
+                        li.skills__item
+                            +diagram_circle('HTML5',80,'skills__circle')
+                        li.skills__item
+                            +diagram_circle('CSS3',70,'skills__circle')
+                        li.skills__item
+                            +diagram_circle('JavaScript & jQuery',65,'skills__circle')
+                .skills__block
+                    .skills__block__title WorkFlow
+                    ul.skills__lists
+                        li.skills__item
+                            +diagram_circle('HTML5',80,'Git')
+                        li.skills__item
+                            +diagram_circle('CSS3',70,'Gulp')
+                        li.skills__item
+                            +diagram_circle('JavaScript & jQuery',65,'Bower')
+    .contacts_blk
+        #maps
+        .contacts
+            h2 Контакты
+            ul
+                li
+                    +icon_svg('skype')
+                    | settler-mar
+                li
+                    +icon_svg('phone')
+                    | +3 8063 23 9 92 92
+                li
+                    +icon_svg('envelope_n')
+                    | matuhinmax@mai.ru
+                li
+                    +icon_svg('map_marker')
+                    | г.Мариуполь ул.Открытая-23
+

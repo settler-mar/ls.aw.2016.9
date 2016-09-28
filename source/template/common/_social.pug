@@ -1,7 +1,17 @@
-.my_linc
-    a.vk(href="https://vk.com/settler_mar")
-        +icon('vk')
-    a.git(href="https://github.com/settler-mar")
-        +icon('github')
-    a.li(href="https://vk.com/settler_mar")
-        +icon('in')
+-
+    var social_list=[
+        {
+            text:'vk',
+            href:'https://vk.com/settler_mar',
+            icon:'vk'
+        },{
+            text:'github',
+            href:'https://github.com/settler-mar',
+            icon:'github-alt'
+        },{
+            text:'linkedin',
+            href:'https://vk.com/settler_mar',
+            icon:'linkedin'
+        }
+    ]
++list_menu(social_list,'header-social',social_modificator)

@@ -4,20 +4,25 @@ block variables
   - var title = 'Home page'
   - var body_css = 'index'
 block header_up
-  a#auth
+  a#auth.autorisation_target
+block header_about
+  include ../common/_social_index
+  .welcome-menu
+    include ../common/_site_menu_index
+
 block dop_menu
-  .auth_menu
-    .title Авторизируйся
+  .autorisation_menu
+    .autorisation_menu__title Авторизируйся
     form
       label.login
-        +icon('login')
+        +icon_svg('login')
         input(name="login",placeholder="Логин")
       label.pass
-        +icon('password')
+        +icon_svg('password')
         input(name="pass",type="password",placeholder="Пароль")
       label.capcha
         input(type="checkbox",name="capcha")
-        +icon('check')
+        +icon_svg('check')
         span Я человек
       div.recapcha
         span Вы точно не робот?
@@ -29,12 +34,12 @@ block dop_menu
           input(type="radio",checked,name="recapcha")
           span
           span Не уверен
-    .menu_blk
-      ul
-        li
-          a(href="#") На главную
-        li
-          a.login_but Войти
+    .header__menu
+      ul.header__menu__list.header__menu__list_index
+        li.header__menu__item.header__menu__item_index
+          a.header__menu__linck.header__menu__linck_index(href="#") На главную
+        li.header__menu__item.header__menu__item_index
+          a.header__menu__linck.header__menu__linck_index Войти
 block dop_up_element
   a.auth_button(href="/#auth") Авторизоваться
 block content

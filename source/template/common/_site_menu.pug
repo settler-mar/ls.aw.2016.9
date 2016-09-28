@@ -1,9 +1,19 @@
-ul
-    li
-        a(href="/") Стартовая
-    li
-        a(href="works.html") Мои работы
-    li
-        a(href="abaut.html") Обо мне
-    li
-        a(href="blog.html") Блог
+-
+    var nav_list=[
+        {
+            text:'Стартовая',
+            href:'/'
+        },{
+            text:'Мои работы',
+            href:'works.html'
+        },{
+            text:'Обо мне',
+            href:'about.html'
+        },{
+            text:'Блог',
+            href:'blog.html'
+        }
+    ]
+
++icon_svg('hamburger')
++list_menu(nav_list,'header-menu')

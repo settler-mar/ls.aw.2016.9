@@ -1,15 +1,11 @@
-header#header
+header.header(class= 'header_'+body_css)
     block header_up
-    .container
-        .logo_blk
-            .logo
-                .logo_img
-                    img(src="/assets/img/my_photo.jpg",alt="Матюхин Максим")
-                .my_name Матюхин Максим
-                span Личный сайт веб разработчика
-            include _social
-            .menu_blk
-                +icon('hamburger')
-                include _site_menu
+    .header__container(class='header__container_'+body_css)
+        .header__about-block
+            .header__logo-block(class='header__logo-block_'+body_css)
+                img.header__logo-img(src="/assets/img/my_photo.jpg",alt="Матюхин Максим")
+            .header__title Матюхин Максим
+                span.header__sub-title Личный сайт веб разработчика
+            block header_about
         block dop_menu
     block dop_up_element

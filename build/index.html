@@ -23,37 +23,30 @@
   </head>
   <body>
     <div class="page-wrap index">
-      <header id="header"><a id="auth"></a>
-        <div class="container">
-          <div class="logo_blk">
-            <div class="logo">
-              <div class="logo_img"><img src="/assets/img/my_photo.jpg" alt="Матюхин Максим"></div>
-              <div class="my_name">Матюхин Максим</div><span>Личный сайт веб разработчика</span>
-            </div>
-            <div class="my_linc"><a class="vk" href="https://vk.com/settler_mar">
-                <svg class="icon icon-vk">
-                  <use xlink:href="/assets/img/sprite.svg#vk"></use>
-                </svg></a><a class="git" href="https://github.com/settler-mar">
-                <svg class="icon icon-github">
-                  <use xlink:href="/assets/img/sprite.svg#github"></use>
-                </svg></a><a class="li" href="https://vk.com/settler_mar">
-                <svg class="icon icon-in">
-                  <use xlink:href="/assets/img/sprite.svg#in"></use>
-                </svg></a></div>
-            <div class="menu_blk">
-              <svg class="icon icon-hamburger">
-                <use xlink:href="/assets/img/sprite.svg#hamburger"></use>
-              </svg>
-              <ul>
-                <li><a href="/">Стартовая</a></li>
-                <li><a href="works.html">Мои работы</a></li>
-                <li><a href="abaut.html">Обо мне</a></li>
-                <li><a href="blog.html">Блог</a></li>
+      <header class="header header_index"><a class="autorisation_target" id="auth"></a>
+        <div class="header__container header__container_index">
+          <div class="header__about-block">
+            <div class="header__logo-block header__logo-block_index"><img class="header__logo-img" src="/assets/img/my_photo.jpg" alt="Матюхин Максим"></div>
+            <div class="header__title">Матюхин Максим<span class="header__sub-title">Личный сайт веб разработчика</span></div>
+            <nav class="header-social header-social_index">
+              <ul class="header-social__list header-social__list_index">
+                <li class="header-social__item header-social__item_index"><a class="header-social__link  header-social__link_index" href="https://vk.com/settler_mar"><i class="fa fa-vk"></i><span class="header-social__item-name header-social__item-name_index">vk</span></a></li>
+                <li class="header-social__item header-social__item_index"><a class="header-social__link  header-social__link_index" href="https://github.com/settler-mar"><i class="fa fa-github-alt"></i><span class="header-social__item-name header-social__item-name_index">github</span></a></li>
+                <li class="header-social__item header-social__item_index"><a class="header-social__link  header-social__link_index" href="https://vk.com/settler_mar"><i class="fa fa-linkedin"></i><span class="header-social__item-name header-social__item-name_index">linkedin</span></a></li>
               </ul>
+            </nav>
+            <div class="welcome-menu">
+              <nav class="welcome-menu ">
+                <ul class="welcome-menu__list ">
+                  <li class="welcome-menu__item "><a class="welcome-menu__link " href="works.html"><span class="welcome-menu__item-name ">Мои работы</span></a></li>
+                  <li class="welcome-menu__item "><a class="welcome-menu__link " href="about.html"><span class="welcome-menu__item-name ">Обо мне</span></a></li>
+                  <li class="welcome-menu__item "><a class="welcome-menu__link " href="blog.html"><span class="welcome-menu__item-name ">Блог</span></a></li>
+                </ul>
+              </nav>
             </div>
           </div>
-          <div class="auth_menu">
-            <div class="title">Авторизируйся</div>
+          <div class="autorisation_menu">
+            <div class="autorisation_menu__title">Авторизируйся</div>
             <form>
               <label class="login">
                 <svg class="icon icon-login">
@@ -82,10 +75,10 @@
                 </label>
               </div>
             </form>
-            <div class="menu_blk">
-              <ul>
-                <li><a href="#">На главную</a></li>
-                <li><a class="login_but">Войти</a></li>
+            <div class="header__menu">
+              <ul class="header__menu__list header__menu__list_index">
+                <li class="header__menu__item header__menu__item_index"><a class="header__menu__linck header__menu__linck_index" href="#">На главную</a></li>
+                <li class="header__menu__item header__menu__item_index"><a class="header__menu__linck header__menu__linck_index">Войти</a></li>
               </ul>
             </div>
           </div>
@@ -94,27 +87,29 @@
       <div id="content">
       </div>
     </div>
-    <footer class="index" id="footer">
+    <footer class="footer index_index">
       <div class="dop_footer">
         <div>Этот сайт я сделал в рамках обучения в Школе<br>онлайн образования LoftSchool.</div>
         <div>
-          <ul>
-            <li><a href="/">Стартовая</a></li>
-            <li><a href="works.html">Мои работы</a></li>
-            <li><a href="abaut.html">Обо мне</a></li>
-            <li><a href="blog.html">Блог
-                <li><a href="/#auth">Авторизация</a></li></a></li>
-          </ul>
-          <div class="my_linc"><a class="vk" href="https://vk.com/settler_mar">
-              <svg class="icon icon-vk">
-                <use xlink:href="/assets/img/sprite.svg#vk"></use>
-              </svg></a><a class="git" href="https://github.com/settler-mar">
-              <svg class="icon icon-github">
-                <use xlink:href="/assets/img/sprite.svg#github"></use>
-              </svg></a><a class="li" href="https://vk.com/settler_mar">
-              <svg class="icon icon-in">
-                <use xlink:href="/assets/img/sprite.svg#in"></use>
-              </svg></a></div>
+          <svg class="icon icon-hamburger">
+            <use xlink:href="/assets/img/sprite.svg#hamburger"></use>
+          </svg>
+          <nav class="header-menu ">
+            <ul class="header-menu__list ">
+              <li class="header-menu__item "><a class="header-menu__link " href="/"><span class="header-menu__item-name ">Стартовая</span></a></li>
+              <li class="header-menu__item "><a class="header-menu__link " href="works.html"><span class="header-menu__item-name ">Мои работы</span></a></li>
+              <li class="header-menu__item "><a class="header-menu__link " href="about.html"><span class="header-menu__item-name ">Обо мне</span></a></li>
+              <li class="header-menu__item "><a class="header-menu__link " href="blog.html"><span class="header-menu__item-name ">Блог</span></a></li>
+            </ul>
+          </nav>
+          <li><a href="/#auth">Авторизация</a></li>
+          <nav class="header-social ">
+            <ul class="header-social__list ">
+              <li class="header-social__item "><a class="header-social__link " href="https://vk.com/settler_mar"><i class="fa fa-vk"></i><span class="header-social__item-name ">vk</span></a></li>
+              <li class="header-social__item "><a class="header-social__link " href="https://github.com/settler-mar"><i class="fa fa-github-alt"></i><span class="header-social__item-name ">github</span></a></li>
+              <li class="header-social__item "><a class="header-social__link " href="https://vk.com/settler_mar"><i class="fa fa-linkedin"></i><span class="header-social__item-name ">linkedin</span></a></li>
+            </ul>
+          </nav>
         </div>
         <div>skype_kdn<br>astahov@gmail.com<br>+7 931 200 93 24<br>г. Новосибирск, ул. Инская, д.4</div>
       </div>

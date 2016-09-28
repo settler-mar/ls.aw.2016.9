@@ -1,8 +1,9 @@
-#footer{
+.footer{
   text-align: center;
   color: $footer_text;
   width: 100%;
   position: relative;
+  display: none;
   .copyright{
     background: $footer_bg_cr;
     color:$footer_text;
