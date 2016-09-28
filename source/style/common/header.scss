@@ -48,24 +48,6 @@
 .header__logo-img {
   height: 140px;
 }
-.autorisation_menu {
-  padding: 40px;
-  color: $text-header;
-  background: $logo_a_fon;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-}
-.autorisation_menu__title{
-  font-family: SansusWebissimo;
-  font-size: 35px;
-  font-weight: 400;
-  line-height: 41px;
-  text-transform: uppercase;
-}
 
 .header-menu{
   display: none;
@@ -113,17 +95,7 @@
   overflow: hidden;
   transition: all 0.35s ease;
 }
-.welcome-menu__link{
-  color: #fff;
-  background: $bt;
-  padding: 14px;
-  text-decoration: none;
-  display: block;
-}
-.welcome-menu__link:hover {
-  background: $bt-hover;
-  color: $text-header;
-}
+
 .icon-bg{
   fill:$base-bg-color;
   width: 2032px;
@@ -184,11 +156,6 @@
   padding-top: 0px;
 }
 
-.autorisation_target:target~.auth_button{
-  opacity: 0;
-  height: 0%;
-  padding: 0 40px;
-}
 .container{
   position: relative;
 }
@@ -229,44 +196,35 @@
   display: table-cell;
   border-right: 1px solid $text-header;
 }
-.welcome-menu__linck{
+.welcome-menu__link{
   color:$text-header;
   background: $bt;
   padding: 14px;
   text-decoration: none;
   display: block;
 }
-.welcome-menu__linck:hover{
+.welcome-menu__link:hover{
   background: $bt-hover;
+  color:$text-header-hover;
 }
-
+.welcome-menu__link:active{
+  text-decoration: underline;
+}
 .welcome-menu__item:last-child{
   border-right: 0;
 }
 
-.autorisation_menu{display: none;}
 
-.header__about-block {
+.header__about-block_index {
   background: $logo_a_fon;
   transform: translateZ(0) rotateY(0);
   transition: all 0.35s ease 0.35s;
   min-width: 250px;
 }
 
-.autorisation_menu {
-  transform: translateZ(-1000px) rotateY(-90deg);
-  transition: all 0.35s ease;
-}
 
 
-.autorisation_target:target~.header__container .header__about-block{
-    transform: translateZ(-1000px) rotateY(90deg);
-    transition: all 0.35s ease;
-  }
-.autorisation_target:target~.header__container .autorisation_menu{
-    transform: translateZ(0) rotateY(0);
-    transition: all 0.35s ease 0.35s;
-}
+
 
 /*
 .works #header {

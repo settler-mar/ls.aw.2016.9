@@ -1,0 +1,100 @@
+.form__label{
+  width: 340px;
+  margin: 0 auto 20px;
+  font-size: 0px;
+  font-weight: 400;
+  display: block;
+}
+.form__input-icon{
+  padding: 14px 0px;
+  width: 45px;
+  box-sizing: border-box;
+  font-size: 16px;
+  display: inline-block;
+  background:$input_icon_bg;
+  color:$input_icon_color;
+}
+.form__input{
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: top;
+  width: 295px;
+  outline: none;
+  border: 0;
+  padding: 13px 20px;
+  box-sizing: border-box;
+}
+.form__checkbox {
+  display: none;
+}
+.form__checkbox-icon{
+  color:$input_checkbox_fon;
+  background: $input_checkbox_fon;
+  border-radius:2px;
+  box-sizing: border-box;
+  height: 20px;
+  width: 20px;
+  float: none;
+  margin: 2px 10px 2px 0;
+  vertical-align: top;
+  transition: all 0.2s ease;
+  font-size: 16px;
+  padding: 2px;
+}
+.form__checkbox:checked{
+  +.form__checkbox-icon{
+    color:$input_checkbox_text;
+  }
+}
+.form__checkbox_text{
+  font-size: 16px;
+  opacity: 0.85;
+}
+.form__radio-question{
+  opacity: 0.8;
+  display: block;
+  font-weight: 700;
+  font-family:Roboto-Bold;
+  margin-bottom: 10px;
+}
+.form__radio-select{
+  display: block;
+  margin-bottom: 40px;
+}
+.form__radio-input {
+  display: none;
+}
+.form__radio-control{
+  opacity: 1;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background: $input_checkbox_fon;
+  box-shadow: $input_checkbox_text 0px 0px 0px 10px inset;
+  border-radius: 100%;
+  vertical-align: top;
+  margin-right: 10px;
+  transition: all 0.2s ease;
+}
+
+.form__radio-input:checked{
+  +.form__radio-control{
+    box-shadow: $input_checkbox_text 0px 0px 0px 6px inset;
+  }
+}
+.form__radio-ansvar{
+    opacity: 0.8;
+}
+.form__radio-label{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 110px;
+    text-align: left;
+}
+.form__radio-ansvar {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}

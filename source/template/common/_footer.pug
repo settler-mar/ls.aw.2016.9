@@ -1,15 +1,15 @@
-footer.footer(class= 'index_'+body_css)
-    .dop_footer
-        div
+footer.footer(class= 'footer-'+body_css)
+    .footer__full-menu(class= 'footer__full-menu-'+body_css)
+        div.footer__full-menu__column
             | Этот сайт я сделал в рамках обучения в Школе
             br
             |онлайн образования LoftSchool.
-        div
+        div.footer__full-menu__column
             include _site_menu
                 li
                     a(href="/#auth") Авторизация
             include _social
-        div
+        div.footer__full-menu__column
             | skype_kdn
             br
             | astahov@gmail.com
@@ -17,4 +17,4 @@ footer.footer(class= 'index_'+body_css)
             | +7 931 200 93 24
             br
             | г. Новосибирск, ул. Инская, д.4
-    .copyright © Матюхин Максим | создано с любовью в LoftSchool | 2016
+    .footer__copyright(class= 'footer__copyright-'+body_css) © Матюхин Максим | создано с любовью в LoftSchool | 2016

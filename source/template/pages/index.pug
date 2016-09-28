@@ -7,39 +7,38 @@ block header_up
   a#auth.autorisation_target
 block header_about
   include ../common/_social_index
-  .welcome-menu
-    include ../common/_site_menu_index
+  include ../common/_site_menu_index
 
 block dop_menu
   .autorisation_menu
     .autorisation_menu__title Авторизируйся
-    form
-      label.login
-        +icon_svg('login')
-        input(name="login",placeholder="Логин")
-      label.pass
-        +icon_svg('password')
-        input(name="pass",type="password",placeholder="Пароль")
-      label.capcha
-        input(type="checkbox",name="capcha")
-        +icon_svg('check')
-        span Я человек
-      div.recapcha
-        span Вы точно не робот?
-        label
-          input(type="radio",name="recapcha")
-          span
-          span Да
-        label
-          input(type="radio",checked,name="recapcha")
-          span
-          span Не уверен
-    .header__menu
-      ul.header__menu__list.header__menu__list_index
-        li.header__menu__item.header__menu__item_index
-          a.header__menu__linck.header__menu__linck_index(href="#") На главную
-        li.header__menu__item.header__menu__item_index
-          a.header__menu__linck.header__menu__linck_index Войти
+    form.form__form
+      label.form__label
+        +icon_font('user','form__input-icon')
+        input.form__input(name="login",placeholder="Логин")
+      label.form__label
+        +icon_font('key','form__input-icon')
+        input.form__input(name="pass",type="password",placeholder="Пароль")
+      label.form__label
+        input.form__checkbox(type="checkbox",name="capcha")
+        +icon_font('check','form__checkbox-icon')
+        span.form__checkbox_text Я человек
+      div.form__radio-select
+        .form__radio-question Вы точно не робот?
+        label.form__radio-label
+          input.form__radio-input(type="radio",name="recapcha")
+          span.form__radio-control
+          span.form__radio-ansvar Да
+        label.form__radio-label
+          input.form__radio-input(type="radio",checked,name="recapcha")
+          span.form__radio-control
+          span.form__radio-ansvar Не уверен
+    nav.welcome-menu
+      ul.welcome-menu__list
+        li.welcome-menu__item
+          a.welcome-menu__link(href="#") На главную
+        li.welcome-menu__item
+          a.welcome-menu__link Войти
 block dop_up_element
   a.auth_button(href="/#auth") Авторизоваться
 block content
