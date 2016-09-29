@@ -20,6 +20,14 @@ var start_maps={lat: 59.9334832, lng: 30.3359137};
       $(this.element).find('canvas').css('opacity',percent/100)
     }
   });
+  $(".page_scrolle-down").click(function (event) {
+    event.preventDefault();
+    $('body,html').animate({scrollTop: window.innerHeight}, 1500);
+  });
+  $(".page_scrolle-up").click(function (event) {
+    event.preventDefault();
+    $('body,html').animate({scrollTop:0}, 1500);
+  });
 })();
 
 function loadScript(url){
@@ -35,7 +43,7 @@ function mapInit() {
       "elementType": "labels.text.fill",
       "stylers": [
         {
-          "color": "#444444"
+          "color": "#4f4f4e"
         }
       ]
     },

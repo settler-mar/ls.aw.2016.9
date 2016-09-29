@@ -1,6 +1,7 @@
 .content_about {
   position: relative;
   font-size: 0;
+  background:$about_bg_right;
 }
 .content_about__block{
   width: 50%;
@@ -79,8 +80,8 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  margin-bottom: -195px;
-  padding-bottom: 195px;
+  margin-bottom: -198px;
+  padding-bottom: 198px;
 }
 .google-map{
   height: 100%;
