@@ -9,7 +9,7 @@ block header_up
   +icon_svg('stars1')
 
 block dop_up_element
-  +icon_svg('arrow_down')
+  +icon_font('chevron-down','page_scrolle page_scrolle-down')
   +icon_svg('stars2')
   +icon_svg('bg','header__bg-work')
   h1.title-h1.title-h1_work Мои работы
@@ -18,32 +18,36 @@ block dop_up_element
 block content
   include ../common/_slider
   .bg_dop1
-    section#review
+    section.review
       +icon_svg('stars3')
-      h2 Что обо мне говорят
-      .re_group
-        .re_blk
-          .logo_img
-            img(src="/assets/img/my_photo.jpg",alt="Ковальчук Дмитрий")
-          .review
+      h2.title-h2 Что обо мне говорят
+      .review__group
+        .review__blk
+          .review__photo-block
+            img.review__photo-img(src="/assets/img/my_photo.jpg",alt="Ковальчук Дмитрий")
+          .review__content
             | Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-          .r_name
+          .review__user_name
             | Ковальчук Дмитрий
-            span — основатель Loftschool
-        .re_blk
-          .logo_img
-            img(src="/assets/img/my_photo.jpg",alt="Ковальчук Дмитрий")
-          .review
+            span.review__user_dop_line — основатель Loftschool
+        .review__blk
+          .review__photo-block
+            img.review__photo-img(src="/assets/img/my_photo.jpg",alt="Ковальчук Дмитрий")
+          .review__content
             | Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-          .r_name
+          .review__user_name
             | Ковальчук Дмитрий
-            span — основатель Loftschool
-    section#feadback
-      h2 Связаться со мной
-      form(method="post")
-        label
-          input(type="text",name="name",placeholder="Имя")
-        label
-          input(type="text",name="mail",placeholder="Ваш email")
-        label
-          textarea(name="comment",placeholder="Ваша сообщение")
+            span.review__user_dop_line — основатель Loftschool
+    section.feadback
+      h2.title-h2.title-h2_underline Связаться со мной
+      form.feadback__form(method="post")
+        label.form__label
+          input.form__input.form__input-full_line.form__input-opacity(type="text",name="name",placeholder="Имя")
+        label.form__label
+          input.form__input.form__input-full_line.form__input-opacity(type="text",name="mail",placeholder="Ваш email")
+        label.form__label
+          textarea.form__input.form__input-textarea.form__input-full_line.form__input-opacity(name="comment",placeholder="Ваша сообщение")
+        .form__control
+          input.form__buttom.form__buttom-submit(type="submit",value="Отправить")
+          input.form__buttom.form__buttom-reset(type="reset",value="Очистить")
+    +icon_font('chevron-up','page_scrolle page_scrolle-up')

@@ -47,10 +47,7 @@
             <div class="header__logo-block header__logo-block_works"><img class="header__logo-img" src="/assets/img/my_photo.jpg" alt="Матюхин Максим"></div>
             <div class="header__title header__title_works">Матюхин Максим<span class="header__sub-title">Личный сайт веб разработчика</span></div>
           </div>
-        </div>
-        <svg class="icon icon-arrow_down">
-          <use xlink:href="/assets/img/sprite.svg#arrow_down"></use>
-        </svg>
+        </div><i class="fa fa-chevron-down page_scrolle page_scrolle-down"></i>
         <svg class="icon icon-stars2">
           <use xlink:href="/assets/img/sprite.svg#stars2"></use>
         </svg>
@@ -78,38 +75,42 @@
           </div>
         </section>
         <div class="bg_dop1">
-          <section id="review">
+          <section class="review">
             <svg class="icon icon-stars3">
               <use xlink:href="/assets/img/sprite.svg#stars3"></use>
             </svg>
-            <h2>Что обо мне говорят</h2>
-            <div class="re_group">
-              <div class="re_blk">
-                <div class="logo_img"><img src="/assets/img/my_photo.jpg" alt="Ковальчук Дмитрий"></div>
-                <div class="review">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
-                <div class="r_name">Ковальчук Дмитрий<span>— основатель Loftschool</span></div>
+            <h2 class="title-h2">Что обо мне говорят</h2>
+            <div class="review__group">
+              <div class="review__blk">
+                <div class="review__photo-block"><img class="review__photo-img" src="/assets/img/my_photo.jpg" alt="Ковальчук Дмитрий"></div>
+                <div class="review__content">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
+                <div class="review__user_name">Ковальчук Дмитрий<span class="review__user_dop_line">— основатель Loftschool</span></div>
               </div>
-              <div class="re_blk">
-                <div class="logo_img"><img src="/assets/img/my_photo.jpg" alt="Ковальчук Дмитрий"></div>
-                <div class="review">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
-                <div class="r_name">Ковальчук Дмитрий<span>— основатель Loftschool</span></div>
+              <div class="review__blk">
+                <div class="review__photo-block"><img class="review__photo-img" src="/assets/img/my_photo.jpg" alt="Ковальчук Дмитрий"></div>
+                <div class="review__content">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
+                <div class="review__user_name">Ковальчук Дмитрий<span class="review__user_dop_line">— основатель Loftschool</span></div>
               </div>
             </div>
           </section>
-          <section id="feadback">
-            <h2>Связаться со мной</h2>
-            <form method="post">
-              <label>
-                <input type="text" name="name" placeholder="Имя">
+          <section class="feadback">
+            <h2 class="title-h2 title-h2_underline">Связаться со мной</h2>
+            <form class="feadback__form" method="post">
+              <label class="form__label">
+                <input class="form__input form__input-full_line form__input-opacity" type="text" name="name" placeholder="Имя">
               </label>
-              <label>
-                <input type="text" name="mail" placeholder="Ваш email">
+              <label class="form__label">
+                <input class="form__input form__input-full_line form__input-opacity" type="text" name="mail" placeholder="Ваш email">
               </label>
-              <label>
-                <textarea name="comment" placeholder="Ваша сообщение"></textarea>
+              <label class="form__label">
+                <textarea class="form__input form__input-textarea form__input-full_line form__input-opacity" name="comment" placeholder="Ваша сообщение"></textarea>
               </label>
+              <div class="form__control">
+                <input class="form__buttom form__buttom-submit" type="submit" value="Отправить">
+                <input class="form__buttom form__buttom-reset" type="reset" value="Очистить">
+              </div>
             </form>
-          </section>
+          </section><i class="fa fa-chevron-up page_scrolle page_scrolle-up"></i>
         </div>
       </div>
     </div>

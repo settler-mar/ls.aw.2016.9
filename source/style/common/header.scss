@@ -127,23 +127,8 @@
   height: 171px;
   opacity: 0.15;
   margin-left: -130px;
-  transform: rotate(-180deg)
-}
-.icon-arrow_down {
-  fill:$base-bg-color;
-  position: absolute;
-  left: 50%;
-  margin-left: -13px;
-  top: 100vh;
-  margin-top: -100px;
-  width: 26px;
-  height: 16px;
-  opacity: 0.7;
-  cursor: pointer;
-  transition: all linear 0.3s;
-}
-.icon-arrow_down:hover{
-  fill: $icon-hover;
+  transform: rotate(-180deg);
+  z-index: 99;
 }
 
 .header:before{
@@ -240,15 +225,3 @@
 .header__bg-work{
   fill:$head-dop-color;
 }
-
-/*
-.works #header {
-  svg.icon-bg {
-    fill:$head-dop-color;
-  }
-  h1{
-    position: absolute;
-    top: 625px;
-    width: 100%;
-  }
-}*/

@@ -14,6 +14,32 @@ body {
   line-height: 56px;
   text-transform: uppercase;
 }
+.title-h2{
+  color:$base-bg-color;
+  font-family: SansusWebissimo;
+  font-size: 63px;
+  font-weight: 400;
+  line-height: 66px;
+  text-transform: uppercase;
+  margin: auto;
+  width: 350px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.title-h2_underline {
+  font-size: 35px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.title-h2_underline:after{
+  content: '';
+  background: $form_fead_back_h_line;
+  width: 89px;
+  height: 3px;
+  opacity: 0.5;
+  display: block;
+  margin: 17px auto 0 auto;
+}
 a{
   transition: all linear 0.3s;
   cursor: pointer;
@@ -59,16 +85,34 @@ a:hover{
 .clearfix:after{
   clear: both;
 }
-
-
 .title-h1_work{
   position: absolute;
   bottom: 20px;
   width: 100%;
 }
-.dashed-title {
 
+.page_scrolle {
+  color:$base-bg-color;
+  font-size: 26px;
+  margin-left: -13px;
+  margin-top: -100px;
+  width: 26px;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all linear 0.3s;
 }
-.description{
-
+.page_scrolle-down{
+  z-index: 99;
+  height: 16px;
+  position: absolute;
+  left: 50%;
+  top: 100vh;
+}
+.page_scrolle-up{
+  display: block;
+  margin: auto;
+  margin-bottom: 70px;
+}
+.page_scrolle:hover{
+  color: $icon-hover;
 }
