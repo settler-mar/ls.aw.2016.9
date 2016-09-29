@@ -11,6 +11,6 @@ html
   body
     .page-wrap(class=body_css)
       include common/_header
-      div#content
+      div.content(class= "content_"+body_css)
         block content
     include common/_footer

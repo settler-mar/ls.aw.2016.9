@@ -28,7 +28,7 @@
   display: none;
 }
 .social-buttons__link:hover{
-  fill: $icon-hover;
+  color: $icon-hover;
   opacity: 1;
 }
 .social-buttons__item_index{
@@ -46,7 +46,7 @@
   color: $icon-hover;
   opacity: 0.7;
 }
-.social-buttons__item_footer{
+.social-buttons_footer{
   position: relative;
   top: 0;
   left: 0;

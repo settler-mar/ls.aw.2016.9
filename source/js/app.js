@@ -17,7 +17,8 @@ var start_maps={lat: 59.9334832, lng: 30.3359137};
       foregroundBorderWidth: 30,
       backgroundBorderWidth: 30,
       percent: el.attr('percent'),
-      replacePercentageByText:' '
+      replacePercentageByText:' ',
+      foregroundColor:'#004cd1'
     });
   })
 })();
@@ -101,7 +102,7 @@ function mapInit() {
       "elementType": "all",
       "stylers": [
         {
-          "color": "#004cd1"
+          "color": "#4369aa"
         },
         {
           "visibility": "on"
@@ -116,7 +117,11 @@ function mapInit() {
     center: new google.maps.LatLng(55.6468, 37.581),
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
-    }
+    },
+    disableDefaultUI: true,
+    zoomControl:false,
+    scaleControl:false,
+    scrollwheel:false
   };
   var map = new google.maps.Map(document.getElementById('maps'),
       mapOptions);

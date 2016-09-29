@@ -5,6 +5,7 @@ body {
   font-weight: 300;
   background: $base-bg-color;
   overflow-x: hidden;
+  color:$text_color;
 }
 .title-h1{
   color:$base-bg-color;
@@ -13,6 +14,13 @@ body {
   font-weight: 400;
   line-height: 56px;
   text-transform: uppercase;
+}
+.title-h1_about{
+  color:$h2_dark;
+  text-align: center;
+  margin-top: 10px;
+  z-index: 99;
+  position: relative;
 }
 .title-h2{
   color:$base-bg-color;
@@ -86,4 +94,28 @@ a:hover{
 }
 .page_scrolle:hover{
   color: $icon-hover;
+}
+.dashed-title{
+  font-family: SansusWebissimo;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 41px;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 300px;
+  margin: 5px auto 20px auto;
+}
+.dashed-title:after{
+  content: '';
+  width: 89px;
+  height: 3px;
+  background-color: #566358;
+  display: block;
+  margin:10px auto;
+}
+.bg_dop1{
+  background: url(/assets/img/majak.png) 100% 100% no-repeat,url(/assets/img/bg_about.jpg) 50% no-repeat;
+  margin-bottom: -196px;
+  padding-bottom: 196px;
+  position: relative;
 }
