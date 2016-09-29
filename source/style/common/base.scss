@@ -6,7 +6,7 @@ body {
   background: $base-bg-color;
   overflow-x: hidden;
 }
-h1{
+.title-h1{
   color:$base-bg-color;
   font-family: SansusWebissimo;
   font-size: 63px;
@@ -41,6 +41,8 @@ a:hover{
   text-decoration: none;
   transition: all linear 0.3s;
   color: $text-header;
+  font-size: 24px;
+  margin-right:25px ;
 }
 .header-social__item-name{
   display: none;
@@ -59,8 +61,11 @@ a:hover{
 }
 
 
-
-/****************************************************/
+.title-h1_work{
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
 .dashed-title {
 
 }

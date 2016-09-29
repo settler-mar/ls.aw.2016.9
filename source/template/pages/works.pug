@@ -4,12 +4,17 @@ block variables
   - var title = 'Works'
   - var body_css = 'works'
 block header_up
+  include ../common/_social
+  include ../common/_site_menu
   +icon_svg('stars1')
+
 block dop_up_element
-  +icon_svg('bg')
   +icon_svg('arrow_down')
   +icon_svg('stars2')
-  h1 Мои работы
+  +icon_svg('bg','header__bg-work')
+  h1.title-h1.title-h1_work Мои работы
+
+
 block content
   include ../common/_slider
   .bg_dop1
@@ -42,6 +47,3 @@ block content
           input(type="text",name="mail",placeholder="Ваш email")
         label
           textarea(name="comment",placeholder="Ваша сообщение")
-        .form_control
-          input(type="submit",value="Отправить")
-          input(type="reset",value="Очистить")
