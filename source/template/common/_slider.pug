@@ -1,4 +1,4 @@
-section#slider
+section.slider
     //-ul
       li
          img(src="/assets/img/work-1.png",alt='Работа 1')
@@ -7,21 +7,21 @@ section#slider
            li HTML
            li CSS
            li JAVASCRIPT
-    .this_slide
-        .title Сайт школы онлайн образования
-        ul.skills
-            li HTML
-            li CSS
-            li JAVASCRIPT
-        a.links(href="/",target="_blank")
-            +icon_svg('link')
+    .slider__left-tab
+        .slider__title Сайт школы онлайн образования
+        ul.slider__skills-list
+            li.slider__skills-item HTML
+            li.slider__skills-item CSS
+            li.slider__skills-item JAVASCRIPT
+        a.slider__link(href="/",target="_blank")
+            +icon_font('link','slider__link-icon')
             | Посмотреть сайт
-    .sliders_control
-        .hear_slide
-            img(src="/assets/img/work-1.png")
-        .prew_slile
-            +icon_svg("portf_arrow_down")
-            img(src="/assets/img/work-2.png")
-        .next_slile
-            +icon_svg("portf_arrow_up")
-            img(src="/assets/img/work-3.png")
+    .slider__rigth-tab
+        .slider__hear-slide
+            img.slider__hear-slide__image(src="/assets/img/work-1.png")
+        .slider__control.slider__control-next
+            +icon_font("chevron-down",'slider__button slider__button-next')
+            img.slider__control__image(src="/assets/img/work-2.png")
+        .slider__control.slider__control-prev
+            +icon_font("chevron-up",'slider__button slider__button-next')
+            img.slider__control__image(src="/assets/img/work-3.png")
