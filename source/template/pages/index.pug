@@ -6,7 +6,8 @@ block variables
 block header_up
   a#auth.autorisation_target
 block header_about
-  include ../common/_social_index
+  -var social_modificator='_index'
+  include ../common/_social
   include ../common/_site_menu_index
 
 block dop_menu

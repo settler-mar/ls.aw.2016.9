@@ -48,35 +48,6 @@ a:hover{
   color:$a_hover;
 }
 
-.header-social {
-  position: absolute;
-  top: 28px;
-  left: 30px;
-}
-.header-social__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.header-social__item {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-.header-social__link{
-  text-decoration: none;
-  transition: all linear 0.3s;
-  color: $text-header;
-  font-size: 24px;
-  margin-right:25px ;
-}
-.header-social__item-name{
-  display: none;
-}
-.header-social__link:hover{
-  fill: $icon-hover;
-  opacity: 1;
-}
 
 .clearfix:before,.clearfix:after{
   content: " ";
