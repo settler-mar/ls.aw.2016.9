@@ -1,3 +1,5 @@
 mixin diagram_circle(name, val,className)
-    div(class= `${className}-content`)= name
-    .circle(percent= val, class= className)
+    div(class= `${className}-content`)
+        .circle(data-percent= val, class= className)
+            div(class= `${className}-label`)
+                span(class= `${className}-text`)= name

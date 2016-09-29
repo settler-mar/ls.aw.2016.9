@@ -10,17 +10,16 @@ var start_maps={lat: 59.9334832, lng: 30.3359137};
     map_src+="&callback=mapInit"
     loadScript(map_src)
   }
-  $('.circle').each(function(){
-    var el=$(this)
-    el.circliful({
-      animationStep: 5,
-      foregroundBorderWidth: 30,
-      backgroundBorderWidth: 30,
-      percent: el.attr('percent'),
-      replacePercentageByText:' ',
-      foregroundColor:'#004cd1'
-    });
-  })
+  $('.circle').pieChart({
+    barColor: '#004cd1',
+    trackColor: '#dfdcd5',
+    lineCap: 'butt',
+    lineWidth: 20,
+    size: 110,
+    onStep: function (from, to, percent) {
+      $(this.element).find('canvas').css('opacity',percent/100)
+    }
+  });
 })();
 
 function loadScript(url){
@@ -114,7 +113,7 @@ function mapInit() {
       {name: "Styled Map"});
   var mapOptions = {
     zoom: 11,
-    center: new google.maps.LatLng(55.6468, 37.581),
+    center: new google.maps.LatLng(47.100566, 37.5376353),
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
     },
