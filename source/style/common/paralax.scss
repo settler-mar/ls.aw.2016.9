@@ -1,25 +1,25 @@
-.paralax{
+.paralax {
   position: absolute;
-  width: 100%;
-  margin: 0 auto;
-  height: 100vh;
   top: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
 }
+
 .paralax-control {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
-.paralax__layer{
+
+.paralax__layer {
 
 }
-.paralax__layer-image{
-  background: url(/assets/img/bg_paralax.png) no-repeat 50% 50%;
-  height: 80vh;
-  width: 120vw;
-  margin-left: -10vw;
-  background-size: cover;
+
+.paralax__layer-image {
   margin-top: 30vh;
-}
-.paralax__layer-video {
-  margin-top: 50vh;
+  margin-left: -10vw;
+  width: 120vw;
+  height: 80vh;
+  background: url(/assets/img/bg_paralax.png) no-repeat 50% 50%;
+  background-size: cover;
 }

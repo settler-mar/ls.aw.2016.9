@@ -1,37 +1,38 @@
-.autorisation_menu__form{
-
-}
 .autorisation_menu {
-  padding: 40px 0 0 0;
-  color: $text-header;
-  background: $logo_a_fon;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
   position: absolute;
   top: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 40px 0 0 0;
+  width: 100%;
+  height: 100%;
+  background: $logo_a_fon;
+  color: $text-header;
+  transition: all 0.35s ease;
   transform: translateZ(-1000px) rotateY(-90deg);
-  transition: all 0.35s ease;
 }
-.autorisation_menu__title{
-  font-family: SansusWebissimo;
-  font-size: 35px;
-  font-weight: 400;
-  line-height: 41px;
-  text-transform: uppercase;
+
+.autorisation_menu__title {
   margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 35px;
+  font-family: SansusWebissimo;
+  line-height: 41px;
 }
-.autorisation_target:target~.auth_button{
-  opacity: 0;
-  height: 0%;
+
+.autorisation_target:target ~ .auth_button {
   padding: 0 40px;
+  height: 0%;
+  opacity: 0;
 }
-.autorisation_target:target~.header__container .header__about-block{
-  transform: translateZ(-1000px) rotateY(90deg);
+
+.autorisation_target:target ~ .header__container .header__about-block {
   transition: all 0.35s ease;
+  transform: translateZ(-1000px) rotateY(90deg);
 }
-.autorisation_target:target~.header__container .autorisation_menu{
-  transform: translateZ(0) rotateY(0);
+
+.autorisation_target:target ~ .header__container .autorisation_menu {
   transition: all 0.35s ease 0.35s;
+  transform: translateZ(0) rotateY(0);
 }

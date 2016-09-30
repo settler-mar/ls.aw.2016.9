@@ -1,139 +1,156 @@
 .slider {
-  font-size: 0;
   background: $slide_this_fon;
+  font-size: 0;
   font-family: Roboto-Medium;
 }
+
 .slider__left-tab {
-    font-size: 16px;
-    width: 50%;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-}
-.slider__rigth-tab {
-  height:  100vh;
-  width: 50%;
   display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 16px;
+}
+
+.slider__rigth-tab {
+  display: inline-block;
+  width: 50%;
+  height: 100vh;
   vertical-align: middle;
 }
 
-.slider__title{
-  font-family: SansusWebissimo;
-  font-size: 35px;
-  font-weight: 400;
-  line-height: 41px;
-  text-transform: uppercase;
-  color: $slide_this_text;
-  padding-bottom:25px;
-  max-width: 500px;
+.slider__title {
   margin: auto;
+  padding-bottom: 25px;
+  max-width: 500px;
+  color: $slide_this_text;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 35px;
+  font-family: SansusWebissimo;
+  line-height: 41px;
 }
-.slider__title:after{
-  content: '';
-  width: 89px;
-  height: 3px;
+
+.slider__title:after {
   display: block;
   margin: auto;
-  opacity: 0.5;
+  margin-top: 30px;
+  width: 89px;
+  height: 3px;
   background: $slide_this_text;
-  margin-top:30px;
+  content: '';
+  opacity: 0.5;
 }
+
 .slider__skills-list {
   margin: 0 0 60px 0;
   padding: 0;
 }
-.slider__skills-item{
+
+.slider__skills-item {
   display: inline-block;
-  list-style: none;
   color: $slide_skill;
-  font-size: 16px;
+  list-style: none;
   font-weight: 500;
+  font-size: 16px;
 }
-.slider__skills-item:before{
+
+.slider__skills-item:before {
   content: ', ';
 }
-.slider__skills-item:first-child:before{
+
+.slider__skills-item:first-child:before {
   content: '';
 }
 
-.slider__link{
-      background: $slide_href_bg;
-      color:$slider_chenger;
-      padding: 16px 21px;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 36px;
-      text-decoration: none;
-      vertical-align: middle;
-}
-.slider__link:hover{
-  background: $slide_href_bg_hover;
-  color:$slider_chenger;
-}
-.slider__link-icon{
-  font-size: 1.2em;
+.slider__link {
+  padding: 16px 21px;
+  background: $slide_href_bg;
+  color: $slider_chenger;
   vertical-align: middle;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+}
+
+.slider__link:hover {
+  background: $slide_href_bg_hover;
+  color: $slider_chenger;
+}
+
+.slider__link-icon {
   margin-right: 10px;
+  vertical-align: middle;
+  font-size: 1.2em;
 }
 
 .slider__hear-slide,
-.slider__control{
-    overflow: hidden;
-  }
-.slider__hear-slide {
-  height: 70%;
-  width: 100%;
-  text-align: center;
-  padding: 50px;
-  box-sizing: border-box;
-  background-color: $hear_slide_bg;
+.slider__control {
+  overflow: hidden;
 }
+
+.slider__hear-slide {
+  box-sizing: border-box;
+  padding: 50px;
+  width: 100%;
+  height: 70%;
+  background-color: $hear_slide_bg;
+  text-align: center;
+}
+
 .slider__hear-slide__image {
   max-width: 100%;
   max-height: 100%;
 }
+
 .slider__control {
-  height: 30%;
-  width: 50%;
-  display: inline-block;
   position: relative;
-  text-align: center;
-  padding: 20px;
+  display: inline-block;
   box-sizing: border-box;
+  padding: 20px;
+  width: 50%;
+  height: 30%;
+  text-align: center;
   cursor: pointer;
 }
+
 .slider__button {
-  color: $slider_chenger;
   position: absolute;
-  height: 54px;
-  width: 100%;
-  left: 0%;
   top: 50%;
-  transition: all linear 0.3s;
+  left: 0%;
+  margin-top: -27px;
+  width: 100%;
+  height: 54px;
+  color: $slider_chenger;
   font-size: 46px;
-  margin-top:-27px ;
+  transition: all linear 0.3s;
 }
+
 .slider__control__image {
   max-width: 100%;
   max-height: 100%;
 }
 
 .slider__control:before {
-  content: '';
   position: absolute;
-  left: 0px;
   top: 0px;
-  height: 100%;
+  left: 0px;
   width: 100%;
+  height: 100%;
   background: $other_slider_shirma;
+  content: '';
   transition: all linear 0.3s;
 }
+
 .slider__control:hover:before {
   background: $other_slider_shirma_hover;
 }
-.slider__control:hover .slider__button{
-  top:60%;
+
+.slider__control:hover .slider__button {
+  top: 60%;
 }
-.slider__control-prev:hover .slider__button{
-  top:40%;
+
+.slider__control-prev:hover .slider__button {
+  top: 40%;
 }

@@ -1,67 +1,75 @@
 .review {
-  padding-top: 70px;
   position: relative;
+  padding-top: 70px;
 }
-.icon-stars3{
-  fill:$base-bg-color;
+
+.icon-stars3 {
   position: absolute;
-  left: 50%;
   top: 32px;
+  left: 50%;
+  margin-left: -86.5px;
   width: 173px;
   height: 202px;
   opacity: 0.15;
-  margin-left: -86.5px;
+  fill: $base-bg-color;
 }
 
 .review__group {
-  text-align: center;
-  width: 810px;
   margin: auto;
-  color: $review_text;
   margin-bottom: 69px;
+  width: 810px;
+  color: $review_text;
+  text-align: center;
 }
+
 .review__blk {
-  padding: 0 13px;
-  font-size: 16px;
-  width: 375px;
   display: inline-block;
+  padding: 0 13px;
+  width: 375px;
   background: url("/assets/img/quotes.png") no-repeat 20px 65px;
+  font-size: 16px;
 }
+
 .review__photo-block {
-  height: 77px;
-  width: 77px;
-  overflow: hidden;
-  border-radius: 100%;
-  margin: 0 auto 15px auto;
   display: block;
+  overflow: hidden;
+  margin: 0 auto 15px auto;
+  width: 77px;
+  height: 77px;
+  border-radius: 100%;
 }
+
 .review__photo-img {
   height: 100%;
 }
-.review__content{
+
+.review__content {
+  margin-bottom: 20px;
+  text-align: left;
+  font-weight: 300;
   font-style: italic;
   font-size: 16px;
   line-height: 26px;
-  font-weight: 300;
-  text-align: left;
-  margin-bottom: 20px;
 }
+
 .review__user_name {
   font-weight: 700;
 }
+
 .review__user_dop_line {
-  font-weight: 300;
   display: block;
+  font-weight: 300;
   font-style: italic;
 }
-.review__user_firm{
+
+.review__user_firm {
 
 }
 
 .feadback {
   overflow: hidden;
-  width: 380px;
   margin: auto;
-  background: $form_fead_back_bg;
   margin-bottom: 70px;
+  width: 380px;
+  background: $form_fead_back_bg;
 }

@@ -1,0 +1,134 @@
+.content_about {
+  position: relative;
+  background: $about_bg_right;
+  font-size: 0;
+}
+
+.content_about__block {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 40px 40px 40px;
+  width: 50%;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.content_about__block_left {
+  background: $about_bg_left;
+  &:before {
+    float: right;
+    margin-right: -40px;
+    border-width: 170px 0 0 1100px;
+    border-color: transparent transparent transparent $about_bg_left;
+  }
+}
+
+.content_about__block_right {
+  background: $about_bg_right;
+  &:before {
+    float: left;
+    margin-left: -40px;
+    border-width: 0 0 170px 1100px;
+    border-color: transparent transparent $about_bg_right transparent;
+  }
+}
+
+.content_about__block:before {
+  margin-top: -170px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  content: '';
+}
+
+.about__about-star {
+  top: -40px;
+  transform: rotateX(140deg) rotateY(-174deg);
+  fill: $about_bg_left_left_star;
+  stroke: $about_bg_left_left_star;
+}
+
+.icon-about_bg_right {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 1100px;
+  height: 360px;
+  fill: $about_bg_right;
+}
+
+.icon-about_bg_left {
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  width: 1100px;
+  height: 360px;
+  fill: $about_bg_left;
+}
+
+.about__photo_box {
+  display: block;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 35px;
+  max-width: 430px;
+  width: 80%;
+}
+
+.about__photo_img {
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.contacts-blk {
+  position: relative;
+  display: flex;
+  margin-bottom: -198px;
+  padding-bottom: 198px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.google-map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.contacts-blk__windos {
+  z-index: 99;
+  margin: auto auto;
+  padding: 20px;
+  max-width: 480px;
+  background: $contact_map_bg;
+  font-size: 16px;
+}
+
+.contacts-blk__icon {
+  margin-right: 10px;
+  width: 45px;
+  height: 45px;
+  vertical-align: middle;
+  fill: $contact_map_inons;
+}
+
+.contacts-blk__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-blk__item {
+  display: inline-block;
+  width: 235px;
+  line-height: 60px;
+}
+
+.contacts-blk__text {
+  display: inline-block;
+  max-width: 180px;
+  vertical-align: middle;
+  line-height: 20px;
+}

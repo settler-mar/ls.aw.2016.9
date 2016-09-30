@@ -1,9 +1,19 @@
-.vjs-big-play-button{
-  display:none;
+.block-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 }
-.vjs-control-bar{
-  display:none;
+
+.vjs-big-play-button {
+  display: none;
 }
-.vjs-hidden{
-  display:none;
+
+.vjs-control-bar {
+  display: none;
+}
+
+.vjs-hidden {
+  display: none;
 }

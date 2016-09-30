@@ -1,50 +1,57 @@
 .footer {
-  text-align: center;
-  color: $footer_text;
-  width: 100%;
   position: relative;
+  width: 100%;
+  color: $footer_text;
+  text-align: center;
 }
-.footer__copyright{
-  background: $footer_bg_cr;
-  color:$footer_text;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 38px;
+
+.footer__copyright {
   padding: 0;
+  background: $footer_bg_cr;
+  color: $footer_text;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 38px;
 }
+
 .footer__full-menu {
-  background: $dop_footer_bg;
   display: table;
   width: 100%;
+  background: $dop_footer_bg;
 }
-.footer__full-menu__column{
+
+.footer__full-menu__column {
   display: table-cell;
-  vertical-align: top;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
-  text-align: left;
   padding: 26px 30px;
   min-width: 30%;
+  vertical-align: top;
+  text-align: left;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
 }
+
 .footer__full-menu__column_description {
   width: 350px;
 }
-.footer__full-menu__column_contact{
-  width:250px;
+
+.footer__full-menu__column_contact {
+  width: 250px;
 }
-.footer__full-menu__column:before{
-  content: "";
-  background: $footer_text;
-  width: 1px;
-  height: 87px;
+
+.footer__full-menu__column:before {
   display: block;
   float: left;
-  opacity: 0.2;
   margin-top: 4px;
   margin-left: -30px;
+  width: 1px;
+  height: 87px;
+  background: $footer_text;
+  content: "";
+  opacity: 0.2;
 }
-.footer__full-menu__column:first-child:before{
+
+.footer__full-menu__column:first-child:before {
   display: none;
 }
 
@@ -53,69 +60,76 @@
   padding: 0;
   white-space: nowrap;
 }
+
 .footer-menu__item {
-  list-style: none;
   display: inline-block;
   margin-right: 40px;
+  list-style: none;
 }
-.footer-menu__link  {
-  text-decoration: none;
+
+.footer-menu__link {
   color: $footer_text;
-  font-family: "Roboto-Bold";
+  text-decoration: none;
   font-weight: 700;
+  font-family: "Roboto-Bold";
 }
+
 .footer-menu__item:last-child {
   margin-right: 0px;
 }
 
-  .my_linc {
-    position: relative;
-    top: 0;
-    left: 0;
-    line-height: 13px;
-    a {
-      margin-right: 17px;
-    }
-    svg {
-      opacity: 0.2;
-    }
-    a:hover svg {
-      opacity: 1;
-    }
+.my_linc {
+  position: relative;
+  top: 0;
+  left: 0;
+  line-height: 13px;
+  a {
+    margin-right: 17px;
   }
-
+  svg {
+    opacity: 0.2;
+  }
+  a:hover svg {
+    opacity: 1;
+  }
+}
 
 .footer-index {
   position: absolute;
   bottom: 0;
   height: auto;
 }
-.footer__copyright-index{
-  background: transparent;
+
+.footer__copyright-index {
   position: absolute;
   bottom: 30px;
   width: 100%;
-}
-.footer__full-menu-index{
-  display: none;
+  background: transparent;
 }
 
+.footer__full-menu-index {
+  display: none;
+}
 
 //прибить подвал
 html, body {
   height: 100%;
 }
+
 .page-wrap {
-  min-height: 100%;
   margin-bottom: -28px;
+  min-height: 100%;
 }
+
 .page-wrap:after {
-  content: "";
   display: block;
+  content: "";
 }
+
 .footer, .page-wrap:after {
   height: 38px;
 }
-.page-wrap.index:after{
+
+.page-wrap.index:after {
   height: auto;
 }

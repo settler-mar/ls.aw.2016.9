@@ -1,17 +1,20 @@
 @import 'font-awesome/font-awesome';
-@import 'common/basecolor';
-@import 'common/base';
+@import 'base/basecolor';
+@import 'base/base';
+@import 'base/forms';
+
+@import 'layout/header';
+@import 'layout/footer';
+
 @import 'common/social';
 @import 'common/slider';
-@import 'common/header';
-@import 'common/forms';
-@import 'common/footer';
 
 @import 'common/autorisation';
-@import 'common/works';
-@import 'common/about';
-@import 'common/blog';
+@import 'page/works';
+@import 'page/about';
+@import 'page/blog';
 
 @import 'common/skills';
 @import 'common/paralax';
 @import 'common/video_bg';
+@import 'common/animation';

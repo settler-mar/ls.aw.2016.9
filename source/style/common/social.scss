@@ -1,4 +1,4 @@
-.social-buttons__linc_index:hover{
+.social-buttons__linc_index:hover {
   opacity: 1;
 }
 
@@ -7,46 +7,55 @@
   top: 28px;
   left: 30px;
 }
+
 .social-buttons__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
+
 .social-buttons__item {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-.social-buttons__link{
-  text-decoration: none;
-  transition: all linear 0.3s;
+
+.social-buttons__link {
+  margin-right: 25px;
   color: $text-header;
+  text-decoration: none;
   font-size: 24px;
-  margin-right:25px ;
+  transition: all linear 0.3s;
 }
-.social-buttons__item-name{
+
+.social-buttons__item-name {
   display: none;
 }
-.social-buttons__link:hover{
+
+.social-buttons__link:hover {
   color: $icon-hover;
   opacity: 1;
 }
-.social-buttons__item_index{
+
+.social-buttons__item_index {
   margin: 0 17px 25px;
 }
+
 .social-buttons_index {
-  padding: 12px;
-  color:$icon-hover;
   position: relative;
-  left: 0;
   top: 0;
+  left: 0;
+  padding: 12px;
+  color: $icon-hover;
   font-size: 30px;
 }
-.social-buttons__link_index{
+
+.social-buttons__link_index {
   color: $icon-hover;
   opacity: 0.7;
 }
-.social-buttons_footer{
+
+.social-buttons_footer {
   position: relative;
   top: 0;
   left: 0;

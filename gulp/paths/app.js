@@ -5,5 +5,7 @@ module.exports = [
   './source/js/map.js',
   './source/js/menu.js',
   './source/js/jquery.next_item_animation.js',
+  './source/js/active.menu.item.js',
+  './source/js/scroll_block_menu.js',
   './source/js/bg_animation.js'
 ];
