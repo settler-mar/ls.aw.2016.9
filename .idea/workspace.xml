@@ -5,10 +5,15 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp/paths/app.js" afterPath="$PROJECT_DIR$/gulp/paths/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp/paths/tasks.js" afterPath="$PROJECT_DIR$/gulp/paths/tasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp/tasks/copy.image.js" afterPath="$PROJECT_DIR$/gulp/tasks/copy.image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp/tasks/sprite.svg.js" afterPath="$PROJECT_DIR$/gulp/tasks/sprite.svg.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/sprite/stars1.svg" afterPath="$PROJECT_DIR$/source/sprite/stars1.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/style/app.scss" afterPath="$PROJECT_DIR$/source/style/app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/style/common/about.scss" afterPath="$PROJECT_DIR$/source/style/common/about.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/style/common/basecolor.scss" afterPath="$PROJECT_DIR$/source/style/common/basecolor.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/style/common/header.scss" afterPath="$PROJECT_DIR$/source/style/common/header.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/style/common/paralax.scss" afterPath="$PROJECT_DIR$/source/style/common/paralax.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/template/pages/index.pug" afterPath="$PROJECT_DIR$/source/template/pages/index.pug" />
     </list>
     <ignored path="www.iws" />
@@ -32,51 +37,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bg_animation.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/js/bg_animation.js">
+      <file leaf-file-name="basecolor.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/style/common/basecolor.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="439">
+              <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="paralax.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/style/common/paralax.scss">
+      <file leaf-file-name="base.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/style/common/base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="video_bg.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/style/common/video_bg.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/style/app.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/template/pages/index.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="161">
+              <caret line="59" column="8" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -85,18 +60,38 @@
       <file leaf-file-name="header.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/style/common/header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="194" column="22" selection-start-line="194" selection-start-column="13" selection-end-line="194" selection-end-column="22" />
+            <state relative-caret-position="123">
+              <caret line="307" column="29" selection-start-line="307" selection-start-column="29" selection-end-line="307" selection-end-column="29" />
               <folding>
-                <marker date="1475229870130" expanded="true" signature="225:323" ph="{...}" />
-                <marker date="1475229870130" expanded="true" signature="955:975" ph="{...}" />
-                <marker date="1475229870130" expanded="true" signature="2965:3158" ph="{...}" />
-                <marker date="1475229870130" expanded="true" signature="3274:3381" ph="{...}" />
-                <marker date="1475229870130" expanded="true" signature="3393:3418" ph="{...}" />
-                <marker date="1475229870130" expanded="true" signature="4006:4028" ph="{...}" />
-                <marker date="1475229870130" expanded="true" signature="4057:4182" ph="{...}" />
-                <marker date="1475229870130" expanded="true" signature="5440:5467" ph="{...}" />
+                <marker date="1475253430996" expanded="true" signature="225:323" ph="{...}" />
+                <marker date="1475253430996" expanded="true" signature="955:975" ph="{...}" />
+                <marker date="1475253430996" expanded="true" signature="2990:3208" ph="{...}" />
+                <marker date="1475253430996" expanded="true" signature="3324:3431" ph="{...}" />
+                <marker date="1475253430996" expanded="true" signature="3443:3468" ph="{...}" />
+                <marker date="1475253430996" expanded="true" signature="4056:4078" ph="{...}" />
+                <marker date="1475253430996" expanded="true" signature="4107:4232" ph="{...}" />
+                <marker date="1475253430996" expanded="true" signature="5490:5517" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/style/common/about.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sprite.svg.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gulp/tasks/sprite.svg.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="13" column="18" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,8 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/template/common/_social_index.pug" />
-        <option value="$PROJECT_DIR$/source/template/common/_site_menu_index.pug" />
         <option value="$PROJECT_DIR$/source/template/mixins/lists.pug" />
         <option value="$PROJECT_DIR$/gulp/tasks/sass.sort.js" />
         <option value="$PROJECT_DIR$/source/style/common/autorisation.scss" />
@@ -131,7 +124,6 @@
         <option value="$PROJECT_DIR$/source/template/common/_footer.pug" />
         <option value="$PROJECT_DIR$/source/style/common/social.scss" />
         <option value="$PROJECT_DIR$/source/template/_template.pug" />
-        <option value="$PROJECT_DIR$/gulp/tasks/sprite.svg.js" />
         <option value="$PROJECT_DIR$/source/template/pages/works.pug" />
         <option value="$PROJECT_DIR$/source/template/pages/blog.pug" />
         <option value="$PROJECT_DIR$/source/style/common/blog.scss" />
@@ -141,7 +133,6 @@
         <option value="$PROJECT_DIR$/source/template/mixins/diagram.pug" />
         <option value="$PROJECT_DIR$/source/style/common/skills.scss" />
         <option value="$PROJECT_DIR$/source/template/pages/about.pug" />
-        <option value="$PROJECT_DIR$/source/style/common/about.scss" />
         <option value="$PROJECT_DIR$/source/style/common/forms.scss" />
         <option value="$PROJECT_DIR$/source/style/common/base.scss" />
         <option value="$PROJECT_DIR$/source/js/app.js" />
@@ -157,16 +148,20 @@
         <option value="$PROJECT_DIR$/source/style/other/animation.css" />
         <option value="$PROJECT_DIR$/source/template/common/_site_menu.pug" />
         <option value="$PROJECT_DIR$/gulp/paths/app.js" />
-        <option value="$PROJECT_DIR$/source/style/common/paralax.scss" />
         <option value="$PROJECT_DIR$/gulp/paths/tasks.js" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/gulp/tasks/copy:video.js" />
-        <option value="$PROJECT_DIR$/source/template/pages/index.pug" />
         <option value="$PROJECT_DIR$/source/style/app.scss" />
         <option value="$PROJECT_DIR$/source/style/common/video_bg.scss" />
-        <option value="$PROJECT_DIR$/source/style/common/header.scss" />
         <option value="$PROJECT_DIR$/source/style/common/basecolor.scss" />
         <option value="$PROJECT_DIR$/source/js/bg_animation.js" />
+        <option value="$PROJECT_DIR$/source/style/common/paralax.scss" />
+        <option value="$PROJECT_DIR$/source/template/pages/index.pug" />
+        <option value="$PROJECT_DIR$/gulp/tasks/copy.image.js" />
+        <option value="$PROJECT_DIR$/source/sprite/stars1.svg" />
+        <option value="$PROJECT_DIR$/gulp/tasks/sprite.svg.js" />
+        <option value="$PROJECT_DIR$/source/style/common/header.scss" />
+        <option value="$PROJECT_DIR$/source/style/common/about.scss" />
       </list>
     </option>
   </component>
@@ -342,20 +337,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gulp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -499,20 +480,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/template/common/_footer.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/template/common/_social.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="58" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/style/common/footer.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -531,13 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulp/tasks/sprite.svg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -597,13 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/style/common/about.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/style/common/forms.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -615,13 +568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-108">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/style/common/base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="121" column="1" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -826,44 +772,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/template/pages/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/style/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/template/pages/index.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/style/common/basecolor.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/style/common/header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="194" column="22" selection-start-line="194" selection-start-column="13" selection-end-line="194" selection-end-column="22" />
-          <folding>
-            <marker date="1475229870130" expanded="true" signature="225:323" ph="{...}" />
-            <marker date="1475229870130" expanded="true" signature="955:975" ph="{...}" />
-            <marker date="1475229870130" expanded="true" signature="2965:3158" ph="{...}" />
-            <marker date="1475229870130" expanded="true" signature="3274:3381" ph="{...}" />
-            <marker date="1475229870130" expanded="true" signature="3393:3418" ph="{...}" />
-            <marker date="1475229870130" expanded="true" signature="4006:4028" ph="{...}" />
-            <marker date="1475229870130" expanded="true" signature="4057:4182" ph="{...}" />
-            <marker date="1475229870130" expanded="true" signature="5440:5467" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -877,16 +798,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/style/common/paralax.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="432">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/js/bg_animation.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/sprite/stars1.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp/tasks/copy.image.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/style/common/basecolor.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/style/common/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp/tasks/sprite.svg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/style/common/header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="307" column="29" selection-start-line="307" selection-start-column="29" selection-end-line="307" selection-end-column="29" />
+          <folding>
+            <marker date="1475253430996" expanded="true" signature="225:323" ph="{...}" />
+            <marker date="1475253430996" expanded="true" signature="955:975" ph="{...}" />
+            <marker date="1475253430996" expanded="true" signature="2990:3208" ph="{...}" />
+            <marker date="1475253430996" expanded="true" signature="3324:3431" ph="{...}" />
+            <marker date="1475253430996" expanded="true" signature="3443:3468" ph="{...}" />
+            <marker date="1475253430996" expanded="true" signature="4056:4078" ph="{...}" />
+            <marker date="1475253430996" expanded="true" signature="4107:4232" ph="{...}" />
+            <marker date="1475253430996" expanded="true" signature="5490:5517" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/style/common/about.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
           <folding />
         </state>
       </provider>

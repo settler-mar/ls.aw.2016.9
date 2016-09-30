@@ -6,7 +6,11 @@ module.exports = function() {
 
     let cheerioConfig = {
       run: function($) {
-        $('[fill]').removeAttr('fill');
+        $('[fill]').each(function () {
+          if(this.attribs.fill.toUpperCase()!='NONE'){
+            this.attribs.fill='';
+          };
+        });
         $('[stroke]').removeAttr('stroke');
         $('[style]').removeAttr('style');
       },

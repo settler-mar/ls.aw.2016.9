@@ -4,12 +4,12 @@ block variables
   - var title = 'Home page'
   - var body_css = 'index'
 block header_up
+  a#auth.autorisation_target
   .paralax
     ul.paralax-control
-      li.layer.paralax__layer(data-depth="0.00")
+      li.layer.paralax__layer.paralax__layer-video(data-depth="0.00")
         div.block-video-bg
       li.layer.paralax__layer.paralax__layer-image(data-depth="1")
-  a#auth.autorisation_target
 block header_about
   -var social_modificator='_index'
   include ../common/_social
