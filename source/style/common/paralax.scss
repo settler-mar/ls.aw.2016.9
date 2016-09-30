@@ -1,0 +1,22 @@
+.paralax{
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  top: 0;
+}
+.paralax-control {
+  padding: 0;
+  margin: 0;
+}
+.paralax__layer{
+
+}
+.paralax__layer-image{
+  background: url(/assets/img/bg_paralax.png) no-repeat 50% 50%;
+  height: 80vh;
+  width: 120vw;
+  margin-left: -10vw;
+  background-size: cover;
+  margin-top: 30vh;
+}

@@ -31,6 +31,7 @@ $.gulp.task('default', $.gulp.series(
     'sprite:svg',
     'sprite:png',
     'css_other',
+    'copy:video',
     $.gulp.series(
         'fonts',
         'fonts_css:concat',
