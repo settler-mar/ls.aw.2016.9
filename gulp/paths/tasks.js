@@ -16,6 +16,7 @@ module.exports = [
   './gulp/tasks/fonts.js',
   './gulp/tasks/fonts_css:clear.js',
   './gulp/tasks/fonts_css:concat.js',
-  './gulp/tasks/copy:favicon.js'
+  './gulp/tasks/copy:favicon.js',
+  './gulp/tasks/css_other.js'
 ];
 

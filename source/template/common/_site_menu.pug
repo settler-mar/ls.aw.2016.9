@@ -1,9 +1,6 @@
 -
     var nav_list=[
         {
-            text:'Стартовая',
-            href:'/'
-        },{
             text:'Мои работы',
             href:'works.html'
         },{
@@ -12,8 +9,11 @@
         },{
             text:'Блог',
             href:'blog.html'
+        },{
+            text:'Авторизация',
+            href:'/#auth'
         }
     ]
-
-+icon_font('bars','header-menu-button')
+div.header-menu-button
+    span.header-menu-button_icon toggle menu
 +list_menu(nav_list,'header-menu')
