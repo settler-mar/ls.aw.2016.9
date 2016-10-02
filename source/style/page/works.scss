@@ -1,4 +1,4 @@
-.review {
+.comment {
   position: relative;
   padding-top: 70px;
 }
@@ -12,25 +12,28 @@
   height: 202px;
   opacity: 0.15;
   fill: $base-bg-color;
+  stroke: $base-bg-color;
+
 }
 
-.review__group {
+.comment__group {
   margin: auto;
   margin-bottom: 69px;
   width: 810px;
-  color: $review_text;
+  color: $comment_text;
   text-align: center;
 }
 
-.review__blk {
+.comment__block {
   display: inline-block;
   padding: 0 13px;
   width: 375px;
   background: url("/assets/img/quotes.png") no-repeat 20px 65px;
+  vertical-align: top;
   font-size: 16px;
 }
 
-.review__photo-block {
+.comment__photo-block {
   display: block;
   overflow: hidden;
   margin: 0 auto 15px auto;
@@ -39,11 +42,11 @@
   border-radius: 100%;
 }
 
-.review__photo-img {
+.comment__photo-img {
   height: 100%;
 }
 
-.review__content {
+.comment__content {
   margin-bottom: 20px;
   text-align: left;
   font-weight: 300;
@@ -52,17 +55,17 @@
   line-height: 26px;
 }
 
-.review__user_name {
+.comment__user {
   font-weight: 700;
 }
 
-.review__user_dop_line {
+.comment__user_description {
   display: block;
   font-weight: 300;
   font-style: italic;
 }
 
-.review__user_firm {
+.comment__user_firm {
 
 }
 

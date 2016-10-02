@@ -1,13 +1,36 @@
+.autorisation_button {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  z-index: 90;
+  overflow: hidden;
+  padding: 15px 29px;
+  border: 1px solid white;
+  color: $text-header;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.autorisation_button:hover {
+  border-color: $a_hover;
+  background: $a_hover;
+  color: $text-header;
+}
+
 .autorisation_menu {
   position: absolute;
   top: 0;
+  left: 0;
   box-sizing: border-box;
-  margin: 0;
+  margin: auto;
   padding: 40px 0 0 0;
-  width: 100%;
-  height: 100%;
+  width: 380px;
   background: $logo_a_fon;
   color: $text-header;
+  text-align: center;
   transition: all 0.35s ease;
   transform: translateZ(-1000px) rotateY(-90deg);
 }
@@ -21,18 +44,18 @@
   line-height: 41px;
 }
 
-.autorisation_target:target ~ .auth_button {
+.autorisation_target:target ~ .header .autorisation_button {
   padding: 0 40px;
   height: 0%;
   opacity: 0;
 }
 
-.autorisation_target:target ~ .header__container .header__about-block {
+.autorisation_target:target ~ .my-infotmation .my-infotmation__about-block {
   transition: all 0.35s ease;
   transform: translateZ(-1000px) rotateY(90deg);
 }
 
-.autorisation_target:target ~ .header__container .autorisation_menu {
+.autorisation_target:target ~ .my-infotmation .autorisation_menu {
   transition: all 0.35s ease 0.35s;
   transform: translateZ(0) rotateY(0);
 }

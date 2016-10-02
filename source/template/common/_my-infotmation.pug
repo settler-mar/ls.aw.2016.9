@@ -1,0 +1,15 @@
+section.my-infotmation(class= 'my-infotmation__'+body_css)
+    .my-infotmation__container(class='my-infotmation__container_'+body_css)
+        .my-infotmation__about-block(class= 'my-infotmation__about-block_'+body_css)
+            .my-infotmation__logo-block
+                img.my-infotmation__logo-img(src="/assets/img/my_photo.jpg",alt="Матюхин Максим")
+            if body_css!='blog'
+                if body_css=='index'
+                    h1.my-infotmation__title Матюхин Максим
+                    span.my-infotmation__sub-title Личный сайт веб разработчика
+                else
+                    .my-infotmation__title(class='my-infotmation__title_'+body_css) Матюхин Максим
+                    span.my-infotmation__sub-title Личный сайт веб разработчика
+            block my-infotmation
+        block dop_menu
+    block dop_up_element

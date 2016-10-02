@@ -11,7 +11,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#fff">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="/assets/css/foundation.css">
@@ -19,63 +18,72 @@
     <script src="/assets/js/foundation.js" defer></script>
     <script src="/assets/js/app.js" defer></script>
     <!--if lt IE 9]>script(src='http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js')
-    --><![endif]-->
+    -->
   </head>
   <body>
-    <div class="page-wrap works">
-      <header class="header header_works">
+    <div class="page-wrap page-wrap_works">
+      <header class="header">
         <nav class="social-buttons ">
           <ul class="social-buttons__list ">
-            <li class="social-buttons__item "><a class="social-buttons__link " href="https://vk.com/settler_mar"><i class="fa fa-vk"></i><span class="social-buttons__item-name ">vk</span></a></li>
-            <li class="social-buttons__item "><a class="social-buttons__link " href="https://github.com/settler-mar"><i class="fa fa-github-alt"></i><span class="social-buttons__item-name ">github</span></a></li>
-            <li class="social-buttons__item "><a class="social-buttons__link " href="https://vk.com/settler_mar"><i class="fa fa-linkedin"></i><span class="social-buttons__item-name ">linkedin</span></a></li>
+            <li class="social-buttons__item "><a class="social-buttons__link " href="https://vk.com/settler_mar" target="_blank"><i class="fa fa-vk"></i><span class="social-buttons__item-name ">vk</span></a>
+            </li>
+            <li class="social-buttons__item "><a class="social-buttons__link " href="https://github.com/settler-mar" target="_blank"><i class="fa fa-github-alt"></i><span class="social-buttons__item-name ">github</span></a>
+            </li>
+            <li class="social-buttons__item "><a class="social-buttons__link " href="https://vk.com/settler_mar" target="_blank"><i class="fa fa-linkedin"></i><span class="social-buttons__item-name ">linkedin</span></a>
+            </li>
           </ul>
         </nav>
         <div class="header-menu-button"><span class="header-menu-button_icon">toggle menu</span></div>
         <nav class="header-menu ">
           <ul class="header-menu__list ">
-            <li class="header-menu__item "><a class="header-menu__link " href="works.html"><span class="header-menu__item-name ">Мои работы</span></a></li>
-            <li class="header-menu__item "><a class="header-menu__link " href="about.html"><span class="header-menu__item-name ">Обо мне</span></a></li>
-            <li class="header-menu__item "><a class="header-menu__link " href="blog.html"><span class="header-menu__item-name ">Блог</span></a></li>
-            <li class="header-menu__item "><a class="header-menu__link " href="/#auth"><span class="header-menu__item-name ">Авторизация</span></a></li>
+            <li class="header-menu__item "><a class="header-menu__link " href="works.html"><span class="header-menu__item-name ">Мои работы</span></a>
+            </li>
+            <li class="header-menu__item "><a class="header-menu__link " href="about.html"><span class="header-menu__item-name ">Обо мне</span></a>
+            </li>
+            <li class="header-menu__item "><a class="header-menu__link " href="blog.html"><span class="header-menu__item-name ">Блог</span></a>
+            </li>
+            <li class="header-menu__item "><a class="header-menu__link " href="/#autorisation"><span class="header-menu__item-name ">Авторизация</span></a>
+            </li>
           </ul>
         </nav>
-        <svg class="icon icon-stars1">
-          <use xlink:href="/assets/img/sprite.svg#stars1"></use>
-        </svg>
-        <div class="header__container header__container_works">
-          <div class="header__about-block header__about-block_works">
-            <div class="header__logo-block header__logo-block_works"><img class="header__logo-img" src="/assets/img/my_photo.jpg" alt="Матюхин Максим"></div>
-            <div class="header__title header__title_works">Матюхин Максим<span class="header__sub-title">Личный сайт веб разработчика</span></div>
+      </header>
+      <section class="my-infotmation my-infotmation__works">
+        <div class="my-infotmation__container my-infotmation__container_works">
+          <div class="my-infotmation__about-block my-infotmation__about-block_works">
+            <div class="my-infotmation__logo-block"><img class="my-infotmation__logo-img" src="/assets/img/my_photo.jpg" alt="Матюхин Максим"></div>
+            <div class="my-infotmation__title my-infotmation__title_works">Матюхин Максим</div><span class="my-infotmation__sub-title">Личный сайт веб разработчика</span>
+            <svg class="icon icon-stars1">
+              <use xlink:href="/assets/img/sprite.svg#stars1"></use>
+            </svg>
           </div>
         </div><i class="fa fa-chevron-down page_scrolle page_scrolle-down"></i>
         <svg class="icon icon-stars2">
           <use xlink:href="/assets/img/sprite.svg#stars2"></use>
         </svg>
-        <svg class="icon icon-bg header__bg-work">
+        <svg class="icon icon-bg icon_dark">
           <use xlink:href="/assets/img/sprite.svg#bg"></use>
         </svg>
         <h1 class="title-h1 title-h1_work">Мои работы</h1>
-      </header>
+      </section>
       <div class="content content_works">
         <section class="slider">
           <div class="slider__left-tab">
             <div class="slider__title">Сайт школы онлайн образования</div>
             <ul class="slider__skills-list">
-              <li class="slider__skills-item">HTML</li>
-              <li class="slider__skills-item">CSS</li>
-              <li class="slider__skills-item">JAVASCRIPT</li>
+              <li class="slider__skills-item">htmp</li>
+              <li class="slider__skills-item">css</li>
+              <li class="slider__skills-item">javascript</li>
             </ul><a class="slider__link" href="/" target="_blank"><i class="fa fa-link slider__link-icon"></i>Посмотреть сайт</a>
           </div>
           <div class="slider__rigth-tab">
-            <div class="slider__hear-slide"><img class="slider__hear-slide__image" src="/assets/img/work-1.png"></div>
-            <div class="slider__control slider__control-next"><i class="fa fa-chevron-down slider__button slider__button-next"></i><img class="slider__control__image" src="/assets/img/work-2.png">
+            <div class="slider__hear-slide"><img class="slider__hear-slide__image" src="/assets/img/work-1.png" alt="Работа 1"></div>
+            <div class="slider__control slider__control-next"><i class="fa fa-chevron-down slider__button slider__button-next"></i><img class="slider__control__image" src="/assets/img/work-2.png" alt="Работа 2">
             </div>
-            <div class="slider__control slider__control-prev"><i class="fa fa-chevron-up slider__button slider__button-next"></i><img class="slider__control__image" src="/assets/img/work-3.png">
+            <div class="slider__control slider__control-prev"><i class="fa fa-chevron-up slider__button slider__button-next"></i><img class="slider__control__image" src="/assets/img/work-3.png" alt="Работа 3">
             </div>
           </div>
         </section>
-        <div class="bg_dop1">
+        <div class="night_lighthouse">
           <section class="review">
             <svg class="icon icon-stars3">
               <use xlink:href="/assets/img/sprite.svg#stars3"></use>
@@ -121,17 +129,24 @@
         <div class="footer__full-menu__column">
           <nav class="footer-menu ">
             <ul class="footer-menu__list ">
-              <li class="footer-menu__item "><a class="footer-menu__link " href="works.html"><span class="footer-menu__item-name ">Мои работы</span></a></li>
-              <li class="footer-menu__item "><a class="footer-menu__link " href="about.html"><span class="footer-menu__item-name ">Обо мне</span></a></li>
-              <li class="footer-menu__item "><a class="footer-menu__link " href="blog.html"><span class="footer-menu__item-name ">Блог</span></a></li>
-              <li class="footer-menu__item "><a class="footer-menu__link " href="/#auth"><span class="footer-menu__item-name ">Авторизация</span></a></li>
+              <li class="footer-menu__item "><a class="footer-menu__link " href="works.html"><span class="footer-menu__item-name ">Мои работы</span></a>
+              </li>
+              <li class="footer-menu__item "><a class="footer-menu__link " href="about.html"><span class="footer-menu__item-name ">Обо мне</span></a>
+              </li>
+              <li class="footer-menu__item "><a class="footer-menu__link " href="blog.html"><span class="footer-menu__item-name ">Блог</span></a>
+              </li>
+              <li class="footer-menu__item "><a class="footer-menu__link " href="/#autorisation"><span class="footer-menu__item-name ">Авторизация</span></a>
+              </li>
             </ul>
           </nav>
           <nav class="social-buttons social-buttons_footer">
             <ul class="social-buttons__list social-buttons__list_footer">
-              <li class="social-buttons__item social-buttons__item_footer"><a class="social-buttons__link  social-buttons__link_footer" href="https://vk.com/settler_mar"><i class="fa fa-vk"></i><span class="social-buttons__item-name social-buttons__item-name_footer">vk</span></a></li>
-              <li class="social-buttons__item social-buttons__item_footer"><a class="social-buttons__link  social-buttons__link_footer" href="https://github.com/settler-mar"><i class="fa fa-github-alt"></i><span class="social-buttons__item-name social-buttons__item-name_footer">github</span></a></li>
-              <li class="social-buttons__item social-buttons__item_footer"><a class="social-buttons__link  social-buttons__link_footer" href="https://vk.com/settler_mar"><i class="fa fa-linkedin"></i><span class="social-buttons__item-name social-buttons__item-name_footer">linkedin</span></a></li>
+              <li class="social-buttons__item social-buttons__item_footer"><a class="social-buttons__link  social-buttons__link_footer" href="https://vk.com/settler_mar" target="_blank"><i class="fa fa-vk"></i><span class="social-buttons__item-name ">vk</span></a>
+              </li>
+              <li class="social-buttons__item social-buttons__item_footer"><a class="social-buttons__link  social-buttons__link_footer" href="https://github.com/settler-mar" target="_blank"><i class="fa fa-github-alt"></i><span class="social-buttons__item-name ">github</span></a>
+              </li>
+              <li class="social-buttons__item social-buttons__item_footer"><a class="social-buttons__link  social-buttons__link_footer" href="https://vk.com/settler_mar" target="_blank"><i class="fa fa-linkedin"></i><span class="social-buttons__item-name ">linkedin</span></a>
+              </li>
             </ul>
           </nav>
         </div>

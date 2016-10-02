@@ -1,5 +1,4 @@
 block variables
-  -var body_css=''
 include mixins/icons.pug
 include mixins/svg.pug
 include mixins/lists.pug
@@ -9,8 +8,12 @@ html
   head
     include common/_head
   body
-    .page-wrap(class=body_css)
+    .page-wrap(class='page-wrap_'+body_css)
+      if body_css == 'index'
+        a#autorisation.autorisation_target
       include common/_header
-      div.content(class= "content_"+body_css)
-        block content
+      include common/_my-infotmation
+      if body_css!='index'
+        div.content(class= "content_"+body_css)
+          block content
     include common/_footer

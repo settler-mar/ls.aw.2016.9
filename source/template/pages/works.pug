@@ -6,39 +6,38 @@ block variables
 block header_up
   include ../common/_social
   include ../common/_site_menu
+block my-infotmation
   +icon_svg('stars1')
-
 
 block dop_up_element
   +icon_font('chevron-down','page_scrolle page_scrolle-down')
   +icon_svg('stars2')
-  +icon_svg('bg','header__bg-work')
+  +icon_svg('bg','icon_dark')
   h1.title-h1.title-h1_work Мои работы
-
 
 block content
   include ../common/_slider
-  .bg_dop1
-    section.review
+  .night_lighthouse
+    section.comment
       +icon_svg('stars3')
       h2.title-h2 Что обо мне говорят
-      .review__group
-        .review__blk
-          .review__photo-block
-            img.review__photo-img(src="/assets/img/my_photo.jpg",alt="Ковальчук Дмитрий")
-          .review__content
+      .comment__group
+        .comment__block
+          .comment__photo-block
+            img.comment__photo-img(src="/assets/img/my_photo.jpg",alt="Ковальчук Дмитрий")
+          .comment__content
             | Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-          .review__user_name
+          .comment__user
             | Ковальчук Дмитрий
-            span.review__user_dop_line — основатель Loftschool
-        .review__blk
-          .review__photo-block
-            img.review__photo-img(src="/assets/img/my_photo.jpg",alt="Ковальчук Дмитрий")
-          .review__content
+            span.comment__user-description — основатель Loftschool
+        .comment__block
+          .comment__photo-block
+            img.comment__photo-img(src="/assets/img/my_photo.jpg",alt="Ковальчук Дмитрий")
+          .comment__content
             | Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-          .review__user_name
+          .comment__user
             | Ковальчук Дмитрий
-            span.review__user_dop_line — основатель Loftschool
+            span.comment__user-description — основатель Loftschool
     section.feadback
       h2.title-h2.title-h2_underline Связаться со мной
       form.feadback__form(method="post")

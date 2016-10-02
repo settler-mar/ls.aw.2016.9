@@ -11,7 +11,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#fff">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="/assets/css/foundation.css">
@@ -19,33 +18,35 @@
     <script src="/assets/js/foundation.js" defer></script>
     <script src="/assets/js/app.js" defer></script>
     <!--if lt IE 9]>script(src='http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js')
-    --><![endif]-->
+    -->
   </head>
   <body>
-    <div class="page-wrap index">
-      <header class="header header_index"><a class="autorisation_target" id="auth"></a>
-        <div class="block-video-bg"></div>
-        <div class="paralax">
-          <ul class="paralax-control">
-            <li class="layer paralax__layer paralax__layer-image" data-depth="0.5"></li>
-          </ul>
-        </div>
-        <div class="header__container header__container_index">
-          <div class="header__about-block header__about-block_index">
-            <div class="header__logo-block header__logo-block_index"><img class="header__logo-img" src="/assets/img/my_photo.jpg" alt="Матюхин Максим"></div>
-            <div class="header__title header__title_index">Матюхин Максим<span class="header__sub-title">Личный сайт веб разработчика</span></div>
+    <div class="page-wrap page-wrap_index"><a class="autorisation_target" id="autorisation"></a>
+      <header class="header"><a class="autorisation_button" href="/#autorisation">Авторизоваться</a>
+      </header>
+      <section class="my-infotmation my-infotmation__index">
+        <div class="my-infotmation__container my-infotmation__container_index">
+          <div class="my-infotmation__about-block my-infotmation__about-block_index">
+            <div class="my-infotmation__logo-block"><img class="my-infotmation__logo-img" src="/assets/img/my_photo.jpg" alt="Матюхин Максим"></div>
+            <h1 class="my-infotmation__title">Матюхин Максим</h1><span class="my-infotmation__sub-title">Личный сайт веб разработчика</span>
             <nav class="social-buttons social-buttons_index">
               <ul class="social-buttons__list social-buttons__list_index">
-                <li class="social-buttons__item social-buttons__item_index"><a class="social-buttons__link  social-buttons__link_index" href="https://vk.com/settler_mar"><i class="fa fa-vk"></i><span class="social-buttons__item-name social-buttons__item-name_index">vk</span></a></li>
-                <li class="social-buttons__item social-buttons__item_index"><a class="social-buttons__link  social-buttons__link_index" href="https://github.com/settler-mar"><i class="fa fa-github-alt"></i><span class="social-buttons__item-name social-buttons__item-name_index">github</span></a></li>
-                <li class="social-buttons__item social-buttons__item_index"><a class="social-buttons__link  social-buttons__link_index" href="https://vk.com/settler_mar"><i class="fa fa-linkedin"></i><span class="social-buttons__item-name social-buttons__item-name_index">linkedin</span></a></li>
+                <li class="social-buttons__item social-buttons__item_index"><a class="social-buttons__link  social-buttons__link_index" href="https://vk.com/settler_mar" target="_blank"><i class="fa fa-vk"></i><span class="social-buttons__item-name ">vk</span></a>
+                </li>
+                <li class="social-buttons__item social-buttons__item_index"><a class="social-buttons__link  social-buttons__link_index" href="https://github.com/settler-mar" target="_blank"><i class="fa fa-github-alt"></i><span class="social-buttons__item-name ">github</span></a>
+                </li>
+                <li class="social-buttons__item social-buttons__item_index"><a class="social-buttons__link  social-buttons__link_index" href="https://vk.com/settler_mar" target="_blank"><i class="fa fa-linkedin"></i><span class="social-buttons__item-name ">linkedin</span></a>
+                </li>
               </ul>
             </nav>
             <nav class="welcome-menu ">
               <ul class="welcome-menu__list ">
-                <li class="welcome-menu__item "><a class="welcome-menu__link " href="works.html"><span class="welcome-menu__item-name ">Мои работы</span></a></li>
-                <li class="welcome-menu__item "><a class="welcome-menu__link " href="about.html"><span class="welcome-menu__item-name ">Обо мне</span></a></li>
-                <li class="welcome-menu__item "><a class="welcome-menu__link " href="blog.html"><span class="welcome-menu__item-name ">Блог</span></a></li>
+                <li class="welcome-menu__item "><a class="welcome-menu__link " href="works.html"><span class="welcome-menu__item-name ">Мои работы</span></a>
+                </li>
+                <li class="welcome-menu__item "><a class="welcome-menu__link " href="about.html"><span class="welcome-menu__item-name ">Обо мне</span></a>
+                </li>
+                <li class="welcome-menu__item "><a class="welcome-menu__link " href="blog.html"><span class="welcome-menu__item-name ">Блог</span></a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -78,10 +79,14 @@
               </ul>
             </nav>
           </div>
-        </div><a class="auth_button" href="/#auth">Авторизоваться</a>
-      </header>
-      <div class="content content_index">
-      </div>
+        </div>
+        <div class="block-video-bg"></div>
+        <div class="paralax">
+          <ul class="paralax-control">
+            <li class="layer paralax__layer paralax__layer-image" data-depth="0.5"></li>
+          </ul>
+        </div>
+      </section>
     </div>
     <footer class="footer footer-index">
       <div class="footer__full-menu footer__full-menu-index">
@@ -89,17 +94,24 @@
         <div class="footer__full-menu__column">
           <nav class="footer-menu ">
             <ul class="footer-menu__list ">
-              <li class="footer-menu__item "><a class="footer-menu__link " href="works.html"><span class="footer-menu__item-name ">Мои работы</span></a></li>
-              <li class="footer-menu__item "><a class="footer-menu__link " href="about.html"><span class="footer-menu__item-name ">Обо мне</span></a></li>
-              <li class="footer-menu__item "><a class="footer-menu__link " href="blog.html"><span class="footer-menu__item-name ">Блог</span></a></li>
-              <li class="footer-menu__item "><a class="footer-menu__link " href="/#auth"><span class="footer-menu__item-name ">Авторизация</span></a></li>
+              <li class="footer-menu__item "><a class="footer-menu__link " href="works.html"><span class="footer-menu__item-name ">Мои работы</span></a>
+              </li>
+              <li class="footer-menu__item "><a class="footer-menu__link " href="about.html"><span class="footer-menu__item-name ">Обо мне</span></a>
+              </li>
+              <li class="footer-menu__item "><a class="footer-menu__link " href="blog.html"><span class="footer-menu__item-name ">Блог</span></a>
+              </li>
+              <li class="footer-menu__item "><a class="footer-menu__link " href="/#autorisation"><span class="footer-menu__item-name ">Авторизация</span></a>
+              </li>
             </ul>
           </nav>
           <nav class="social-buttons social-buttons_footer">
             <ul class="social-buttons__list social-buttons__list_footer">
-              <li class="social-buttons__item social-buttons__item_footer"><a class="social-buttons__link  social-buttons__link_footer" href="https://vk.com/settler_mar"><i class="fa fa-vk"></i><span class="social-buttons__item-name social-buttons__item-name_footer">vk</span></a></li>
-              <li class="social-buttons__item social-buttons__item_footer"><a class="social-buttons__link  social-buttons__link_footer" href="https://github.com/settler-mar"><i class="fa fa-github-alt"></i><span class="social-buttons__item-name social-buttons__item-name_footer">github</span></a></li>
-              <li class="social-buttons__item social-buttons__item_footer"><a class="social-buttons__link  social-buttons__link_footer" href="https://vk.com/settler_mar"><i class="fa fa-linkedin"></i><span class="social-buttons__item-name social-buttons__item-name_footer">linkedin</span></a></li>
+              <li class="social-buttons__item social-buttons__item_footer"><a class="social-buttons__link  social-buttons__link_footer" href="https://vk.com/settler_mar" target="_blank"><i class="fa fa-vk"></i><span class="social-buttons__item-name ">vk</span></a>
+              </li>
+              <li class="social-buttons__item social-buttons__item_footer"><a class="social-buttons__link  social-buttons__link_footer" href="https://github.com/settler-mar" target="_blank"><i class="fa fa-github-alt"></i><span class="social-buttons__item-name ">github</span></a>
+              </li>
+              <li class="social-buttons__item social-buttons__item_footer"><a class="social-buttons__link  social-buttons__link_footer" href="https://vk.com/settler_mar" target="_blank"><i class="fa fa-linkedin"></i><span class="social-buttons__item-name ">linkedin</span></a>
+              </li>
             </ul>
           </nav>
         </div>

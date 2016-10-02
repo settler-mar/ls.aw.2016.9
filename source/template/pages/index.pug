@@ -1,15 +1,10 @@
 extends ../_template
-
 block variables
   - var title = 'Home page'
   - var body_css = 'index'
 block header_up
-  a#auth.autorisation_target
-  div.block-video-bg
-  .paralax
-    ul.paralax-control
-      li.layer.paralax__layer.paralax__layer-image(data-depth="0.5")
-block header_about
+  a.autorisation_button(href="/#autorisation") Авторизоваться
+block my-infotmation
   -var social_modificator='_index'
   include ../common/_social
   include ../common/_site_menu_index
@@ -45,5 +40,8 @@ block dop_menu
         li.welcome-menu__item
           a.welcome-menu__link Войти
 block dop_up_element
-  a.auth_button(href="/#auth") Авторизоваться
+  div.block-video-bg
+  .paralax
+    ul.paralax-control
+      li.layer.paralax__layer.paralax__layer-image(data-depth="0.5")
 block content

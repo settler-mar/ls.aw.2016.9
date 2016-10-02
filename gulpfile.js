@@ -1,5 +1,4 @@
 'use strict';
-var fontgen = require('./node_modules/gulp-fontgen');
 global.$ = {
   package: require('./package.json'),
   config: require('./gulp/config'),
