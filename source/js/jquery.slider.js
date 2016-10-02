@@ -15,6 +15,11 @@
 		full_slider_class:'slider__full-information',
 		full_slider_title_class:'slider__title',
 		skills_list_class:'slider__skills-list',
+		skills_item_class:'slider__skills-item',
+		slider_link_class:'slider__link',
+		slider_link_icon:'<i class="fa fa-link slider__link-icon"></i>',
+		slider_link_text_class:'slider__link-text',
+		slider_link_text:'Перейти на сайт',
 	};
 
 	function settler_slider(element,options){
@@ -56,7 +61,26 @@
 				class:this.config.full_slider_title_class,
 				text:data.find('.title').text()
 			}));
-			var skils=data.find('.skills');
+			var skils=data.find('.skills').first().clone();
+			skils
+				.attr('class','')
+				.addClass(this.config.skills_list_class)
+				.find('li')
+					.attr('class','')
+					.addClass(this.config.skills_item_class);
+			full_slider.append(skils);
+
+			var link=$('<a/>',{
+				class:this.config.slider_link_class,
+				html:this.config.slider_link_icon
+			});
+			link.append($('<span/>',{
+				class:this.config.slider_link_text_class,
+				text:this.config.slider_link_text
+			}));
+
+			full_slider.append(link);
+
 			slider_here.append(full_slider);
 
 			//создание блока управления
