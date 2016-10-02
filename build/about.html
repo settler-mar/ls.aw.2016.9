@@ -16,14 +16,12 @@
     <link rel="stylesheet" href="/assets/css/foundation.css">
     <link rel="stylesheet" href="/assets/css/app.css">
     <script src="/assets/js/foundation.js" defer></script>
-    <script src="/assets/js/app.js" defer></script>
-    <!--if lt IE 9]>script(src='http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js')
-    -->
+    <script src="/assets/js/app.js" defer></script><!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
     <div class="page-wrap page-wrap_about">
       <header class="header">
-        <nav class="social-buttons ">
+        <div class="social-buttons ">
           <ul class="social-buttons__list ">
             <li class="social-buttons__item "><a class="social-buttons__link " href="https://vk.com/settler_mar" target="_blank"><i class="fa fa-vk"></i><span class="social-buttons__item-name ">vk</span></a>
             </li>
@@ -32,7 +30,7 @@
             <li class="social-buttons__item "><a class="social-buttons__link " href="https://vk.com/settler_mar" target="_blank"><i class="fa fa-linkedin"></i><span class="social-buttons__item-name ">linkedin</span></a>
             </li>
           </ul>
-        </nav>
+        </div>
         <div class="header-menu-button"><span class="header-menu-button_icon">toggle menu</span></div>
         <nav class="header-menu ">
           <ul class="header-menu__list ">
@@ -59,130 +57,132 @@
         </div><i class="fa fa-chevron-down page_scrolle page_scrolle-down"></i>
       </section>
       <div class="content content_about">
-        <div class="content_about__block content_about__block_left">
-          <svg class="icon icon-stars2 about__about-star">
-            <use xlink:href="/assets/img/sprite.svg#stars2"></use>
-          </svg>
-          <h1 class="title-h1 title-h1_about">Обо мне</h1>
-          <div class="about__photo_box"><img class="about__photo_img" src="/assets/img/my_photo.jpg" alt="Матюхин Максим"></div>
-          <h2 class="dashed-title">Кто я</h2>
-          <p class="about_text">
-            Я програмист из Мариуполя(Украна). Мне 27 лет. Занимаюсь разработкой современных сайтов и WEB-сервисов.
-            На сегодняшний день сайт стал неотъемлемой частью любой солидной компании. Взявшись за сайт, я беру на себя ответственность по созданию готового продукта, адаптированного для продвижения и получения дохода.
-          </p>
-          <p class="about_text">
-            В совокупности это позволяет создать действительно эффективный сайт и воплотить Ваши идеи.
-            Создать сайт могут многие, сделать эффективный инструмент на рынке интернет-маркетинга – единицы.
-          </p>
-        </div>
-        <div class="content_about__block content_about__block_right">
-          <h2 class="dashed-title">Чем я могу быть вам полезен</h2>
-          <p class="description">Я занимаюсь комлексной разработкой сайтов (Frontend + Backend), что позваляет видеть и риализовывать задачи в целом.</p>
-          <div class="skills">
-            <div class="skills__block">
-              <div class="skills__block__title">Frontend</div>
-              <ul class="skills__lists">
-                <li class="skills__item">
-                  <div class="skills__circle-content">
-                    <div class="circle skills__circle" data-percent="80">
-                      <div class="skills__circle-label"><span class="skills__circle-text">HTML5</span></div>
+        <div class="content-about">
+          <div class="content-about__block content-about__block_left">
+            <svg class="icon icon-stars2 about__about-star">
+              <use xlink:href="/assets/img/sprite.svg#stars2"></use>
+            </svg>
+            <h1 class="title-h1 title-h1_about">Обо мне</h1>
+            <div class="about__photo_box"><img class="about__photo_img" src="/assets/img/my_photo.jpg" alt="Матюхин Максим"></div>
+            <h2 class="dashed-title">Кто я</h2>
+            <p class="about_text">
+              Я програмист из Мариуполя(Украна). Мне 27 лет. Занимаюсь разработкой современных сайтов и WEB-сервисов.
+              На сегодняшний день сайт стал неотъемлемой частью любой солидной компании. Взявшись за сайт, я беру на себя ответственность по созданию готового продукта, адаптированного для продвижения и получения дохода.
+            </p>
+            <p class="about_text">
+              В совокупности это позволяет создать действительно эффективный сайт и воплотить Ваши идеи.
+              Создать сайт могут многие, сделать эффективный инструмент на рынке интернет-маркетинга – единицы.
+            </p>
+          </div>
+          <div class="content-about__block content-about__block_right">
+            <h2 class="dashed-title">Чем я могу быть вам полезен</h2>
+            <p class="description">Я занимаюсь комлексной разработкой сайтов (Frontend + Backend), что позваляет видеть и риализовывать задачи в целом.</p>
+            <div class="skills">
+              <div class="skills__block">
+                <div class="skills__block__title">Frontend</div>
+                <ul class="skills__lists">
+                  <li class="skills__item">
+                    <div class="skills__circle-content">
+                      <div class="circle skills__circle" data-percent="80">
+                        <div class="skills__circle-label"><span class="skills__circle-text">HTML5</span></div>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="skills__item">
-                  <div class="skills__circle-content">
-                    <div class="circle skills__circle" data-percent="70">
-                      <div class="skills__circle-label"><span class="skills__circle-text">CSS3</span></div>
+                  </li>
+                  <li class="skills__item">
+                    <div class="skills__circle-content">
+                      <div class="circle skills__circle" data-percent="70">
+                        <div class="skills__circle-label"><span class="skills__circle-text">CSS3</span></div>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="skills__item">
-                  <div class="skills__circle-content">
-                    <div class="circle skills__circle" data-percent="65">
-                      <div class="skills__circle-label"><span class="skills__circle-text">JavaScript &amp; jQuery</span></div>
+                  </li>
+                  <li class="skills__item">
+                    <div class="skills__circle-content">
+                      <div class="circle skills__circle" data-percent="65">
+                        <div class="skills__circle-label"><span class="skills__circle-text">JavaScript &amp; jQuery</span></div>
+                      </div>
                     </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="skills__block">
-              <div class="skills__block__title">Backend</div>
-              <ul class="skills__lists">
-                <li class="skills__item">
-                  <div class="skills__circle-content">
-                    <div class="circle skills__circle" data-percent="80">
-                      <div class="skills__circle-label"><span class="skills__circle-text">HTML5</span></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="skills__block">
+                <div class="skills__block__title">Backend</div>
+                <ul class="skills__lists">
+                  <li class="skills__item">
+                    <div class="skills__circle-content">
+                      <div class="circle skills__circle" data-percent="80">
+                        <div class="skills__circle-label"><span class="skills__circle-text">HTML5</span></div>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="skills__item">
-                  <div class="skills__circle-content">
-                    <div class="circle skills__circle" data-percent="70">
-                      <div class="skills__circle-label"><span class="skills__circle-text">CSS3</span></div>
+                  </li>
+                  <li class="skills__item">
+                    <div class="skills__circle-content">
+                      <div class="circle skills__circle" data-percent="70">
+                        <div class="skills__circle-label"><span class="skills__circle-text">CSS3</span></div>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="skills__item">
-                  <div class="skills__circle-content">
-                    <div class="circle skills__circle" data-percent="65">
-                      <div class="skills__circle-label"><span class="skills__circle-text">JavaScript &amp; jQuery</span></div>
+                  </li>
+                  <li class="skills__item">
+                    <div class="skills__circle-content">
+                      <div class="circle skills__circle" data-percent="65">
+                        <div class="skills__circle-label"><span class="skills__circle-text">JavaScript &amp; jQuery</span></div>
+                      </div>
                     </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="skills__block">
-              <div class="skills__block__title">WorkFlow</div>
-              <ul class="skills__lists">
-                <li class="skills__item">
-                  <div class="skills__circle-content">
-                    <div class="circle skills__circle" data-percent="80">
-                      <div class="skills__circle-label"><span class="skills__circle-text">HTML5</span></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="skills__block">
+                <div class="skills__block__title">WorkFlow</div>
+                <ul class="skills__lists">
+                  <li class="skills__item">
+                    <div class="skills__circle-content">
+                      <div class="circle skills__circle" data-percent="80">
+                        <div class="skills__circle-label"><span class="skills__circle-text">HTML5</span></div>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="skills__item">
-                  <div class="skills__circle-content">
-                    <div class="circle skills__circle" data-percent="70">
-                      <div class="skills__circle-label"><span class="skills__circle-text">CSS3</span></div>
+                  </li>
+                  <li class="skills__item">
+                    <div class="skills__circle-content">
+                      <div class="circle skills__circle" data-percent="70">
+                        <div class="skills__circle-label"><span class="skills__circle-text">CSS3</span></div>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="skills__item">
-                  <div class="skills__circle-content">
-                    <div class="circle skills__circle" data-percent="65">
-                      <div class="skills__circle-label"><span class="skills__circle-text">JavaScript &amp; jQuery</span></div>
+                  </li>
+                  <li class="skills__item">
+                    <div class="skills__circle-content">
+                      <div class="circle skills__circle" data-percent="65">
+                        <div class="skills__circle-label"><span class="skills__circle-text">JavaScript &amp; jQuery</span></div>
+                      </div>
                     </div>
-                  </div>
-                </li>
-              </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div class="contacts-blk">
+        <div class="contacts-block">
           <div class="google-map" id="maps"></div>
-          <div class="contacts-blk__windos">
+          <div class="contacts-block__windos">
             <h2 class="dashed-title">Контакты</h2>
-            <ul class="contacts-blk__list">
-              <li class="contacts-blk__item">
-                <svg class="icon icon-skype contacts-blk__icon">
+            <ul class="contacts-block__list">
+              <li class="contacts-block__item">
+                <svg class="icon icon-skype contacts-block__icon">
                   <use xlink:href="/assets/img/sprite.svg#skype"></use>
-                </svg><span class="contacts-blk__text">settler-mar</span>
+                </svg><span class="contacts-block__text">settler-mar</span>
               </li>
-              <li class="contacts-blk__item">
-                <svg class="icon icon-phone contacts-blk__icon">
+              <li class="contacts-block__item">
+                <svg class="icon icon-phone contacts-block__icon">
                   <use xlink:href="/assets/img/sprite.svg#phone"></use>
-                </svg><span class="contacts-blk__text">+3 8063 23 9 92 92</span>
+                </svg><span class="contacts-block__text">+3 8063 23 9 92 92</span>
               </li>
-              <li class="contacts-blk__item">
-                <svg class="icon icon-envelope_n contacts-blk__icon">
+              <li class="contacts-block__item">
+                <svg class="icon icon-envelope_n contacts-block__icon">
                   <use xlink:href="/assets/img/sprite.svg#envelope_n"></use>
-                </svg><span class="contacts-blk__text">matuhinmax@mai.ru</span>
+                </svg><span class="contacts-block__text">matuhinmax@mai.ru</span>
               </li>
-              <li class="contacts-blk__item">
-                <svg class="icon icon-map_marker contacts-blk__icon">
+              <li class="contacts-block__item">
+                <svg class="icon icon-map_marker contacts-block__icon">
                   <use xlink:href="/assets/img/sprite.svg#map_marker"></use>
-                </svg><span class="contacts-blk__text">г.Мариуполь ул.Открытая-23</span>
+                </svg><span class="contacts-block__text">г.Мариуполь ул.Открытая-23</span>
               </li>
             </ul>
           </div>
@@ -205,7 +205,7 @@
               </li>
             </ul>
           </nav>
-          <nav class="social-buttons social-buttons_footer">
+          <div class="social-buttons social-buttons_footer">
             <ul class="social-buttons__list social-buttons__list_footer">
               <li class="social-buttons__item social-buttons__item_footer"><a class="social-buttons__link  social-buttons__link_footer" href="https://vk.com/settler_mar" target="_blank"><i class="fa fa-vk"></i><span class="social-buttons__item-name ">vk</span></a>
               </li>
@@ -214,7 +214,7 @@
               <li class="social-buttons__item social-buttons__item_footer"><a class="social-buttons__link  social-buttons__link_footer" href="https://vk.com/settler_mar" target="_blank"><i class="fa fa-linkedin"></i><span class="social-buttons__item-name ">linkedin</span></a>
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
         <div class="footer__full-menu__column footer__full-menu__column_contact">
           <div class="footer__contact-line">settler_mar</div>
