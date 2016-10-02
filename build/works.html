@@ -16,14 +16,12 @@
     <link rel="stylesheet" href="/assets/css/foundation.css">
     <link rel="stylesheet" href="/assets/css/app.css">
     <script src="/assets/js/foundation.js" defer></script>
-    <script src="/assets/js/app.js" defer></script>
-    <!--if lt IE 9]>script(src='http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js')
-    -->
+    <script src="/assets/js/app.js" defer></script><!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
     <div class="page-wrap page-wrap_works">
       <header class="header">
-        <nav class="social-buttons ">
+        <div class="social-buttons ">
           <ul class="social-buttons__list ">
             <li class="social-buttons__item "><a class="social-buttons__link " href="https://vk.com/settler_mar" target="_blank"><i class="fa fa-vk"></i><span class="social-buttons__item-name ">vk</span></a>
             </li>
@@ -32,7 +30,7 @@
             <li class="social-buttons__item "><a class="social-buttons__link " href="https://vk.com/settler_mar" target="_blank"><i class="fa fa-linkedin"></i><span class="social-buttons__item-name ">linkedin</span></a>
             </li>
           </ul>
-        </nav>
+        </div>
         <div class="header-menu-button"><span class="header-menu-button_icon">toggle menu</span></div>
         <nav class="header-menu ">
           <ul class="header-menu__list ">
@@ -67,38 +65,32 @@
       </section>
       <div class="content content_works">
         <section class="slider">
-          <div class="slider__left-tab">
-            <div class="slider__title">Сайт школы онлайн образования</div>
-            <ul class="slider__skills-list">
-              <li class="slider__skills-item">htmp</li>
-              <li class="slider__skills-item">css</li>
-              <li class="slider__skills-item">javascript</li>
-            </ul><a class="slider__link" href="/" target="_blank"><i class="fa fa-link slider__link-icon"></i>Посмотреть сайт</a>
-          </div>
-          <div class="slider__rigth-tab">
-            <div class="slider__hear-slide"><img class="slider__hear-slide__image" src="/assets/img/work-1.png" alt="Работа 1"></div>
-            <div class="slider__control slider__control-next"><i class="fa fa-chevron-down slider__button slider__button-next"></i><img class="slider__control__image" src="/assets/img/work-2.png" alt="Работа 2">
-            </div>
-            <div class="slider__control slider__control-prev"><i class="fa fa-chevron-up slider__button slider__button-next"></i><img class="slider__control__image" src="/assets/img/work-3.png" alt="Работа 3">
-            </div>
-          </div>
+          <ul>
+            <li><img src="/assets/img/work-1.png" alt="Работа 1"><a class="title" href="/">Работа 1</a>
+              <ul class="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+              </ul>
+            </li>
+          </ul>
         </section>
         <div class="night_lighthouse">
-          <section class="review">
+          <section class="comment">
             <svg class="icon icon-stars3">
               <use xlink:href="/assets/img/sprite.svg#stars3"></use>
             </svg>
             <h2 class="title-h2">Что обо мне говорят</h2>
-            <div class="review__group">
-              <div class="review__blk">
-                <div class="review__photo-block"><img class="review__photo-img" src="/assets/img/my_photo.jpg" alt="Ковальчук Дмитрий"></div>
-                <div class="review__content">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
-                <div class="review__user_name">Ковальчук Дмитрий<span class="review__user_dop_line">— основатель Loftschool</span></div>
+            <div class="comment__group">
+              <div class="comment__block">
+                <div class="comment__photo-block"><img class="comment__photo-img" src="/assets/img/my_photo.jpg" alt="Ковальчук Дмитрий"></div>
+                <div class="comment__content">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
+                <div class="comment__user">Ковальчук Дмитрий<span class="comment__user-description">— основатель Loftschool</span></div>
               </div>
-              <div class="review__blk">
-                <div class="review__photo-block"><img class="review__photo-img" src="/assets/img/my_photo.jpg" alt="Ковальчук Дмитрий"></div>
-                <div class="review__content">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
-                <div class="review__user_name">Ковальчук Дмитрий<span class="review__user_dop_line">— основатель Loftschool</span></div>
+              <div class="comment__block">
+                <div class="comment__photo-block"><img class="comment__photo-img" src="/assets/img/my_photo.jpg" alt="Ковальчук Дмитрий"></div>
+                <div class="comment__content">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
+                <div class="comment__user">Ковальчук Дмитрий<span class="comment__user-description">— основатель Loftschool</span></div>
               </div>
             </div>
           </section>
@@ -139,7 +131,7 @@
               </li>
             </ul>
           </nav>
-          <nav class="social-buttons social-buttons_footer">
+          <div class="social-buttons social-buttons_footer">
             <ul class="social-buttons__list social-buttons__list_footer">
               <li class="social-buttons__item social-buttons__item_footer"><a class="social-buttons__link  social-buttons__link_footer" href="https://vk.com/settler_mar" target="_blank"><i class="fa fa-vk"></i><span class="social-buttons__item-name ">vk</span></a>
               </li>
@@ -148,7 +140,7 @@
               <li class="social-buttons__item social-buttons__item_footer"><a class="social-buttons__link  social-buttons__link_footer" href="https://vk.com/settler_mar" target="_blank"><i class="fa fa-linkedin"></i><span class="social-buttons__item-name ">linkedin</span></a>
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
         <div class="footer__full-menu__column footer__full-menu__column_contact">
           <div class="footer__contact-line">settler_mar</div>
