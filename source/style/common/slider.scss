@@ -74,6 +74,7 @@ $slider_timeout
   width: 100%;
   opacity:0;
   transition: all linear 0.3s;
+
   &:before {
     content :'';
     height: 100%;
@@ -81,11 +82,19 @@ $slider_timeout
     vertical-align: middle;
   }
 }
+.full_slide_box.active .slider__skills-item{
+  transform: rotateX(0deg) translateY(0px);
+}
 .full_slide_box.active{
   opacity:1;
+  z-index: 50;
 }
 .slider__title>span{
-
+  opacity:0;
+  display: inline-block;
+}
+.slider__title>span.show_letter {
+  opacity:1;
 }
 .slider__rigth-tab {
   display: inline-block;
@@ -129,6 +138,8 @@ $slider_timeout
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
+  transition: all linear 1s;
+  transform: rotateX(-90deg) translateY(20px);
 }
 
 .slider__skills-item:before {

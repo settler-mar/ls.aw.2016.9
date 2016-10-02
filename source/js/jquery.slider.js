@@ -64,7 +64,7 @@
 
 		slider_here=$(slider_here[el.active_slide]);
 		slider_here.addClass(el.config.active_slide_class);
-		slider_here.find('.slider__title span').next_item_animation({animation_class:'item-show'});
+		slider_here.find('.slider__title span').next_item_animation({animation_class:el.config.show_letter_class});
 	}
 
 	settler_slider.prototype.init=function(){
