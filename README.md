@@ -5,8 +5,8 @@
 Матюхин М.С.
 
 >Инструкция по установке моего проекта
-1. git clone https://github.com/DANADJ/JS_01_07_2016_TEST.git dz1
+1. git clone https://github.com/settler-mar/ls.aw.2016.9.git dz1
 2. cd dz1
 3. bower i
 4. npm i
-5. gulp
+5. gulp 
