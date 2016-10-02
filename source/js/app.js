@@ -17,7 +17,8 @@
   $(".page_scrolle-up").click(function (event) {
     event.preventDefault();
     $('body,html').animate({scrollTop: 0}, 1500);
-  })
+  });
+  //$('.slider').settler_slider();
 })();
 
 function loadScript(url){
