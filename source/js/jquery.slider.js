@@ -35,4 +35,4 @@
 			new setler_slider(this,options)
 		})
 	}
-})(jQuery);*/
+})(jQuery);
