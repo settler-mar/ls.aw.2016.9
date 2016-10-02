@@ -5,6 +5,7 @@
 Матюхин М.С.
 
 >Инструкция по установке моего проекта
+
 1. git clone https://github.com/settler-mar/ls.aw.2016.9.git dz1
 2. cd dz1
 3. bower i
