@@ -26,7 +26,10 @@ $.gulp.task('default', $.gulp.series(
     'js:foundation',
     'js:process',
     'copy:image',
-    'css:foundation',
+    $.gulp.series(
+      'sass:foundation',
+      'css:foundation'
+    ),
     'sprite:svg',
     'sprite:png',
     'copy:video',
