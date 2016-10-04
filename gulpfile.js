@@ -33,11 +33,7 @@ $.gulp.task('default', $.gulp.series(
     'sprite:svg',
     'sprite:png',
     'copy:video',
-    $.gulp.series(
-        'fonts',
-        'fonts_css:concat',
-        'fonts_css:clear'
-    ),
+    'fonts',
     'copy:favicon'
   ),
   $.gulp.parallel(
