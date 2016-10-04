@@ -1,5 +1,5 @@
 .autorisation-menu
-    .autorisation-menu__title Авторизируйся
+    .autorisation-menu__title Авторизуйтесь
     form.form__form
         label.form__label
             +icon_font('user','form__input-icon')
@@ -7,7 +7,7 @@
         label.form__label
             +icon_font('key','form__input-icon')
             input.form__input(name="pass",type="password",placeholder="Пароль")
-        label.form__label
+        label.form__label.form__label-checkbox
             input.form__checkbox(type="checkbox",name="capcha")
             +icon_font('check','form__checkbox-icon')
             span.form__checkbox_text Я человек
@@ -21,9 +21,9 @@
                 input.form__radio-input(type="radio",checked,name="recapcha")
                 span.form__radio-control
                 span.form__radio-ansvar Не уверен
-    nav.welcome-menu
-        ul.welcome-menu__list
-            li.welcome-menu__item
-                a.welcome-menu__link(href="#") На главную
-            li.welcome-menu__item
-                a.welcome-menu__link Войти
+        nav.welcome-menu
+            ul.welcome-menu__list
+                li.welcome-menu__item
+                    a.welcome-menu__link(href="#") На главную
+                li.welcome-menu__item
+                    input.welcome-menu__link.welcome-menu__link-input(name="autorisation",type="submit",value="Войти")

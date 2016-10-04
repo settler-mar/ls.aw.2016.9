@@ -1,12 +1,5 @@
 .header {
   position: relative;
-  /*padding-top: 105px;
-  padding-bottom: 377px;
-  height: 300px;
-  background-size: cover;
-  text-align: center;
-  */
-  height: 0px;
 }
 
 .header-menu {
@@ -36,7 +29,7 @@
   margin: auto;
   padding: 0;
   list-style: none;
-  text-align:center;
+  text-align: center;
 }
 
 .header-menu__item {
@@ -125,12 +118,17 @@
 
 .welcome-menu__link {
   display: block;
-  padding: 14px;
+  padding: 14px 27px;
   background: $bt;
+  font-weight: 500;
   color: $text-header;
   text-decoration: none;
 }
-
+.welcome-menu__link-input{
+  outline: none;
+  border: 0;
+  width: 100%;
+}
 .welcome-menu__link:hover {
   background: $bt-hover;
   color: $text-header-hover;

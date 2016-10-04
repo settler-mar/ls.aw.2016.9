@@ -6,12 +6,13 @@
   display: block;
   transition: all 0.2s ease;
   cursor: pointer;
+  &:hover {
+    color: $bt-hover;
+  }
 }
-
-.form__label:hover {
-  color: $bt-hover;
+.form__label-checkbox{
+  margin-bottom: 14px;
 }
-
 .form__input-icon {
   padding: 14px 0px;
   width: 45px;
@@ -90,7 +91,7 @@
 
 .form__radio-select {
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .form__radio-input {
@@ -124,20 +125,19 @@
   padding: 0;
   margin: 0;
   display: inline-block;
-  width: 110px;
+  min-width: 87px;
   text-align: left;
   cursor: pointer;
   transition: all 0.2s ease;
-}
-
-.form__radio-label:hover {
-  color: $bt-hover;
+  &:hover {
+    color: $bt-hover;
+  }
 }
 
 .form__radio-ansvar {
   display: inline-block;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 24px;
 }
 

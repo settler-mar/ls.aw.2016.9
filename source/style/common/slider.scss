@@ -34,7 +34,7 @@
 .slider__title:after {
   display: block;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 18px;
   width: 89px;
   height: 3px;
   background: $slide_this_text;
@@ -43,7 +43,7 @@
 }
 
 .slider__skills-list {
-  margin: 0 0 60px 0;
+  margin: 0 0 62px 0;
   padding: 0;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .slider__link {
-  padding: 16px 21px;
+  padding: 14px 21px;
   background: $slide_href_bg;
   color: $slider_chenger;
   vertical-align: middle;
@@ -81,7 +81,7 @@
 }
 
 .slider__link-icon {
-  margin-right: 10px;
+  margin-right: 12px;
   vertical-align: middle;
   font-size: 1.2em;
 }

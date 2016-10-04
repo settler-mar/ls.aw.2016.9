@@ -22,11 +22,11 @@
     <div class="page-wrap page-wrap_index"><a class="autorisation-target" id="autorisation"></a>
       <header class="header"><a class="autorisation-button" href="/#autorisation">Авторизоваться</a>
       </header>
-      <section class="my-infotmation my-infotmation__index">
+      <section class="my-infotmation my-infotmation_index">
         <div class="my-infotmation__container my-infotmation__container_index">
           <div class="my-infotmation__about-block my-infotmation__about-block_index">
             <div class="my-infotmation__logo-block"><img class="my-infotmation__logo-img" src="/assets/img/my_photo.jpg" alt="Матюхин Максим"></div>
-            <h1 class="my-infotmation__title">Матюхин Максим</h1><span class="my-infotmation__sub-title">Личный сайт веб разработчика</span>
+            <h1 class="my-infotmation__title my-infotmation__title_index">Матюхин Максим</h1><span class="my-infotmation__sub-title">Личный сайт веб разработчика</span>
             <div class="social-buttons social-buttons_index">
               <ul class="social-buttons__list social-buttons__list_index">
                 <li class="social-buttons__item social-buttons__item_index"><a class="social-buttons__link  social-buttons__link_index" href="https://vk.com/settler_mar" target="_blank"><i class="fa fa-vk"></i><span class="social-buttons__item-name ">vk</span></a>
@@ -49,7 +49,7 @@
             </nav>
           </div>
           <div class="autorisation-menu">
-            <div class="autorisation-menu__title">Авторизируйся</div>
+            <div class="autorisation-menu__title">Авторизуйтесь</div>
             <form class="form__form">
               <label class="form__label"><i class="fa fa-user form__input-icon"></i>
                 <input class="form__input" name="login" placeholder="Логин">
@@ -57,7 +57,7 @@
               <label class="form__label"><i class="fa fa-key form__input-icon"></i>
                 <input class="form__input" name="pass" type="password" placeholder="Пароль">
               </label>
-              <label class="form__label">
+              <label class="form__label form__label-checkbox">
                 <input class="form__checkbox" type="checkbox" name="capcha"><i class="fa fa-check form__checkbox-icon"></i><span class="form__checkbox_text">Я человек</span>
               </label>
               <div class="form__radio-select">
@@ -69,13 +69,15 @@
                   <input class="form__radio-input" type="radio" checked name="recapcha"><span class="form__radio-control"></span><span class="form__radio-ansvar">Не уверен</span>
                 </label>
               </div>
+              <nav class="welcome-menu">
+                <ul class="welcome-menu__list">
+                  <li class="welcome-menu__item"><a class="welcome-menu__link" href="#">На главную</a></li>
+                  <li class="welcome-menu__item">
+                    <input class="welcome-menu__link welcome-menu__link-input" name="autorisation" type="submit" value="Войти">
+                  </li>
+                </ul>
+              </nav>
             </form>
-            <nav class="welcome-menu">
-              <ul class="welcome-menu__list">
-                <li class="welcome-menu__item"><a class="welcome-menu__link" href="#">На главную</a></li>
-                <li class="welcome-menu__item"><a class="welcome-menu__link">Войти</a></li>
-              </ul>
-            </nav>
           </div>
         </div>
         <div class="block-video-bg"></div>

@@ -4,14 +4,6 @@
   height: 100vh;
 }
 
-.my-infotmation_index {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 80;
-  width: 100vw;
-}
-
 .my-infotmation__container {
   position: relative;
   z-index: 80;
@@ -28,10 +20,14 @@
   font-weight: 500;
   font-size: 35px;
   font-family: Roboto-Medium;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 .my-infotmation__title_index {
   font-size: 28px;
+  margin-bottom: 8px;
+  margin-top: 0px;
 }
 
 .my-infotmation__sub-title {
@@ -41,6 +37,7 @@
   font-size: 16px;
   font-family: Roboto-Light;
   opacity: 0.8;
+  margin-bottom: 28px;
 }
 
 .my-infotmation__about-block {
@@ -66,7 +63,6 @@
   height: 140px;
   border-radius: 100%;
 }
-
 .my-infotmation__logo-img {
   height: 140px;
 }

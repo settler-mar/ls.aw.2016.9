@@ -13,17 +13,18 @@ block my-infotmation
 block content
     .content-about
         .content-about__block.content-about__block_left
-            +icon_svg('stars2','about__about-star')
             h1.title-h1.title-h1_about Обо мне
-            .about__photo_box
-                img.about__photo_img(src="/assets/img/my_photo.jpg",alt="Матюхин Максим")
-            h2.dashed-title Кто я
-            p.about_text
-                | Я програмист из Мариуполя(Украна). Мне 27 лет. Занимаюсь разработкой современных сайтов и WEB-сервисов.
-                | На сегодняшний день сайт стал неотъемлемой частью любой солидной компании. Взявшись за сайт, я беру на себя ответственность по созданию готового продукта, адаптированного для продвижения и получения дохода.
-            p.about_text
-                | В совокупности это позволяет создать действительно эффективный сайт и воплотить Ваши идеи.
-                | Создать сайт могут многие, сделать эффективный инструмент на рынке интернет-маркетинга – единицы.
+                +icon_svg('stars2','about__about-star')
+            .about
+                .about__photo_box
+                    img.about__photo_img(src="/assets/img/my_photo.jpg",alt="Матюхин Максим")
+                h2.dashed-title.dashed-title_about Кто я
+                p.about_text
+                    | Я програмист из Мариуполя(Украна). Мне 27 лет. Занимаюсь разработкой современных сайтов и WEB-сервисов.
+                    | На сегодняшний день сайт стал неотъемлемой частью любой солидной компании. Взявшись за сайт, я беру на себя ответственность по созданию готового продукта, адаптированного для продвижения и получения дохода.
+                p.about_text
+                    | В совокупности это позволяет создать действительно эффективный сайт и воплотить Ваши идеи.
+                    | Создать сайт могут многие, сделать эффективный инструмент на рынке интернет-маркетинга – единицы.
         .content-about__block.content-about__block_right
             h2.dashed-title Чем я могу быть вам полезен
             p.description
@@ -68,7 +69,7 @@ block content
                     +icon_svg('phone','contacts-block__icon')
                     span.contacts-block__text +3 8063 23 9 92 92
                 li.contacts-block__item
-                    +icon_svg('envelope_n','contacts-block__icon')
+                    +icon_svg('envelope2','contacts-block__icon')
                     span.contacts-block__text matuhinmax@mai.ru
                 li.contacts-block__item
                     +icon_svg('map_marker','contacts-block__icon')

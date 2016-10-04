@@ -23,7 +23,7 @@
 .social-buttons__link {
   color: $text-header;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 28px;
   transition: all linear 0.3s;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .social-buttons__item_index {
-  margin: 0 0 25px 27px;
+  margin: 0 0 25px 24px;
 }
 .social-buttons__item:first-child{
   margin-left:0;
@@ -46,9 +46,9 @@
   position: relative;
   top: 0;
   left: 0;
-  padding: 12px;
   color: $icon-hover;
   font-size: 30px;
+  margin-bottom: 10px;
 }
 
 .social-buttons__link_index {
