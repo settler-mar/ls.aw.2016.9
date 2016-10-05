@@ -23,18 +23,18 @@
 .social-buttons__link {
   color: $text-header;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 28PX;
   transition: all linear 0.3s;
+  &:hover {
+    color: $icon-hover;
+    opacity: 1;
+  }
 }
 
 .social-buttons__item-name {
   display: none;
 }
 
-.social-buttons__link:hover {
-  color: $icon-hover;
-  opacity: 1;
-}
 
 .social-buttons__item_index {
   margin: 0 0 25px 24px;

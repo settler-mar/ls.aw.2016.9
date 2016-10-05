@@ -19,10 +19,13 @@
     "gulp-csso": "^2.0.0",
     "gulp-eslint": "2.0.0",
     "gulp-fontgen": "^0.2.5",
+    "gulp-group-css-media-queries": "^1.2.0",
     "gulp-ignore": "^2.0.1",
     "gulp-load-plugins": "1.2.0",
     "gulp-notify": "2.2.0",
     "gulp-pug": "^3.0.3",
+    "gulp-pxrem": "0.0.2",
+    "gulp-pxtorem": "^2.0.0",
     "gulp-replace": "^0.5.4",
     "gulp-sass": "2.2.0",
     "gulp-smushit": "^1.2.0",
@@ -40,7 +43,6 @@
     "gulp": "git+https://git@github.com/gulpjs/gulp.git#4.0",
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "^2.5.0",
-    "gulp.spritesmith": "^6.2.1",
     "normalize.css": "^4.1.1"
   }
 }

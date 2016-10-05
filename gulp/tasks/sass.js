@@ -1,17 +1,22 @@
 'use strict';
-
 module.exports = function() {
   $.gulp.task('sass', function() {
+    var pxtorem = require('gulp-pxtorem');
     return $.gulp.src('./source/style/app.scss')
       .pipe($.gp.sourcemaps.init())
       .pipe($.gp.sass()).on('error', $.gp.notify.onError({ title: 'Style SASS' }))
       .pipe($.gp.autoprefixer({ browsers: $.config.autoprefixerConfig }))
-      /*.pipe($.gp.cssUnit({
-        type     :    'px-to-rem',
-        rootSize    :    16
-      }))*/
+      .pipe(pxtorem({
+        propWhiteList:['font', 'font-size', 'line-height', 'letter-spacing',
+                        'height',
+                        'margin','margin-bottom','margin-top',
+                        'padding','padding-bottom','padding-top'
+        ]
+      }))
+      .pipe($.gp.replace('PX', 'px'))
+      .pipe($.gp.groupCssMediaQueries())
       .pipe($.gp.csso({
-        restructure: false
+        restructure: true
       }))
       .pipe($.gp.sourcemaps.write())
       .pipe($.gulp.dest($.config.root + '/assets/css'))

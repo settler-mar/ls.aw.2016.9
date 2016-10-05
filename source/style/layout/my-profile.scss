@@ -25,24 +25,32 @@
 }
 
 .my-infotmation__title_index {
-  font-size: 28px;
-  margin-bottom: 8px;
+  font-size: 28PX;
+  margin-bottom: 8PX;
   margin-top: 0px;
+  @include media($phones){
+    font-size: 21PX;
+    margin-bottom: 12PX;
+  }
 }
+
 
 .my-infotmation__sub-title {
   display: block;
   text-transform: none;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 16PX;
   font-family: Roboto-Light;
   opacity: 0.8;
-  margin-bottom: 28px;
+  margin-bottom: 28PX;
+  @include media($phones){
+    font-size: 14PX;
+  }
 }
 
 .my-infotmation__about-block {
   margin: auto;
-  padding: 40px 0 0;
+  padding: 40PX 0 0;
   width: 380px;
   color: $text-header;
   text-align: center;
@@ -59,12 +67,15 @@
   display: inline-block;
   overflow: hidden;
   margin-bottom: 10px;
-  width: 140px;
-  height: 140px;
+  width: 140PX;
+  height: 140PX;
   border-radius: 100%;
+  @include media($phones){
+    margin-bottom: 15px;
+  }
 }
 .my-infotmation__logo-img {
-  height: 140px;
+  height: 140PX;
 }
 
 .my-infotmation__blog{

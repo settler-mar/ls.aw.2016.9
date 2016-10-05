@@ -1,3 +1,8 @@
+.about{
+  @include media($desktop) {
+    margin-left: 300px;
+  }
+}
 .content_about {
   position: relative;
   background: $about_bg_right;
@@ -78,6 +83,12 @@
 }
 .dashed-title_about{
   margin-bottom: 12px;
+}
+.dashed-title_contact:after{
+  margin-top: 16px;
+}
+.dashed-title_contact{
+  margin-bottom: 20px;
 }
 .about__photo_img {
   margin: auto;
