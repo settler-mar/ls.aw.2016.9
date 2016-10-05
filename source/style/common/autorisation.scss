@@ -9,9 +9,12 @@
   color: $text-header;
   text-decoration: none;
   font-weight: 500;
-  font-size: 16px;
   cursor: pointer;
   transition: all 0.35s ease;
+  @include media($phones){
+    right: 50%;
+    margin-right:-79px  ;
+  }
 }
 
 .autorisation-button:hover {
@@ -33,6 +36,12 @@
   text-align: center;
   transition: all 0.35s ease;
   transform: translateZ(-1000px) rotateY(-90deg);
+  @include media($tablets){
+    width: 348PX;
+  }
+  @include media($phones){
+    width: 300PX;
+  }
 }
 
 .autorisation-menu__title {

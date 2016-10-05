@@ -12,7 +12,10 @@
 }
 
 .my-infotmation__container_index {
-  padding: 0;
+  margin: 100PX auto;
+  @include media($phones){
+    margin:90PX auto;
+  }
 }
 
 .my-infotmation__title {
@@ -51,10 +54,16 @@
 .my-infotmation__about-block {
   margin: auto;
   padding: 40PX 0 0;
-  width: 380px;
+  width: 380PX;
   color: $text-header;
   text-align: center;
   transition: all 0.35s ease 0.35s;
+  @include media($tablets){
+    width: 348PX;
+  }
+  @include media($phones){
+    width: 300PX;
+  }
 }
 
 .my-infotmation__about-block_index {

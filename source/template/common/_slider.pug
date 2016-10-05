@@ -1,27 +1,34 @@
 section.slider
-    //-ul
+    ul.slider-home
       li
-         img(src="/assets/img/work-1.png",alt='Работа 1')
+         a.image(href="/assets/img/work-1.png")
+            img(src="/assets/img/work-1.png",alt='Работа 1')
          a.title(href="/") Работа 1
          ul.skills
-           li HTML
-           li CSS
-           li JAVASCRIPT
-    .slider__left-tab
-        .slider__title Сайт школы онлайн образования
-        ul.slider__skills-list
-            li.slider__skills-item html
-            li.slider__skills-item css
-            li.slider__skills-item javascript
-        a.slider__link(href="/",target="_blank")
-            +icon_font('link','slider__link-icon')
-            | Посмотреть сайт
-    .slider__rigth-tab
-        .slider__here-slide
-            img.slider__here-slide__image(src="/assets/img/work-1.png" alt='Работа 1')
-        .slider__control.slider__control-next
-            +icon_font("chevron-down",'slider__button slider__button-next')
-            img.slider__control__image(src="/assets/img/work-2.png" alt='Работа 2')
-        .slider__control.slider__control-prev
-            +icon_font("chevron-up",'slider__button slider__button-next')
-            img.slider__control__image(src="/assets/img/work-3.png" alt='Работа 3')
+           li html
+           li css
+           li javascript
+      li
+         a.image(href="/assets/img/work-2.png")
+            img(src="/assets/img/work-2.png",alt='Работа 2')
+         a.title(href="/") Работа 2
+         ul.skills
+           li html
+           li css
+           li javascript
+      li
+         a.image(href="/assets/img/work-3.png")
+            img(src="/assets/img/work-3.png",alt='Работа 3')
+         a.title(href="/") Работа 3
+         ul.skills
+           li html
+           li css
+           li javascript
+      li
+         a.image(href="/assets/img/work-4.png")
+            img(src="/assets/img/work-4.png",alt='Работа 4')
+         a.title(href="/") Работа 4
+         ul.skills
+           li html
+           li css
+           li javascript

@@ -63,15 +63,6 @@
   width: 83px;
 }
 
-.welcome-menu__link {
-  color: $text-header;
-  cursor: pointer;
-  transition: all linear 0.3s;
-  font-size: 16PX;
-  @include media($phones){
-    font-size: 14PX;
-  }
-}
 
 .header-menu__link {
   color: $text-header;
@@ -122,11 +113,17 @@
 
 .welcome-menu__link {
   display: block;
-  padding: 14px 27px;
+  padding: 14PX 20px;
   background: $bt;
   font-weight: 500;
-  color: $text-header;
   text-decoration: none;
+  color: $text-header;
+  cursor: pointer;
+  transition: all linear 0.3s;
+  font-size: 16PX;
+  @include media($phones){
+    font-size: 14PX;
+  }
 }
 .welcome-menu__link-input{
   outline: none;

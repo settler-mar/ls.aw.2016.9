@@ -10,4 +10,4 @@
 2. cd dz1
 3. bower i
 4. npm i
-5. gulp 
+5. gulp
