@@ -48,21 +48,21 @@
 	function update_slide(el){
 		var here_control=el.here_control.find('>div');
 		here_control.removeClass(el.config.active_here_class);
-		$(here_control[el.active_slide]).addClass(el.config.active_here_class);
+		here_control.eq(el.active_slide).addClass(el.config.active_here_class);
 
 		var next_control=el.next_control.find('>div');
 		next_control.removeClass(el.config.control_next_active_class);
-		$(next_control[test_sel(el.active_slide+1,el.slider_count)]).addClass(el.config.control_next_active_class);
+		next_control.eq(test_sel(el.active_slide+1,el.slider_count)).addClass(el.config.control_next_active_class);
 
 		var prev_control=el.prev_control.find('>div');
 		prev_control.removeClass(el.config.control_prev_active_class);
-		$(prev_control[test_sel(el.active_slide-1,el.slider_count)]).addClass(el.config.control_prev_active_class);
+		prev_control.eq(test_sel(el.active_slide-1,el.slider_count)).addClass(el.config.control_prev_active_class);
 
 		var slider_here=el.slider_here.find('>div');
 		slider_here.removeClass(el.config.active_slide_class);
 		slider_here.find('.slider__title span').removeClass(el.config.show_letter_class);
 
-		slider_here=$(slider_here[el.active_slide]);
+		slider_here=slider_here.eq(el.active_slide);
 		slider_here.addClass(el.config.active_slide_class);
 		slider_here.find('.slider__title span').next_item_animation({animation_class:el.config.show_letter_class});
 	}
@@ -89,7 +89,7 @@
 		});
 		this.slider_count=slides_start.length;
 		for(var i=0;i<slides_start.length;i++){
-			data=$(slides_start[i]);
+			var data=slides_start.eq(i);
 
 			//создание блока полной информации
 			var full_slider=$('<div/>',{
