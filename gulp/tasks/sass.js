@@ -11,12 +11,13 @@ module.exports = function() {
                         'height',
                         'margin','margin-bottom','margin-top',
                         'padding','padding-bottom','padding-top'
-        ]
+        ],
+        map:true
       }))
       .pipe($.gp.replace('PX', 'px'))
       .pipe($.gp.groupCssMediaQueries())
       .pipe($.gp.csso({
-        restructure: true
+        restructure: false
       }))
       .pipe($.gp.sourcemaps.write())
       .pipe($.gulp.dest($.config.root + '/assets/css'))

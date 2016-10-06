@@ -18,16 +18,17 @@
 
 .comment__group {
   margin: auto;
-  margin-bottom: 69px;
-  width: 810px;
+  margin-bottom: 40PX;
+  max-width: 810px;
   color: $comment_text;
   text-align: center;
 }
 
 .comment__block {
+  margin-bottom: 30PX;
   display: inline-block;
   padding: 0 13px;
-  width: 375px;
+  max-width: 375px;
   background: url("/assets/img/quotes.png") no-repeat 20px 65px;
   vertical-align: top;
   font-size: 16px;
@@ -37,9 +38,13 @@
   display: block;
   overflow: hidden;
   margin: 0 auto 15px auto;
-  width: 77px;
-  height: 77px;
+  width: 50PX;
+  height: 50PX;
   border-radius: 100%;
+  @include media_min($tablets){
+    width: 77PX;
+    height: 77PX;
+  };
 }
 
 .comment__photo-img {
@@ -73,6 +78,12 @@
   overflow: hidden;
   margin: auto;
   margin-bottom: 70px;
-  width: 380px;
+  width: 300px;
   background: $form_fead_back_bg;
+  @include media_min($tablets){
+    width: 300px;
+  }
+  @include media_min($laptop){
+    width: 380px;
+  }
 }

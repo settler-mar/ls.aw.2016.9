@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  z-index: 100;
 }
 
 .header-menu {
@@ -9,6 +10,7 @@
   display: none;
   width: 100%;
   height: 100vh;
+  z-index: 1000;
 }
 
 .header-menu:before,
@@ -41,34 +43,33 @@
   color: $text-header;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 63px;
+  font-size: 63PX;
   font-family: SansusWebissimo;
-}
-
-.header-menu__link:hover {
-  color: $text-header;
-}
-
-.header-menu__link:after {
-  display: block;
-  margin: auto;
-  width: 0;
-  height: 3px;
-  background: $text-header;
-  content: '';
-  transition: all linear 0.3s;
-}
-
-.header-menu__link:hover:after {
-  width: 83px;
-}
-
-
-.header-menu__link {
-  color: $text-header;
   cursor: pointer;
   transition: all linear 0.3s;
+  @include media($phones) {
+    font-size: 35PX;
+  }
+  @include media($tablets) {
+    font-size: 49PX;
+  }
+  &:hover {
+    color: $text-header;
+  }
+  &:after {
+    display: block;
+    margin: auto;
+    width: 0;
+    height: 3px;
+    background: $text-header;
+    content: '';
+    transition: all linear 0.3s;
+  }
+  &:hover:after {
+    width: 83px;
+  }
 }
+
 
 .welcome-menu {
   display: table;
@@ -154,7 +155,7 @@
   position: absolute;
   top: 23px;
   right: 31px;
-  z-index: 101;
+  z-index: 1001;
   display: block;
   overflow: hidden;
   margin: 0;
@@ -171,6 +172,12 @@
   cursor: pointer;
   transition: all linear 0.3s;
   appearance: none;
+  @include media($phones){
+    top: 10PX;
+    right: 10PX;
+    width: 26PX;
+    height: 23PX;
+  }
 }
 
 .header-menu-button:hover {
@@ -186,6 +193,10 @@
   display: block;
   height: 4PX;
   background: white;
+  @include media($phones){
+    top: 10PX;
+    height: 3PX;
+  }
 }
 
 .header-menu-button_icon:before,
@@ -199,16 +210,25 @@
   content: "";
   transition-delay: 0.3s, 0;
   transition-duration: 0.3s, 0.3s;
+  @include media($phones) {
+    height: 3PX;
+  }
 }
 
 .header-menu-button_icon:before {
   top: -15PX;
   transition-property: top, transform;
+  @include media($phones) {
+    top: -10PX;
+  }
 }
 
 .header-menu-button_icon:after {
   bottom: -15PX;
   transition-property: bottom, transform;
+  @include media($phones) {
+    bottom: -10PX;
+  }
 }
 
 .header-menu-button_active {

@@ -6,6 +6,10 @@
   position: absolute;
   top: 28px;
   left: 30px;
+  @include media($phones){
+    top: 16px;
+    left: 10px;
+  }
 }
 
 .social-buttons__list {
@@ -25,12 +29,17 @@
   text-decoration: none;
   font-size: 28PX;
   transition: all linear 0.3s;
+  @include media($phones){
+    font-size: 22PX;
+  }
   &:hover {
     color: $icon-hover;
     opacity: 1;
   }
 }
-
+.social-buttons__link_footer{
+  font-size: 28PX;
+}
 .social-buttons__item-name {
   display: none;
 }

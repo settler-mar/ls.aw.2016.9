@@ -60,6 +60,12 @@ p{
   font-size: 62px;
   font-family: SansusWebissimo;
   line-height: 56px;
+  @include media($phones){
+    font-size: 35PX;
+  }
+  @include media($laptop){
+    font-size: 49PX;
+  }
 }
 
 .title-h1_about {
@@ -85,12 +91,16 @@ p{
   font-size: 62px;
   font-family: SansusWebissimo;
   line-height: 66px;
+  @include media($tablets){
+    width: auto;
+  }
 }
 
 .title-h2_underline {
   margin-top: 40px;
   margin-bottom: 40px;
   font-size: 35px;
+  width: auto;
   &:after {
     display: block;
     margin: 17px auto 0 auto;
@@ -142,14 +152,13 @@ a {
 
 .page_scrolle-down {
   position: absolute;
-  top: 100vh;
   left: 50%;
   z-index: 99;
-  margin-top: -100px;
   height: 16px;
+  bottom: 100px;
 }
 .page_scrolle-work{
-  margin-top: -240px;
+  bottom: 240px;
 }
 .page_scrolle-up {
   display: block;
@@ -178,10 +187,33 @@ a {
 
 .night_lighthouse {
   position: relative;
-  margin-bottom: -196px;
-  padding-bottom: 196px;
   background: url(/assets/img/majak.png) 100% 100% no-repeat, url(/assets/img/bg_about.jpg) 50% no-repeat;
   background-size: auto, cover;
+  margin-bottom: -385PX;
+  padding-bottom: 385PX;
+  @include media($phones){
+    background: url(/assets/img/bg_about_320.jpg) 0 50% no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  @include media($tablets){
+    background: url(/assets/img/bg_about_768.jpg) 0 50% no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  @include media_retina($phones){
+    background: url(/assets/img/bg_about_768.jpg) 0  50% no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  @include media_min($laptop){
+    margin-bottom: -196PX;
+    padding-bottom: 196PX;
+  }
+  @include media_min($tablets){
+    margin-bottom:  -236PX;
+    padding-bottom: 236PX;
+  }
 }
 
 .hide_scroll {
@@ -213,8 +245,9 @@ a {
   position: absolute;
   top: 4px;
   left: 50%;
-  margin-left: -256px;
+  transform: translateX(-50%);
   width: 468px;
+  max-width:80vw;
   height: 270px;
   opacity: .07;
   fill: $base-bg-color;
@@ -226,11 +259,11 @@ a {
   top: -65px;
   left: 50%;
   z-index: 99;
-  margin-left: -156px;
   width: 260px;
+  max-width:60vw;
   height: 162px;
   opacity: 0.15;
-  transform: rotate(-180deg);
+  transform: rotate(-180deg) translateX(50%);
   fill: $base-bg-color;
   stroke: $base-bg-color;
 }
