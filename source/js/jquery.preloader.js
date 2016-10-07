@@ -19,9 +19,9 @@
     this.init();
   }
   preloader.prototype.re_draw=function() {
-    preloader_pl.counter+=1;
-    percent=preloader_pl.counter;
-    if(preloader_pl.counter>preloader_pl.percent) return;
+    percent=preloader_pl.counter+1;
+    if(parseInt(preloader_pl.counter)>parseInt(preloader_pl.percent)) return;
+    preloader_pl.counter=percent;
 
     if(percent>=100){
       preloader_pl.preloader.fadeOut(1000,function(){
@@ -52,6 +52,9 @@
   };
   preloader.prototype.re_calc=function(){
     var percent=Math.ceil(100*preloader_pl.img_load/preloader_pl.img_total);
+    if(parseInt(preloader_pl.img_load)==parseInt(preloader_pl.img_total)) {
+      percent = 100;
+    };
     preloader_pl.percent=percent;
   };
 
@@ -96,12 +99,12 @@
     this.counter=0;
     preloader_pl=this;
     for(i=0;i<img_list.length;i++){
-      var image = $('<img/>',{
-        src:img_list[i]
-      });
-      image.on('load',this.load_img_normal);
-      image.on('error',this.load_img_error);
+      var image= new Image();
+      image.onload=this.load_img_normal;
+      image.onerror=this.load_img_normal;
+      image.src=img_list[i];
     }
+    this.preloader_counter.text(0);
     this.re_calc();
     timer=setInterval(this.re_draw,5);
   };
