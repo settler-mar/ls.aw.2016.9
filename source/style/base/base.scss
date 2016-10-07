@@ -185,12 +185,11 @@ a {
   }
 }
 
-.night_lighthouse {
+.night_lighthouse{
   position: relative;
   background: url(/assets/img/majak.png) 100% 100% no-repeat, url(/assets/img/bg_about.jpg) 50% no-repeat;
   background-size: auto, cover;
-  margin-bottom: -385PX;
-  padding-bottom: 385PX;
+  padding-bottom: 400PX;
   @include media($phones){
     background: url(/assets/img/bg_about_320.jpg) 0 50% no-repeat;
     background-size: cover;
@@ -207,11 +206,9 @@ a {
     background-attachment: fixed;
   }
   @include media_min($laptop){
-    margin-bottom: -196PX;
     padding-bottom: 196PX;
   }
   @include media_min($tablets){
-    margin-bottom:  -223PX;
     padding-bottom: 223PX;
   }
 }

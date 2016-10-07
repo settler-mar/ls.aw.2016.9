@@ -7,5 +7,6 @@ module.exports = [
   './source/js/jquery.next_item_animation.js',
   './source/js/scroll_block_menu.js',
   './source/js/bg_animation.js',
-  './source/js/jquery.slider.js'
+  './source/js/jquery.slider.js',
+  './source/js/jquery.preloader.js'
 ];

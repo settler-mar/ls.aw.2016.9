@@ -1,5 +1,4 @@
-$slider_timeout
-:0.5s;
+$slider_timeout:0.5s;
 .slider {
   position: relative;
   background: $slide_this_fon;
@@ -7,6 +6,7 @@ $slider_timeout
   font-family: Roboto-Medium;
   height: 100vh;
   padding-left: 50vw;
+  overflow-x:hidden ;
   @include media($tablets){
     padding: 0;
     height: auto;

@@ -84,3 +84,12 @@
     transform: rotateX(0deg) translateX(0px);
   }
 }
+
+@keyframes animation_rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
