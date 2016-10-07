@@ -1,12 +1,26 @@
-.about{
-  @include media($desktop) {
+.about {
+  @include media_min($desktop) {
     margin-left: 300px;
   }
+  @include media($tablets) {
+    max-width: 61vw;
+    margin: auto;
+    min-width: 320px;
+  }
+  @include media($phones) {
+    width: 100vw;
+    min-width: 0;
+    max-width: none;
+  }
 }
+
 .content_about {
   position: relative;
   background: $about_bg_right;
   font-size: 0;
+  @include media($phones){
+    margin-bottom: -43PX;
+  }
 }
 
 .content-about__block {
@@ -17,6 +31,10 @@
   width: 50%;
   vertical-align: top;
   font-size: 16px;
+  @include media($tablets) {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .content-about__block_left {
@@ -27,6 +45,15 @@
     margin-right: -80px;
     border-width: 180px 0 0 1100px;
     border-color: transparent transparent transparent $about_bg_left;
+    @include media($tablets) {
+      border-width: 180PX 1100PX 50PX 1100PX;
+      margin: -210PX auto 0 -1100PX;
+      border-color: transparent #f2f0e8 #f2f0e8 #f2f0e8;
+      float: none;
+      position: absolute;
+      left: 50%;
+      width: 0;
+    }
   }
 }
 
@@ -37,11 +64,39 @@
     margin-left: -40px;
     border-width: 0 0 180px 1100px;
     border-color: transparent transparent $about_bg_right transparent;
+    @include media($tablets) {
+      display: none;
+    }
+  }
+  @include media($tablets) {
+    padding-top: 28PX;
+    text-align: center;
+  }
+}
+
+.content-about__description {
+  line-height: 1.5em;
+  margin-bottom: 48PX;
+  text-align: left;
+  @include media($tablets) {
+    max-width: 61vw;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 320px;
+  }
+  @include media($phones) {
+    width: 100vw;
+    min-width: 0;
+    max-width: none;
+  }
+  @include media(($phones + 8)) {
+    padding: 8PX;
+    box-sizing: border-box;
   }
 }
 
 .content-about__block:before {
-  margin-top: -180px;
+  margin-top: -180PX;
   width: 0;
   height: 0;
   border-style: solid;
@@ -80,47 +135,81 @@
   margin-bottom: 32px;
   max-width: 440px;
   width: 100%;
+  @include media($tablets) {
+    max-width: none;
+  }
 }
-.dashed-title_about{
+
+.dashed-title_about {
   margin-bottom: 12px;
 }
-.dashed-title_contact:after{
+
+.dashed-title_contact:after {
   margin-top: 16px;
 }
-.dashed-title_contact{
+
+.dashed-title_contact {
   margin-bottom: 20px;
 }
+
 .about__photo_img {
   margin: auto;
   max-width: 100%;
   max-height: 100%;
 }
-.about_text{
+
+.about_text {
   line-height: 1.4em;
   margin-top: 0px;
+  margin-bottom: 27PX;
+  @include media(($phones + 8)) {
+    padding: 8PX;
+  }
 }
+
 .contacts-block {
   position: relative;
-  display: flex;
-  margin-bottom: -198px;
-  padding-bottom: 198px;
+  display: block;
+  padding-bottom: 120vh;
   width: 100vw;
-  height: 100vh;
+  @include media($phones) {
+    display: block;
+    height: auto;
+    margin-bottom: -4px;
+    padding-bottom: 0;
+    position: relative;
+  }
 }
 
 .google-map {
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 54;
+  @include media($phones) {
+    position: relative;
+    height: 100vh;
+  }
 }
 
 .contacts-block__windos {
-  z-index: 99;
-  margin: auto auto;
+  position: relative;
+  z-index: 55;
+  margin: 0;
   padding: 20px;
-  max-width: 480px;
+  max-width: 580px;
   background: $contact_map_bg;
   font-size: 16px;
+  transform: translate(50%,50%);
+  @include media($tablets) {
+    max-width: 350px;
+  }
+  @include media($phones) {
+    width: 100%;
+    transform:none;
+  }
 }
 
 .contacts-block__icon {

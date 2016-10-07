@@ -4,9 +4,15 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
+  min-height: 450px;
+}
+.my-infotmation_works{
   min-height: 600px;
 }
-
+.my-infotmation_blog{
+  padding-top: 70px;
+  box-sizing: border-box;
+}
 .my-infotmation__container {
   position: relative;
   z-index: 40;

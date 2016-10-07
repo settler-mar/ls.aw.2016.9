@@ -75,7 +75,7 @@ p{
   color: $h2_dark;
   text-align: center;
   margin-bottom: 46px;
-  @include media($desktop) {
+  @include media_min($desktop) {
     float: left;
   }
 }
@@ -211,8 +211,8 @@ a {
     padding-bottom: 196PX;
   }
   @include media_min($tablets){
-    margin-bottom:  -236PX;
-    padding-bottom: 236PX;
+    margin-bottom:  -223PX;
+    padding-bottom: 223PX;
   }
 }
 
@@ -268,24 +268,10 @@ a {
   stroke: $base-bg-color;
 }
 
-.page-wrap_index {
-  overflow: hidden;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  height: 100vh;
-  @include media($laptop) {
-    background: transparent;
-  }
-}
-
 .container {
   position: relative;
 }
 
 .icon_dark {
   fill: $head-dop-color;
-}
-.description{
-  line-height: 1.5em;
-  margin-bottom: 48px;
 }

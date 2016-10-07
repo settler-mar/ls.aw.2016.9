@@ -3,6 +3,7 @@
   width: 100%;
   color: $footer_text;
   text-align: center;
+  z-index: 70;
 }
 
 .footer__copyright {
@@ -85,7 +86,7 @@
 .footer__full-menu__column_contact {
   border-bottom: 0;
   @include media_min($tablets) {
-    width: 310PX;
+    width: 305PX;
     float: right;
     text-align: right;
   }
@@ -188,6 +189,7 @@ html, body {
 .page-wrap {
   margin-bottom: -38PX;
   min-height: 100%;
+  overflow-x:hidden;
 }
 
 .page-wrap:after {
@@ -201,4 +203,20 @@ html, body {
 
 .page-wrap.index:after {
   height: auto;
+}
+
+.page-wrap_index {
+  overflow: hidden;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 100vh;
+  @include media($laptop) {
+    background: transparent;
+  }
+}
+.page-wrap_about{
+  margin-bottom: -70vh;
+  @include media($phones) {
+    margin-bottom:0;
+  }
 }
