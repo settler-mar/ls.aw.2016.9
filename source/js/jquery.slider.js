@@ -178,5 +178,4 @@
 
 	}
 })(jQuery);
-
-var settler_slider= $('.slider').settler_slider();
+$('.slider').settler_slider();

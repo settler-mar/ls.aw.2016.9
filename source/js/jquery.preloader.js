@@ -113,5 +113,4 @@
     return this;
   }
 })(jQuery);
-
 $('body').preloader();

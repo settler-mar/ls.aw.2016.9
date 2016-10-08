@@ -166,15 +166,16 @@
     opacity: 1;
   }
 }
-
-.footer__copyright-index {
+.footer-index {
   position: absolute;
   bottom: 30px;
   width: 100%;
-  background: transparent;
   @include media($tablets){
     bottom: auto;
   }
+}
+.footer__copyright-index {
+   background: transparent;
 }
 
 .footer__full-menu-index {
@@ -190,6 +191,7 @@ html, body {
   margin-bottom: -38PX;
   min-height: 100vh;
   overflow-x:hidden;
+
 }
 
 .page-wrap:after {
@@ -198,7 +200,7 @@ html, body {
 }
 
 .footer, .page-wrap:after {
-  height: 43PX;
+  height: 38PX;
 }
 
 .page-wrap.index:after {
@@ -210,23 +212,41 @@ html, body {
   padding-top: 0px;
   padding-bottom: 0px;
   height: 100vh;
+  min-height: 600px;
+  @include media($tablets){
+    min-height: 550px;
+  }
+  @include media($phones){
+    min-height: 520px;
+  }
   @include media($laptop) {
     background: transparent;
   }
 }
 .page-wrap_about{
-  margin-bottom: -70vh;
   @include media($phones) {
     margin-bottom:0;
   }
 }
 
+.page-wrap_blog{
+  margin-bottom: -34PX;
+}
 .footer-works{
-  margin-top: -412PX;
+  margin-top: -417PX;
   @include media_min($laptop){
     margin-top: -196PX;
   }
   @include media_min($tablets){
-    margin-top:  -256PX;
+    margin-top:  -267PX;
+  }
+}
+.footer-about{
+  margin-top: 0PX;
+  @include media_min($laptop){
+    margin-top: -196PX;
+  }
+  @include media_min($tablets){
+    margin-top:  -267PX;
   }
 }

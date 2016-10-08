@@ -168,29 +168,29 @@
 }
 
 .contacts-block {
-  position: relative;
-  display: block;
-  padding-bottom: 120vh;
   width: 100vw;
-  @include media($phones) {
-    display: block;
-    height: auto;
-    margin-bottom: -4px;
-    padding-bottom: 0;
+  display: block;
+  height: auto;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+  position: relative;
+  @include media_min($tablets) {
     position: relative;
+    display: block;
+    padding-bottom: 120vh;
   }
 }
 
 .google-map {
-  position: absolute;
   width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
   z-index: 54;
-  @include media($phones) {
-    position: relative;
-    height: 100vh;
+  position: relative;
+  height: 70vh;
+  @include media_min($tablets) {
+    position: absolute;
+    height: 100%;
   }
 }
 
@@ -199,16 +199,22 @@
   z-index: 55;
   margin: 0;
   padding: 20px;
-  max-width: 580px;
+  //width: 580px;
   background: $contact_map_bg;
   font-size: 16px;
-  transform: translate(50%,50%);
-  @include media($tablets) {
-    max-width: 350px;
+  width: 100%;
+  transform:none;
+  box-sizing: border-box;
+  @include media_min($tablets) {
+    width: 350PX;
+    margin-left: -175PX;
+    left: 50%;
+    transform: translate(0,50%);
+
   }
-  @include media($phones) {
-    width: 100%;
-    transform:none;
+  @include media_min($laptop) {
+    width: 580PX;
+    margin-left: -290PX;
   }
 }
 

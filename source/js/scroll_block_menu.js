@@ -1,6 +1,9 @@
 (function() {
     if($('.content-blog__menu').length>0){
         var top_pos_menu = $('.content-blog__menu').offset().top;
+        $(window).on('resize',function(){
+            top_pos_menu = $('.content-blog__content').offset().top;
+        });
         $('.content-blog__menu a[href^=#]').click(function(){
             event.preventDefault(event);
             $('body,html').animate({scrollTop: $($(this).attr('href')).offset().top}, 500);
@@ -32,6 +35,14 @@
             }
             if(i==link_list.length)active_menu_item(link_list,i)
         });
+        $('.content-blog__menu').on('click',function(){
+          var $this=$(this)
+          if($this.hasClass('mobile_show')){
+            $this.removeClass('mobile_show')
+          }else{
+            $this.addClass('mobile_show')
+          }
+        })
     }
     function active_menu_item(link_list,i){
         link_list.removeClass('content-blog__link_active');

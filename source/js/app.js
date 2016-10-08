@@ -18,9 +18,7 @@
     event.preventDefault();
     $('body,html').animate({scrollTop: 0}, 1500);
   });
-  //$('.slider').settler_slider();
 })();
-
 function loadScript(url){
   var e = document.createElement("script");
   e.src = url;
