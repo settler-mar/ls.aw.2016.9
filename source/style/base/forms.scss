@@ -11,9 +11,11 @@
     color: $bt-hover;
   }
 }
-.form__label-checkbox{
+
+.form__label-checkbox {
   margin-bottom: 14px;
 }
+
 .form__input-icon {
   padding: 14px 0px;
   width: 45px;
@@ -33,7 +35,7 @@
   vertical-align: top;
   outline: none;
   border: 0;
-  padding: 13px 20px 13px 65PX;
+  padding: 13PX 20PX 13PX 65PX;
   box-sizing: border-box;
   width: 100%;
 }
@@ -175,4 +177,88 @@
 .form__buttom-reset {
   background: $form_fead_reset_bg;
   color: $form_fead_reset_text;
+}
+
+.error {
+  position: relative;
+  color: $comment_text;
+  &:hover {
+    color: $comment_text;
+  }
+  &:after {
+    content: attr(error_text);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 14PX);
+    font-size: 16px;
+    background: $error_color;
+    padding: 16px 21px;
+    z-index: 99;
+    border-radius: 5PX;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 10PX;
+    border: 10px solid;
+    border-color: transparent transparent $error_color transparent;
+    transform: translate(-50%, -16PX);
+  }
+  input,textarea{
+    border: 1PX solid $error_color;
+    padding: 12PX 19PX 12PX 64PX;
+  }
+  .form__input-full_line{
+    padding: 12PX 19PX;
+  }
+  i{
+    border-right: 1PX solid $error_color;
+    color:$error_color;
+  }
+}
+
+.message_windows {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  transition: opacity 400ms ease-in;
+  display: none;
+  pointer-events: none;
+  z-index: 99999;
+  &.open{
+    display: block;
+    pointer-events: auto;
+  }
+}
+.message_windows__content {
+  max-width: 280px;
+  position: relative;
+  margin: 10% auto;
+  padding:20px;
+  border-radius: 5px;
+  background: $base-bg-color;
+  text-align: center;
+}
+.message_windows__button{
+  background: $bt;
+  color:$base-bg-color;
+  border: none;
+  outline: 0;
+  display: block;
+  margin: 16px auto 0;
+  padding: 12px 20px;
+  transition: opacity 400ms ease-in;
+  cursor: pointer;
+  &:hover{
+    opacity: 0.8;
+  }
 }

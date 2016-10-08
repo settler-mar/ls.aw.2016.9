@@ -1,12 +1,12 @@
 .autorisation-menu
     .autorisation-menu__title Авторизуйтесь
-    form.form__form
+    form.form__form(method="post" action='autorisation.php')
         label.form__label
             +icon_font('user','form__input-icon')
-            input.form__input(name="login",placeholder="Логин")
+            input.form__input(name="login",placeholder="Логин",required=true)
         label.form__label
             +icon_font('key','form__input-icon')
-            input.form__input(name="pass",type="password",placeholder="Пароль")
+            input.form__input(name="password",type="password",placeholder="Пароль",required=true)
         label.form__label.form__label-checkbox
             input.form__checkbox(type="checkbox",name="capcha")
             +icon_font('check','form__checkbox-icon')

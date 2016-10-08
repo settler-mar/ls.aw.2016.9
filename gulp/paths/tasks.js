@@ -5,6 +5,7 @@ module.exports = [
   './gulp/tasks/sass.foundation.js',
   './gulp/tasks/serve.js',
   './gulp/tasks/pug.js',
+  './gulp/tasks/pug.admin.js',
   './gulp/tasks/watch.js',
   './gulp/tasks/clean.js',
   './gulp/tasks/js.foundation.js',
@@ -16,6 +17,7 @@ module.exports = [
   './gulp/tasks/sprite.png.js',
   './gulp/tasks/fonts.js',
   './gulp/tasks/copy:favicon.js',
-  './gulp/tasks/copy:video.js'
+  './gulp/tasks/copy:video.js',
+  './gulp/tasks/copy:php.js'
 ];
 

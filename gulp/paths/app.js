@@ -8,5 +8,6 @@ module.exports = [
   './source/js/scroll_block_menu.js',
   './source/js/bg_animation.js',
   './source/js/jquery.slider.js',
-  './source/js/jquery.preloader.js'
+  './source/js/jquery.preloader.js',
+  './source/js/jquery.ajax_form.js'
 ];

@@ -40,13 +40,13 @@ block content
             span.comment__user-description — основатель Loftschool
     section.feadback
       h2.title-h2.title-h2_underline Связаться со мной
-      form.feadback__form(method="post")
+      form.feadback__form(method="post" action='mail.php')
         label.form__label
-          input.form__input.form__input-full_line.form__input-opacity(type="text",name="name",placeholder="Имя")
+          input.form__input.form__input-full_line.form__input-opacity(type="text",name="name",placeholder="Имя",required=true)
         label.form__label
-          input.form__input.form__input-full_line.form__input-opacity(type="text",name="mail",placeholder="Ваш email")
+          input.form__input.form__input-full_line.form__input-opacity(type="text",name="mail",placeholder="Ваш email",required=true)
         label.form__label
-          textarea.form__input.form__input-textarea.form__input-full_line.form__input-opacity(name="comment",placeholder="Ваша сообщение")
+          textarea.form__input.form__input-textarea.form__input-full_line.form__input-opacity(name="comment",placeholder="Ваша сообщение",required=true)
         .form__control
           input.form__buttom.form__buttom-submit(type="submit",value="Отправить")
           input.form__buttom.form__buttom-reset(type="reset",value="Очистить")

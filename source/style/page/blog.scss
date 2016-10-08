@@ -34,7 +34,8 @@
   margin-right: 95px;
   width: 308px;
   @include media($tablets) {
-    margin-left: -308px;
+    margin-left: -284px;
+    width: 284px;
     margin-right: 0;
     background: $slim_menu_bg;
     z-index: 99;
@@ -61,7 +62,7 @@
     &.mobile_show{
       margin-left:0;
       &:after {
-        left: 308PX;
+        left: 284PX;
       }
     }
   }

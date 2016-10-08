@@ -23,6 +23,7 @@ $.gulp.task('default', $.gulp.series(
   $.gulp.parallel(
     'sass',
     'pug',
+    'pug.admin',
     'js:foundation',
     'js:process',
     'copy:image',
@@ -34,7 +35,8 @@ $.gulp.task('default', $.gulp.series(
     'sprite:png',
     'copy:video',
     'fonts',
-    'copy:favicon'
+    'copy:favicon',
+    'copy:php'
   ),
   $.gulp.parallel(
     'watch',
