@@ -1,6 +1,3 @@
-/**
- * Created by max on 08.10.16.
- */
 ;(function($){
   var form;
 
@@ -15,7 +12,8 @@
       password:'Заполните поле пароль',
       name:'Введите свое имя',
       mail:'Введите адрес своей электронной почты',
-      comment:'Введите ваше сообщение'
+      comment:'Введите ваше сообщение',
+      fail_ajax:'Ошибка отправки формы'
     }
   };
   function ajax_form(element,options){
@@ -37,7 +35,7 @@
     form.form.removeClass('disabled');
   };
   ajax_form.prototype.ajax_fail=function(data) {
-    form.result_message('Ошибка отправки формы','error_windows')
+    form.result_message(form.config.err_message.fail_ajax,'error_windows')
     form.form.removeClass('disabled');
   };
   ajax_form.prototype.result_message=function(text,className) {
@@ -89,27 +87,35 @@
         .attr('required',false)
         .addClass('required');
     });
-    this.form.on('submit',function(e){
-      e.preventDefault();
-      var is_validate=true;
-      $this=$(this);
-      elements=$this.find('.required');
-      $.each(elements,function(){
-        var $this=$(this);
-        is_validate=form.vlidate($this) && is_validate;
-      });
+    this.form
+      .on('submit',function(e){
+        e.preventDefault();
+        var is_validate=true;
+        $this=$(this);
+        elements=$this.find('.required');
+        $.each(elements,function(){
+          var $this=$(this);
+          is_validate=form.vlidate($this) && is_validate;
+        });
 
-      if(!is_validate)return;
-      form.form.addClass('disabled');
-      $.ajax({
-        url: $this.attr('action')||form.config.url,
-        method:$this.attr('method')||form.config.method,
-        data:$this.serialize(),
-        dataType:$this.attr('dataType')||form.config.dataType
+        if(!is_validate)return;
+        form.form.addClass('disabled');
+        $.ajax({
+          url: $this.attr('action')||form.config.url,
+          method:$this.attr('method')||form.config.method,
+          data:$this.serialize(),
+          dataType:$this.attr('dataType')||form.config.dataType
+        })
+          .done(form.ajax_done)
+          .fail(form.ajax_fail);
       })
-        .done(form.ajax_done)
-        .fail(form.ajax_fail);
-    });
+      .on('reset',function(e){
+        $this=$(this);
+        $this.find('.required')
+          .off( "input")
+          .off( "paste")
+          .parent().removeClass(form.config.error_class)
+      })
   };
   $.fn.ajax_form=function(options){
     $(this).each(function(){

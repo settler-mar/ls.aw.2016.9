@@ -6,16 +6,8 @@ include mixins/diagram.pug
 doctype html
 html
   head
-    include common/_head
+    include common/_head_admin
   body
-    .page-wrap(class='page-wrap_'+body_css)
-      if body_css == 'index'
-        a#autorisation.autorisation-target
-      include common/_header
-      include common/_my-infotmation
-      if body_css!='index'
-        div.content(class= "content_"+body_css)
-          block content
-    include common/_footer
-
-include common/_preloader
+    .page-wrap(class='page-wrap')
+      div.content(class= "content")
+        block content

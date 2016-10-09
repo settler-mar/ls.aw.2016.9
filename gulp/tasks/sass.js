@@ -1,12 +1,11 @@
 'use strict';
 module.exports = function() {
   $.gulp.task('sass', function() {
-    var pxtorem = require('gulp-pxtorem');
     return $.gulp.src('./source/style/app.scss')
       .pipe($.gp.sourcemaps.init())
       .pipe($.gp.sass()).on('error', $.gp.notify.onError({ title: 'Style SASS' }))
       .pipe($.gp.autoprefixer({ browsers: $.config.autoprefixerConfig }))
-      .pipe(pxtorem({
+      .pipe($.gp.pxtorem({
         propWhiteList:['font', 'font-size', 'line-height', 'letter-spacing',
                         'height',
                         'margin','margin-bottom','margin-top',
