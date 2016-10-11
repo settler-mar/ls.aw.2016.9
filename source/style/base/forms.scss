@@ -172,6 +172,9 @@
 .form__buttom-submit {
   background: $form_fead_submit_bg;
   color: $form_fead_submit_text;
+  &:disabled{
+    background: $bt_dis;
+  }
 }
 
 .form__buttom-reset {
@@ -182,15 +185,16 @@
 .error {
   position: relative;
   color: $comment_text;
+  text-align: center;
   &:hover {
     color: $comment_text;
   }
   &:after {
     content: attr(error_text);
     position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, 14PX);
+    top: 0px;
+    left: 100%;
+    transform: translate(16px, 0PX);
     font-size: 16px;
     background: $error_color;
     padding: 16px 21px;
@@ -198,16 +202,32 @@
     border-radius: 5PX;
     white-space: nowrap;
     font-weight: 600;
+    @include media($tablets - 80){
+      position: initial;
+      display: inline-block;
+      transform: none;
+      left: 50%;
+      margin-top: 16px;
+    }
   }
   &:before {
     content: '';
     position: absolute;
-    top: 100%;
-    left: 50%;
-    height: 10PX;
+    top: 16PX;
+    left: 100%;
     border: 10px solid;
-    border-color: transparent transparent $error_color transparent;
-    transform: translate(-50%, -16PX);
+    border-color: transparent $error_color transparent transparent;
+    transform: translate(-3px,0PX);
+    @include media($tablets){
+      top: 12PX;
+    }
+    @include media($tablets - 80){
+      bottom: 0;
+      top: auto;
+      left: 50%;
+      transform: translate(-50%,-43px);
+      border-color: transparent transparent $error_color transparent;
+    }
   }
   input,textarea{
     border: 1PX solid $error_color;

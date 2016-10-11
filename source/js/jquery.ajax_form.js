@@ -11,7 +11,7 @@
       login:'Заполните поле логин',
       password:'Заполните поле пароль',
       name:'Введите свое имя',
-      mail:'Введите адрес своей электронной почты',
+      mail:'Введите свой email',
       comment:'Введите ваше сообщение',
       fail_ajax:'Ошибка отправки формы'
     }
@@ -29,14 +29,16 @@
     if(data.error){
       form.result_message(data.error,'error_windows')
     }else if(data.message){
-      form.result_message(data.message)
+      form.result_message(data.message);
       form.form[0].reset()
     }
     form.form.removeClass('disabled');
+    form.form.find('[type=submit]').prop('disabled',false);
   };
   ajax_form.prototype.ajax_fail=function(data) {
-    form.result_message(form.config.err_message.fail_ajax,'error_windows')
+    form.result_message(form.config.err_message.fail_ajax,'error_windows');
     form.form.removeClass('disabled');
+    form.form.find('[type=submit]').prop('disabled',false);
   };
   ajax_form.prototype.result_message=function(text,className) {
     var message_windows=$('<div/>',{
@@ -100,6 +102,7 @@
 
         if(!is_validate)return;
         form.form.addClass('disabled');
+        form.form.find('[type=submit]').prop('disabled',true);
         $.ajax({
           url: $this.attr('action')||form.config.url,
           method:$this.attr('method')||form.config.method,
