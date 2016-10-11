@@ -35,7 +35,6 @@
     "gulp-svgmin": "^1.2.2",
     "gulp.spritesmith": "^6.2.1",
     "install": "^0.8.1",
-    "normalize.css": "^4.2.0",
     "npm": "^3.10.8",
     "rimraf": "2.5.2"
   },
@@ -43,6 +42,6 @@
     "gulp": "git+https://git@github.com/gulpjs/gulp.git#4.0",
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "^2.5.0",
-    "normalize.css": "^4.1.1"
+    "normalize.css": "^4.2.0",
   }
 }

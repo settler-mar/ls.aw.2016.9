@@ -1,0 +1,14 @@
+{
+  "http":{
+    "port":3000,
+    "host":"localhost",
+    "publicRoot":"dist"
+  },
+  "db":{
+    "host":"localhost",
+    "port":"27017",
+    "name":"portfolio",
+    "user":"",
+    "password":""
+  }
+}
