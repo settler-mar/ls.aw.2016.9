@@ -17,6 +17,15 @@ meta(name="theme-color" content="#fff")
 link(rel='stylesheet' href='/assets/fonts/fonts.css')
 //- end fonts
 
+//- CSS
+- var css_all = ["/assets/css/foundation", "/admin/css/admin"];
+for css in css_all
+    link(rel='stylesheet' href= css+'.css')
+//- end CSS
 
-
+//-js
+- var js_all = ["/assets/js/foundation", "/admin/js/admin"];
+for js in js_all
+    script(src=js+'.js' defer)
+//- end js
 <!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->

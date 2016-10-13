@@ -1,0 +1,46 @@
+body{
+  background: url(/assets/img/admin_bg_1200.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.page-wrap{
+  min-height: 100vh;
+  background: rgba(#fff,0.85);
+}
+.block-title{
+  color: $content_text;
+  font-size: 21px;
+  font-family: Roboto-Medium;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.content__list {
+  overflow-x: hidden;
+  font-size: 0;
+}
+.content__item {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  width: 100vw;
+  padding: 30px;
+  box-sizing: border-box;
+  margin-right: -100vw;
+  transform: translate(-100vw, 00px);
+  transition: all linear .6s;
+  background: #FFF;
+  color: $content_text;
+}
+
+.content__item-active {
+  transform: translate(0vw, 0px);
+  opacity: 1;
+  background: rgba(#fff,0);
+}
+
+[sufix]:after{
+  content: attr(sufix);
+  color: $sufix_color;
+  font-family: Roboto-Regular;
+  padding:10px;
+}

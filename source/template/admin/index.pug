@@ -3,4 +3,10 @@ block variables
     - var title = 'Admin'
     - var body_css = 'admin'
 block content
-    div Админка
+    .content__list
+        .content__item.content__item-active
+            include ./page/_about
+        .content__item
+            include ./page/_blog
+        .content__item
+            include ./page/_works

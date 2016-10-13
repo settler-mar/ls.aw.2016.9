@@ -6,8 +6,9 @@ include mixins/diagram.pug
 doctype html
 html
   head
-    include common/_head_admin
+    include admin/common/_head
   body
-    .page-wrap(class='page-wrap')
-      div.content(class= "content")
+    .page-wrap
+      include admin/common/_header
+      div.content
         block content

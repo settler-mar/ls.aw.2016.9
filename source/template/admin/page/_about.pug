@@ -1,0 +1,41 @@
+h2.block-title Страница "Обо мне"
+form.admin-form(method='POST')
+    .skills-edit
+        .skills-edit__block
+            .skills-edit__title Frontend
+            ul.skills-edit__list
+                li.skills-edit__item(sufix='%')
+                    label.skills-edit__name Html
+                    input.skills-edit__input(name='skils_1' value='100')
+                li.skills-edit__item(sufix='%')
+                    label.skills-edit__name СSS
+                    input.skills-edit__input(name='skils_1' value='90')
+                li.skills-edit__item(sufix='%')
+                    label.skills-edit__name JavaScript
+                    input.skills-edit__input(name='skils_1' value='80')
+        .skills-edit__block
+            .skills-edit__title Workflow
+            ul.skills-edit__list
+                li.skills-edit__item(sufix='%')
+                    label.skills-edit__name Git
+                    input.skills-edit__input(name='skils_1' value='80')
+                li.skills-edit__item(sufix='%')
+                    label.skills-edit__name Gulp
+                    input.skills-edit__input(name='skils_1' value='90')
+                li.skills-edit__item(sufix='%')
+                    label.skills-edit__name Bower
+                    input.skills-edit__input(name='skils_1' value='80')
+        .skills-edit__block
+            .skills-edit__title Backend
+            ul.skills-edit__list
+                li.skills-edit__item(sufix='%')
+                    label.skills-edit__name PHP
+                    input.skills-edit__input(name='skils_1' value='80')
+                li.skills-edit__item(sufix='%')
+                    label.skills-edit__name Node.js
+                    input.skills-edit__input(name='skils_1' value='30')
+                li.skills-edit__item(sufix='%')
+                    label.skills-edit__name Mongo.db
+                    input.skills-edit__input(name='skils_1' value='40')
+    .admin-form__control
+        input.admin-form__submit(type='submit' value='Сохранить')
