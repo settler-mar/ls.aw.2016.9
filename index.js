@@ -4,7 +4,7 @@ let fs = require('fs');
 let path = require('path');
 let express = require('express');
 let pug = require('pug');
-let config = require('./express/server.config.json');
+let config = require('./express/config/server.config.json');
 let mongoodb=require('./express/module/mongoodb');
 let app =express();
 
@@ -23,8 +23,8 @@ app.get('/',(req,res)=>{
 
 app.use((req,res,next)=>res.status(404).send('404! Page not found'));
 app.use((err,req,res,next)=>{
-  res.status(500)
-  res.renderer('error',{error:err.message})
+  res.status(500);
+  res.renderer('error',{error:err.message});
   console.error(err.message,err.stack)
 });
 

@@ -1,7 +1,7 @@
 'use strict';
 
 let mongoose = require('mongoose');
-let config = require('./server.config.json');
+let config = require('./../config/server.config.json');
 let options= {
   user:config.db.user,
   password:config.db.password
