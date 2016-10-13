@@ -5,9 +5,8 @@ module.exports = [
   './gulp/tasks/sass.foundation.js',
   './gulp/tasks/serve.js',
   './gulp/tasks/pug.js',
-  './gulp/tasks/pug.admin.js',
-  './gulp/tasks/watch.js',
   './gulp/tasks/clean.js',
+  './gulp/tasks/watch.js',
   './gulp/tasks/js.foundation.js',
   './gulp/tasks/css.foundation.js',
   './gulp/tasks/js.process.js',
@@ -18,6 +17,10 @@ module.exports = [
   './gulp/tasks/fonts.js',
   './gulp/tasks/copy:favicon.js',
   './gulp/tasks/copy:video.js',
-  './gulp/tasks/copy:php.js'
+  './gulp/tasks/copy:php.js',
+
+  './gulp/tasks/admin/pug.admin.js',
+  './gulp/tasks/admin/sass.admin.js',
+  './gulp/tasks/admin/js.process.js'
 ];
 

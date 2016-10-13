@@ -1,9 +1,7 @@
 (function() {
     'use strict';
     if ($('.paralax-control').length > 0) {
-        if(navigator.userAgent.match(/iPhone|iPad|iPod|Android|BlackBerry|IEMobile/i)) {
-            //для мобильных устройств не грузить пралакс и видео
-        } else{
+        if(!isMobile()){
             $('.paralax').parallax();
             var BV = new $.BigVideo({container: $('.block-video-bg'), useFlashForFirefox:false});
             BV.init();

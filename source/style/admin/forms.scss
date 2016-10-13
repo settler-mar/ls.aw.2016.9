@@ -1,0 +1,173 @@
+input {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  vertical-align: middle;
+  border: 0;
+  &:focus {
+    outline: none;
+    box-shadow: #999 0 0 3px 2px;
+  }
+
+}
+
+input[type=submit] {
+  color: $button_text;
+  background: $button_bg;
+  padding: 16px 20px;
+  transition: all linear .3s;
+  cursor: pointer;
+  &:hover {
+    background: rgba($button_bg, 0.5);
+  }
+}
+
+.admin-form__label {
+  display: block;
+  margin-bottom: 20px;
+  width: 345px;
+  max-width: 100%
+}
+.admin-form__label_textarea{
+  width: 500px;
+  max-width: 100%
+}
+.admin-form__input_file{
+  display: none;
+}
+.admin-form__label_file{
+  font-size: 20px;
+  cursor: pointer;
+  color:$button_bg;
+  transition: all linear .3s;
+  &:hover{
+    color: $content_text;
+  }
+}
+.admin-form__input {
+  width: 100%;
+  resize: none;
+  padding: 14px 20px;
+  box-sizing: border-box;
+}
+.admin-form__label_file i{
+  padding-right: 10px;
+}
+.admin-form__file-name{
+  font-size: 16px;
+}
+.admin-form__textarea {
+  width: 100%;
+  height: 166px;
+  padding: 14px 20px;
+  resize: none;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  &:focus {
+    outline: none;
+    box-shadow: #999 0 0 3px 2px;
+  }
+  box-sizing: border-box;
+}
+
+
+.message_windows {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $message_fon;
+  z-index: 99999;
+  -webkit-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  display: none;
+  pointer-events: none;
+}
+
+.message_windows.open {
+  display: block;
+  pointer-events: auto
+}
+
+.message_windows__content {
+  max-width: 280px;
+  position: relative;
+  margin: 10% auto;
+  padding: 1.25rem;
+  border-radius: 5px;
+  background: $message_bg;
+  color: $message_text;
+  text-align: center;
+  box-shadow: #999 0 0 9px 1px;
+}
+
+.message_windows__button {
+  background: $button_bg;
+  color: $button_text;
+  border: none;
+  outline: 0;
+  display: block;
+  margin: 1rem auto 0;
+  padding: .75rem 1.25rem;
+  -webkit-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  cursor: pointer
+}
+
+.message_windows__button:hover {
+  opacity: .8
+}
+
+.error {
+  position: relative;
+  color:$error_color;
+  &:hover {
+    color: $comment_text;
+  }
+  &:after {
+    color: $comment_text;
+    content: attr(error_text);
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    transform: translate(16px, 0PX);
+    font-size: 16px;
+    background: $error_color;
+    padding: 16px 21px;
+    z-index: 99;
+    border-radius: 5PX;
+    white-space: nowrap;
+    font-weight: 600;
+    @include media($tablets - 80){
+      position: initial;
+      display: inline-block;
+      transform: none;
+      left: 50%;
+      margin-top: 16px;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 16PX;
+    left: 100%;
+    border: 10px solid;
+    border-color: transparent $error_color transparent transparent;
+    transform: translate(-3px,0PX);
+    @include media($tablets){
+      top: 12PX;
+    }
+    @include media($tablets - 80){
+      bottom: 0;
+      top: auto;
+      left: 50%;
+      transform: translate(-50%,-43px);
+      border-color: transparent transparent $error_color transparent;
+    }
+  }
+  input,textarea{
+    border: 1PX solid $error_color;
+  }
+}

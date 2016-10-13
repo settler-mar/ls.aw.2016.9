@@ -214,7 +214,7 @@ html, body {
   height: 100vh;
   min-height: 600px;
   @include media($tablets){
-    min-height: 550px;
+    min-height: 620px;
   }
   @include media($phones){
     min-height: 520px;

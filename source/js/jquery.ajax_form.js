@@ -1,6 +1,6 @@
 ;(function($){
   var form;
-
+  var file_api = ( window.File && window.FileReader && window.FileList && window.Blob ) ? true : false;
   var defaults={
     error_class:'error',
     error_message_param:'error_text',
@@ -11,8 +11,12 @@
       login:'Заполните поле логин',
       password:'Заполните поле пароль',
       name:'Введите свое имя',
-      mail:'Введите адрес своей электронной почты',
+      mail:'Введите свой email',
       comment:'Введите ваше сообщение',
+      data:'Введите дату',
+      text:'Введите текст',
+      skill:'Введите технологии',
+      image:'Выберите фаил',
       fail_ajax:'Ошибка отправки формы'
     }
   };
@@ -24,19 +28,21 @@
   }
   ajax_form.prototype.ajax_done=function(data) {
     if(data.href) {
-      setTimeout('location.replace("'+data.href+'")',2000);
+      setTimeout('location.pathname="'+data.href+'"',2000);
     }
     if(data.error){
       form.result_message(data.error,'error_windows')
     }else if(data.message){
-      form.result_message(data.message)
+      form.result_message(data.message);
       form.form[0].reset()
     }
     form.form.removeClass('disabled');
+    form.form.find('[type=submit]').prop('disabled',false);
   };
   ajax_form.prototype.ajax_fail=function(data) {
-    form.result_message(form.config.err_message.fail_ajax,'error_windows')
+    form.result_message(form.config.err_message.fail_ajax,'error_windows');
     form.form.removeClass('disabled');
+    form.form.find('[type=submit]').prop('disabled',false);
   };
   ajax_form.prototype.result_message=function(text,className) {
     var message_windows=$('<div/>',{
@@ -87,6 +93,24 @@
         .attr('required',false)
         .addClass('required');
     });
+    this.form.find('[type=file]').on('change',function(){
+      var file_name;
+      var input=this;
+      var $this=$(input);
+      if( file_api && input.files[0] )
+        file_name = input.files[ 0].name;
+      else
+        file_name = $this.val();
+
+      if(!file_name.length){
+        $this.parent().find('span').text($this.attr('default_text'))
+      }else{
+        $this.parent().find('span').text(file_name)
+      }
+    }).each(function(){
+      $this=$(this);
+      $this.attr('default_text',$this.parent().find('span').text())
+    });
     this.form
       .on('submit',function(e){
         e.preventDefault();
@@ -100,10 +124,14 @@
 
         if(!is_validate)return;
         form.form.addClass('disabled');
-        $.ajax({
+        form.form.find('[type=submit]').prop('disabled',true);
+        var data=(form.form.find('[type=file]').length>0)?new FormData($this[0]):form.form.serialize();
+          $.ajax({
           url: $this.attr('action')||form.config.url,
           method:$this.attr('method')||form.config.method,
-          data:$this.serialize(),
+          processData: false,
+          contentType: false,
+          data:data,
           dataType:$this.attr('dataType')||form.config.dataType
         })
           .done(form.ajax_done)

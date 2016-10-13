@@ -1,0 +1,12 @@
+h2.block-title Страница "Блог"
+form.admin-form(method='POST')
+    p Добавить запись
+    .admin-form__box
+        label.admin-form__label
+            input.admin-form__input(name='name' placeholder="Название" required=true)
+        label.admin-form__label
+            input.admin-form__input(name='data' type='date' placeholder="Дата" required=true)
+        label.admin-form__label.admin-form__label_textarea
+            textarea.admin-form__textarea(name='text' placeholder="Содержание" required=true)
+    .admin-form__control
+        input.admin-form__submit(type='submit' value='Добавить')

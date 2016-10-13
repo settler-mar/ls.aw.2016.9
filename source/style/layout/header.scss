@@ -121,6 +121,9 @@
   cursor: pointer;
   transition: all linear 0.3s;
   font-size: 16PX;
+  &:disabled{
+    background: $bt_dis;
+  }
   @include media($phones){
     font-size: 14PX;
   }

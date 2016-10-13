@@ -1,0 +1,14 @@
+h2.block-title Страница "Мои работы"
+form.admin-form(method='POST')
+    p Добавить работу
+    .admin-form__box
+        label.admin-form__label
+            input.admin-form__input(name='name' placeholder="Название проекта" required=true)
+        label.admin-form__label
+            input.admin-form__input(name='skill' placeholder="Технологии" required=true)
+        label.admin-form__label.admin-form__label_file
+            input.admin-form__input_file(type="file" name='image' required=true)
+            +icon_font('picture-o')
+            span.admin-form__file-name Загрузить картинку
+    .admin-form__control
+        input.admin-form__submit(type='submit' value='Добавить')

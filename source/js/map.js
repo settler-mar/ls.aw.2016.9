@@ -1,14 +1,12 @@
 (function() {
     'use strict';
     if ($('#maps').length > 0) {
-        /*  map.setOptions({ minZoom: 7, maxZoom: 25 });
-         map.setZoom(8)*/
         var map_src = "http://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false&language=ru-RU&region=uk&libraries=places"
-        map_src += "&key=AIzaSyDaQ9tBdRls8QW7NERlhxUMgk5J5TeHKdo"
-        map_src += "&callback=mapInit"
-        loadScript(map_src)
+        map_src += "&key=AIzaSyDaQ9tBdRls8QW7NERlhxUMgk5J5TeHKdo";
+        map_src += "&callback=mapInit";
+        loadScript(map_src);
     }
-})()
+})();
 function mapInit() {
     var styles = [
         {
