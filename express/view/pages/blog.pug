@@ -1,0 +1,25 @@
+extends ../_template
+
+block variables
+    - var title = 'Блог'
+    - var body_css = 'blog'
+block header_up
+    include ../common/_social
+    include ../common/_site_menu
+block my-infotmation
+    h1.my-infotmation__title.my-infotmation_blog Блог
+    span.my-infotmation__sub-title.my-infotmation__sub-title-blog Статьи, которые я написал
+    +icon_svg('stars1')
+block content
+    .content-blog__menu
+        ul.content-blog__list
+            for item in items
+                li.content-blog__item
+                    a(href= '#'+item._id).content-blog__link= item.title
+    .content-blog__content
+        for item in items
+            article.content-blog__article
+                h2(id= item._id).content-blog__title= item.title
+                .content-blog__date= item.date
+                .content-blog__text
+                    p= item.body

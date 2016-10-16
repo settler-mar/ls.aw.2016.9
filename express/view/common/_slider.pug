@@ -1,0 +1,10 @@
+section.slider
+    ul.slider-home
+        for item in items
+          li
+             a.image(href= item.picture)
+                img(src= item.picture,alt= item.name)
+             a.title(href= item.link)= item.name
+             ul.skills
+              for skill in item.skills_list
+                  li= skill

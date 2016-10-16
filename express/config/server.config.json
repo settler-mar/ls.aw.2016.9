@@ -2,7 +2,8 @@
   "http":{
     "port":3000,
     "host":"localhost",
-    "publicRoot":"dist"
+    "publicRoot":"dist",
+    "uploadDir":"upload"
   },
   "db":{
     "host":"localhost",
@@ -10,5 +11,17 @@
     "name":"portfolio",
     "user":"",
     "password":""
+  },
+  "mail":{
+    "subject":"Сообщения с сайта портфолио",
+    "smtp":{
+      "host":"smtp.gmail.com",
+      "port":465,
+      "secure":true,
+      "auth":{
+        "user":"test@gmail.com",
+        "pass":"......"
+      }
+    }
   }
 }

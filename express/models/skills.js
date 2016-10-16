@@ -2,7 +2,7 @@
 
 let mongoose = require('mongoose'),
     Schema=mongoose.Schema,
-    TechSchema = new Schema({
+    SkillsSchema = new Schema({
       section:{
         type: String
       },
@@ -15,8 +15,8 @@ let mongoose = require('mongoose'),
             type:Number,
             default:0
           }
-        }
-
-        ]
+        }]
       }
     });
+
+mongoose.model('skills',SkillsSchema);

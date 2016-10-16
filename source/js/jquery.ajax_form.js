@@ -17,6 +17,7 @@
       text:'Введите текст',
       skill:'Введите технологии',
       image:'Выберите фаил',
+      link:'Введите ссылку',
       fail_ajax:'Ошибка отправки формы'
     }
   };
@@ -28,7 +29,7 @@
   }
   ajax_form.prototype.ajax_done=function(data) {
     if(data.href) {
-      setTimeout('location.pathname="'+data.href+'"',2000);
+      setTimeout('location.hash="";location.pathname="'+data.href+'"',2000);
     }
     if(data.error){
       form.result_message(data.error,'error_windows')
@@ -125,15 +126,22 @@
         if(!is_validate)return;
         form.form.addClass('disabled');
         form.form.find('[type=submit]').prop('disabled',true);
-        var data=(form.form.find('[type=file]').length>0)?new FormData($this[0]):form.form.serialize();
-          $.ajax({
+        var ajax_parametr={
           url: $this.attr('action')||form.config.url,
           method:$this.attr('method')||form.config.method,
-          processData: false,
-          contentType: false,
-          data:data,
           dataType:$this.attr('dataType')||form.config.dataType
-        })
+        };
+        if($this.find('[type=file]').length>0){
+          ajax_parametr['data']=new FormData($this[0]);
+          ajax_parametr['processData']=false;
+          ajax_parametr['contentType']=false;
+        }else{
+          ajax_parametr['data']=JSON.stringify($this.serializeObject());
+          ajax_parametr['beforeSend']= function (xhr) {
+            xhr.setRequestHeader('content-type', 'application/json');
+          }
+        }
+          $.ajax(ajax_parametr)
           .done(form.ajax_done)
           .fail(form.ajax_fail);
       })
@@ -152,4 +160,22 @@
     return this;
   }
 })(jQuery);
+
+$.fn.serializeObject = function()
+{
+  var o = {};
+  var a = this.serializeArray();
+  $.each(a, function() {
+    if (o[this.name]) {
+      if (!o[this.name].push) {
+        o[this.name] = [o[this.name]];
+      }
+      o[this.name].push(this.value || '');
+    } else {
+      o[this.name] = this.value || '';
+    }
+  });
+  return o;
+};
+
 $('form').ajax_form();

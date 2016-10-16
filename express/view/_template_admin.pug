@@ -1,0 +1,14 @@
+block variables
+include mixins/icons.pug
+include mixins/svg.pug
+include mixins/lists.pug
+include mixins/diagram.pug
+doctype html
+html
+  head
+    include admin/common/_head
+  body
+    .page-wrap
+      include admin/common/_header
+      div.content
+        block content

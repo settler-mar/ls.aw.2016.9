@@ -5,5 +5,6 @@ module.exports = function() {
     return $.gulp.src($.path.jsFoundation)
       .pipe($.gp.concat('foundation.js'))
       .pipe($.gulp.dest($.config.root + '/assets/js'))
+      .pipe($.gulp.dest($.config.dist + '/assets/js'))
   })
 };

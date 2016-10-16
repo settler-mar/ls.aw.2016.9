@@ -20,6 +20,7 @@ module.exports = function() {
       }))
       .pipe($.gp.sourcemaps.write())
       .pipe($.gulp.dest($.config.root + '/assets/css'))
+      .pipe($.gulp.dest($.config.dist + '/assets/css'))
       .pipe($.browserSync.stream());
   })
 };

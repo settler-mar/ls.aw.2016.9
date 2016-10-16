@@ -1,0 +1,57 @@
+extends ../_template
+
+block variables
+    - var title = 'About'
+    - var body_css = 'about'
+block header_up
+    include ../common/_social
+    include ../common/_site_menu
+block dop_up_element
+    +icon_font('chevron-down','page_scrolle page_scrolle-down')
+block my-infotmation
+    +icon_svg('stars1')
+block content
+    .content-about
+        .content-about__block.content-about__block_left
+            h1.title-h1.title-h1_about Обо мне
+                +icon_svg('stars2','about__about-star')
+            .about
+                .about__photo_box
+                    img.about__photo_img(src="/assets/img/my_photo.jpg",alt="Матюхин Максим")
+                h2.dashed-title.dashed-title_about Кто я
+                p.about_text
+                    | Я програмист из Мариуполя(Украна). Мне 27 лет. Занимаюсь разработкой современных сайтов и WEB-сервисов.
+                    | На сегодняшний день сайт стал неотъемлемой частью любой солидной компании. Взявшись за сайт, я беру на себя ответственность по созданию готового продукта, адаптированного для продвижения и получения дохода.
+                p.about_text
+                    | В совокупности это позволяет создать действительно эффективный сайт и воплотить Ваши идеи.
+                    | Создать сайт могут многие, сделать эффективный инструмент на рынке интернет-маркетинга – единицы.
+        .content-about__block.content-about__block_right
+            h2.dashed-title Чем я могу быть вам полезен
+            p.content-about__description
+                | Я занимаюсь комлексной разработкой сайтов (Frontend + Backend), что позваляет видеть и риализовывать задачи в целом.
+            .skills
+                for skill_group in skills
+                    .skills__block
+                        .skills__block__title= skill_group.name
+                        ul.skills__lists
+                            for skill in skill_group.items
+                                li.skills__item
+                                    +diagram_circle(skill.name,skill.value,'skills__circle')
+
+    .contacts-block
+        .contacts-block__windos
+            h2.dashed-title.dashed-title_contact Контакты
+            ul.contacts-block__list
+                li.contacts-block__item
+                    +icon_svg('skype','contacts-block__icon')
+                    span.contacts-block__text settler-mar
+                li.contacts-block__item
+                    +icon_svg('phone','contacts-block__icon')
+                    span.contacts-block__text +3 8063 23 9 92 92
+                li.contacts-block__item
+                    +icon_svg('envelope2','contacts-block__icon')
+                    span.contacts-block__text matuhinmax@mai.ru
+                li.contacts-block__item
+                    +icon_svg('map_marker','contacts-block__icon')
+                    span.contacts-block__text г.Мариуполь ул.Открытая-23
+        #maps.google-map

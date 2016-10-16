@@ -114,7 +114,9 @@
 
 			var link=$('<a/>',{
 				class:this.config.slider_link_class,
-				html:this.config.slider_link_icon
+				html:this.config.slider_link_icon,
+				href:data.find('.title').attr('href'),
+				target:'_blank'
 			});
 			link.append($('<span/>',{
 				class:this.config.slider_link_text_class,

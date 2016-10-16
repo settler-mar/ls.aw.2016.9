@@ -1,0 +1,15 @@
+h2.block-title Страница "Обо мне"
+form.admin-form(method='POST' action="/admin/about")
+    .skills-edit
+        for skill_group in skills
+            .skills-edit__block
+                .skills-edit__title= skill_group.name
+                ul.skills-edit__list
+                    for skill in skill_group.items
+                        li.skills-edit__item(sufix='%')
+                            label.skills-edit__name= skill.name
+                            input.skills-edit__input(name= 'skills_'+skill_group.id+'_'+skill.key value= skill.value)
+
+
+    .admin-form__control
+        input.admin-form__submit(type='submit' value='Сохранить')

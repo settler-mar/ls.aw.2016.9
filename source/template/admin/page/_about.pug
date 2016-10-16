@@ -6,36 +6,39 @@ form.admin-form(method='POST')
             ul.skills-edit__list
                 li.skills-edit__item(sufix='%')
                     label.skills-edit__name Html
-                    input.skills-edit__input(name='skils_1' value='100')
+                    input.skills-edit__input(name='skills[frontend][html]' value='100')
                 li.skills-edit__item(sufix='%')
                     label.skills-edit__name СSS
-                    input.skills-edit__input(name='skils_1' value='90')
+                    input.skills-edit__input(name='skills[frontend][css]' value='90')
                 li.skills-edit__item(sufix='%')
                     label.skills-edit__name JavaScript
-                    input.skills-edit__input(name='skils_1' value='80')
+                    input.skills-edit__input(name='skills[frontend][js]' value='80')
         .skills-edit__block
             .skills-edit__title Workflow
             ul.skills-edit__list
                 li.skills-edit__item(sufix='%')
                     label.skills-edit__name Git
-                    input.skills-edit__input(name='skils_1' value='80')
+                    input.skills-edit__input(name='skills[workflow][git]' value='80')
                 li.skills-edit__item(sufix='%')
                     label.skills-edit__name Gulp
-                    input.skills-edit__input(name='skils_1' value='90')
+                    input.skills-edit__input(name='skills[workflow][gulp]' value='90')
                 li.skills-edit__item(sufix='%')
                     label.skills-edit__name Bower
-                    input.skills-edit__input(name='skils_1' value='80')
+                    input.skills-edit__input(name='skills[workflow][bower]' value='80')
         .skills-edit__block
             .skills-edit__title Backend
             ul.skills-edit__list
                 li.skills-edit__item(sufix='%')
                     label.skills-edit__name PHP
-                    input.skills-edit__input(name='skils_1' value='80')
+                    input.skills-edit__input(name='skills[backend][php]' value='80')
                 li.skills-edit__item(sufix='%')
                     label.skills-edit__name Node.js
-                    input.skills-edit__input(name='skils_1' value='30')
+                    input.skills-edit__input(name='skills[backend][node]' value='30')
                 li.skills-edit__item(sufix='%')
                     label.skills-edit__name Mongo.db
-                    input.skills-edit__input(name='skils_1' value='40')
+                    input.skills-edit__input(name='skills[backend][mongo]' value='40')
+                li.skills-edit__item(sufix='%')
+                    label.skills-edit__name mySql
+                    input.skills-edit__input(name='skills[backend][mysql]' value='40')
     .admin-form__control
         input.admin-form__submit(type='submit' value='Сохранить')

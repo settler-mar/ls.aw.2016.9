@@ -1,0 +1,53 @@
+extends ../_template
+
+block variables
+  - var title = 'Works'
+  - var body_css = 'works'
+block header_up
+  include ../common/_social
+  include ../common/_site_menu
+block my-infotmation
+  +icon_svg('stars1')
+
+block dop_up_element
+  +icon_font('chevron-down','page_scrolle page_scrolle-down page_scrolle-work')
+  +icon_svg('bg','icon_dark')
+  h1.title-h1.title-h1_work Мои работы
+    +icon_svg('stars2')
+
+block content
+  include ../common/_slider
+  .night_lighthouse
+    section.comment
+      +icon_svg('stars3')
+      h2.title-h2 Что обо мне говорят
+      .comment__group
+        .comment__block
+          .comment__photo-block
+            img.comment__photo-img(src="/assets/img/my_photo.jpg",alt="Ковальчук Дмитрий")
+          .comment__content
+            | Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+          .comment__user
+            | Ковальчук Дмитрий
+            span.comment__user-description — основатель Loftschool
+        .comment__block
+          .comment__photo-block
+            img.comment__photo-img(src="/assets/img/my_photo.jpg",alt="Ковальчук Дмитрий")
+          .comment__content
+            | Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+          .comment__user
+            | Ковальчук Дмитрий
+            span.comment__user-description — основатель Loftschool
+    section.feadback
+      h2.title-h2.title-h2_underline Связаться со мной
+      form.feadback__form(method="post" action='mail.php')
+        label.form__label
+          input.form__input.form__input-full_line.form__input-opacity(type="text",name="name",placeholder="Имя",required=true)
+        label.form__label
+          input.form__input.form__input-full_line.form__input-opacity(type="text",name="mail",placeholder="Ваш email",required=true)
+        label.form__label
+          textarea.form__input.form__input-textarea.form__input-full_line.form__input-opacity(name="comment",placeholder="Ваша сообщение",required=true)
+        .form__control
+          input.form__buttom.form__buttom-submit(type="submit",value="Отправить")
+          input.form__buttom.form__buttom-reset(type="reset",value="Очистить")
+    +icon_font('chevron-up','page_scrolle page_scrolle-up')
