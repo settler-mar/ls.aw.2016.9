@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "author": "Matuhin Max",
   "license": "ISC",
-  "scripts": {
-    "postinstall": "bower install"
-  },
   "devDependencies": {
     "browser-sync": "2.11.2",
     "fonts": "0.0.2",
